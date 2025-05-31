@@ -103,7 +103,7 @@ const bodyparser = require("body-parser");
     // PORT LISTEN xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
     // //////////////////////////////////////////////////////////////////////////
 
-        const port = 4000;
+        const port = process.env.PORT || 8080;
 
 
     // PORT LISTEN xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
