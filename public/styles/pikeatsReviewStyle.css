@@ -6,6 +6,7 @@
         margin:0px auto;
         background:#fffde0;
         text-align:center;
+        font-family:"poppins", sans-serif;
         transition:all 600ms ease;
         -o-transition:all 600ms ease;
         -ms-transition:all 600ms ease;
@@ -21,6 +22,8 @@
             right:0;
             bottom:0;
             margin:0px auto;
+            padding:20px 0px;
+            display:inline-table;
             position:relative;
             transition:all 600ms ease;
             -o-transition:all 600ms ease;
@@ -37,14 +40,473 @@
 /* STYLE ELEMENTS FOR NAV BAR --------------------------------------- */
 /* ////////////////////////////////////////////////////////////////// */
 
-    /* NAV BAR FUNCTIONS -------------------------------------------- */
+    /* NAV BAR STYLES ----------------------------------------------- */
     /* ////////////////////////////////////////////////////////////// */
 
-    /* VIDEO CAPTURE FUNCTIONS -------------------------------------- */
+    /* VIDEO CAPTURE STYLES ----------------------------------------- */
     /* ////////////////////////////////////////////////////////////// */
 
-    /* BASE 64 CONVERT FUNCTIONS ------------------------------------ */
+        /* VIDEO CAPTURE CONTAINER MAIN STYLES >>>>>>>>>>>>>>>>>>>>>> */
+        /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+            .pictureSpotContainer{
+
+                width:300px;
+                left:0;
+                right:0;
+                margin:0px auto;
+                position:relative;
+                transition:all 600ms ease;
+                -o-transition:all 600ms ease;
+                -ms-transition:all 600ms ease;
+                -moz-transition:all 600ms ease;
+                -webkit-transition:all 600ms ease;
+
+            }
+
+
+
+
+
+
+
+
+
+                /* START VIDEO STREAM STYLES //////////////////////// */
+                /* ////////////////////////////////////////////////// */
+
+                    .cameraContainer{
+
+                        width:100%;
+                        left:0;
+                        right:0;
+                        margin:0px auto;
+                        position:relative;
+                        transition:all 600ms ease;
+                        -o-transition:all 600ms ease;
+                        -ms-transition:all 600ms ease;
+                        -moz-transition:all 600ms ease;
+                        -webkit-transition:all 600ms ease;
+
+                    }
+
+                        /* VIDEO START BUTTON STYLES //////////////// */
+                        /* ////////////////////////////////////////// */
+
+                            .cameraStartPictureButtonContainer{
+
+                                width:100%;
+                                height:50px;
+                                position:relative;
+                                transition:all 600ms ease;
+                                -o-transition:all 600ms ease;
+                                -ms-transition:all 600ms ease;
+                                -moz-transition:all 600ms ease;
+                                -webkit-transition:all 600ms ease;
+
+                            }
+
+                                .cameraStartButtonActual{
+
+                                    width:max-content;
+                                    height:50px;
+                                    left:0;
+                                    right:0;
+                                    color:#FFFFFF;
+                                    cursor:pointer;
+                                    margin:0px auto;
+                                    padding:0px 30px;
+                                    position:relative;
+                                    background:#2C2C2C;
+                                    line-height:50px;
+                                    border-radius:8px;
+                                    letter-spacing:1px;
+                                    transition:all 600ms ease;
+                                    -o-transition:all 600ms ease;
+                                    -ms-transition:all 600ms ease;
+                                    -moz-transition:all 600ms ease;
+                                    -webkit-transition:all 600ms ease;
+
+                                }
+
+
+
+
+                        /* VIDEO CONTAINER STYLE //////////////////// */
+                        /* ////////////////////////////////////////// */
+
+                            .cameraBoxContainer{
+
+                                width:300px;
+                                height:230px;
+                                left:0;
+                                right:0;
+                                margin:20px 0px 0px 0px;
+                                position:relative;
+                                background:#FFFFFF;
+                                box-shadow:0px 50px 30px -20px rgba(0,0,0,0.15);
+                                border-radius:10px;
+                                transition:all 600ms ease;
+                                -o-transition:all 600ms ease;
+                                -ms-transition:all 600ms ease;
+                                -moz-transition:all 600ms ease;
+                                -webkit-transition:all 600ms ease;
+
+                            }
+
+                                .cameraBoxActualPicture{
+
+                                    width:270px;
+                                    height:230px;
+                                    left:0;
+                                    right:0;
+                                    margin:0px auto;
+                                    position:relative;
+                                    border-radius:8px;
+                                    transition:all 600ms ease;
+                                    -o-transition:all 600ms ease;
+                                    -ms-transition:all 600ms ease;
+                                    -moz-transition:all 600ms ease;
+                                    -webkit-transition:all 600ms ease;
+
+                                }
+
+
+
+
+                        /* VIDEO START BUTTON STYLES //////////////// */
+                        /* ////////////////////////////////////////// */
+
+                            .cameraTakePictureButtonContainer{
+
+                                width:100%;
+                                height:50px;
+                                position:relative;
+                                margin-top:30px;
+                                transition:all 600ms ease;
+                                -o-transition:all 600ms ease;
+                                -ms-transition:all 600ms ease;
+                                -moz-transition:all 600ms ease;
+                                -webkit-transition:all 600ms ease;
+
+                            }
+
+                                .cameraTakePictureButtonActual{
+
+                                    width:max-content;
+                                    height:50px;
+                                    left:0;
+                                    right:0;
+                                    color:#FFFFFF;
+                                    cursor:pointer;
+                                    margin:0px auto;
+                                    padding:0px 30px;
+                                    position:relative;
+                                    background:#2C2C2C;
+                                    line-height:50px;
+                                    border-radius:8px;
+                                    letter-spacing:1px;
+                                    transition:all 600ms ease;
+                                    -o-transition:all 600ms ease;
+                                    -ms-transition:all 600ms ease;
+                                    -moz-transition:all 600ms ease;
+                                    -webkit-transition:all 600ms ease;
+
+                                }
+
+
+
+
+
+
+
+            
+
+                /* CAPTURE SHOT BLOCK STYLES //////////////////////// */
+                /* ////////////////////////////////////////////////// */
+
+                    .cameraSnipDisplayContainer{
+
+                        width:300px;
+                        position:relative;
+                        margin-top:20px;
+                        transition:all 600ms ease;
+                        -o-transition:all 600ms ease;
+                        -ms-transition:all 600ms ease;
+                        -moz-transition:all 600ms ease;
+                        -webkit-transition:all 600ms ease;
+
+                    }
+
+
+                        /* DISPLAY SNIP ON CANVAS CONTAINER --------- */
+                        /* ------------------------------------------ */
+
+                            .cameraSnipDisplayBoxContainer{
+
+                                width:300px;
+                                height:230px;
+                                left:0;
+                                right:0;
+                                margin:30px 0px 0px 0px;
+                                padding:12px 0px;
+                                position:relative;
+                                background:#FFFFFF;
+                                box-shadow:0px 50px 30px -20px rgba(0,0,0,0.15);
+                                border-radius:10px;
+                                transition:all 600ms ease;
+                                -o-transition:all 600ms ease;
+                                -ms-transition:all 600ms ease;
+                                -moz-transition:all 600ms ease;
+                                -webkit-transition:all 600ms ease;
+
+                            }
+
+                                .cameraSnipDisplayActual{
+
+                                    width:270px;
+                                    height:230px;
+                                    left:0;
+                                    right:0;
+                                    margin:0px auto;
+                                    position:relative;
+                                    border-radius:8px;
+                                    transition:all 600ms ease;
+                                    -o-transition:all 600ms ease;
+                                    -ms-transition:all 600ms ease;
+                                    -moz-transition:all 600ms ease;
+                                    -webkit-transition:all 600ms ease;
+
+                                }
+
+
+
+
+
+
+
+            
+
+                /* DISPLAY SNIP ON CANVAS CONTAINER STYLES ////////// */
+                /* ////////////////////////////////////////////////// */
+
+                    .cameraSnipDisplayHeaderUrlContainer{
+
+                        width:300px;
+                        margin-top:30px;
+                        position:relative;
+                        background:#FFFFFF;
+                        box-shadow:0px 50px 30px 0px rgba(0,0,0,0.15);
+                        border-radius:10px;
+                        transition:all 600ms ease;
+                        -o-transition:all 600ms ease;
+                        -ms-transition:all 600ms ease;
+                        -moz-transition:all 600ms ease;
+                        -webkit-transition:all 600ms ease;
+
+                    }
+
+                        .cameraSnipDisplayHeaderUrlActual{
+
+                            width:90%;
+                            height:90%;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:0px auto;
+                            padding:20px 0px;
+                            position:relative;
+                            background:#FFFFFF;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        }
+
+
+
+
+
+
+
+            
+
+                /* DROP DOWN AND COMMENTS CONTAINER STYLES ////////// */
+                /* ////////////////////////////////////////////////// */
+
+                    .cameraSnapDescriptionContainer{
+
+                        width:300px;
+                        margin-top:30px;
+                        position:relative;
+                        transition:all 600ms ease;
+                        -o-transition:all 600ms ease;
+                        -ms-transition:all 600ms ease;
+                        -moz-transition:all 600ms ease;
+                        -webkit-transition:all 600ms ease;
+
+                    }
+
+                        /* SELECT AREA DROP DOWN CONTAINER ---------- */
+                        /* ------------------------------------------ */
+
+                            .cameraSnapAreaDropDownContainer{
+
+                                width:300px;
+                                height:50px;
+                                position:relative;
+                                box-shadow:0px 30px 30px -10px rgba(0,0,0,0.15);
+                                transition:all 600ms ease;
+                                -o-transition:all 600ms ease;
+                                -ms-transition:all 600ms ease;
+                                -moz-transition:all 600ms ease;
+                                -webkit-transition:all 600ms ease;
+
+                            }
+
+                                /* DROP DOWN AREA ITEM SIDE >>>>>>>>> */
+                                /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+                                    .cameraSnapAreaDropDownItemsSideContainer{
+
+                                        width:250px;
+                                        height:50px;
+                                        float:left;
+                                        display:inline-table;
+                                        position:relative;
+                                        background:#FFFFFF;
+                                        border-radius:10px 0px 0px 10px;
+                                        transition:all 600ms ease;
+                                        -o-transition:all 600ms ease;
+                                        -ms-transition:all 600ms ease;
+                                        -moz-transition:all 600ms ease;
+                                        -webkit-transition:all 600ms ease;
+
+                                    }
+
+                                        .cameraSnapAreaDropDownItemsSideActualTextContainer{
+
+                                            width:90%;
+                                            height:60%;
+                                            top:0;
+                                            left:0;
+                                            right:0;
+                                            bottom:0;
+                                            color:#2C2C2C;
+                                            margin:auto auto;
+                                            position:absolute;
+                                            line-height:30px;
+                                            transition:all 600ms ease;
+                                            -o-transition:all 600ms ease;
+                                            -ms-transition:all 600ms ease;
+                                            -moz-transition:all 600ms ease;
+                                            -webkit-transition:all 600ms ease;
+
+                                        }
+
+
+
+                                            /* DROP DOWN CONTENTS --- */
+                                            /* ////////////////////// */
+
+                                                .cameraSnapAreaDropAreaDownContentsContainer{
+
+                                                    width:280px;
+                                                    margin:10px 0px 0px 0px;
+                                                    padding:0px 10px 10px 10px;
+                                                    display:inline-table;
+                                                    overflow:hidden;
+                                                    position:relative;
+                                                    background:#FFFFFF;
+                                                    border-radius:10px;
+                                                    transition:all 600ms ease;
+                                                    -o-transition:all 600ms ease;
+                                                    -ms-transition:all 600ms ease;
+                                                    -moz-transition:all 600ms ease;
+                                                    -webkit-transition:all 600ms ease;
+
+                                                }
+
+                                                    /* DROP DOWN AREA SELECT SLIDER CONTAINER */
+                                                    /* ////////////////////////////////////// */
+
+                                                        .cameraSnapAreaDropAreaDownSliderContainer{
+
+                                                            width:200%;
+                                                            margin-left:0%;
+                                                            transition:all 600ms ease;
+                                                            -o-transition:all 600ms ease;
+                                                            -ms-transition:all 600ms ease;
+                                                            -moz-transition:all 600ms ease;
+                                                            -webkit-transition:all 600ms ease;
+
+                                                        }
+
+                                                            /* DROP DOWN AREA SELECT SLIDE SIDE */
+                                                            /* //////////////////////////////// */
+
+                                                                .cameraSnapDropDownAreaSelectSide{
+
+                                                                    width:50%;
+                                                                    float:left;
+                                                                    transition:all 600ms ease;
+                                                                    -o-transition:all 600ms ease;
+                                                                    -ms-transition:all 600ms ease;
+                                                                    -moz-transition:all 600ms ease;
+                                                                    -webkit-transition:all 600ms ease;
+
+                                                                }
+
+                                                            /* DROP DOWN DINER SELECT SLIDE SIDE */
+                                                            /* //////////////////////////////// */
+
+                                                                .cameraSnapDropDownDinerSelectSide{
+
+                                                                    width:50%;
+                                                                    float:left;
+                                                                    transition:all 600ms ease;
+                                                                    -o-transition:all 600ms ease;
+                                                                    -ms-transition:all 600ms ease;
+                                                                    -moz-transition:all 600ms ease;
+                                                                    -webkit-transition:all 600ms ease;
+
+                                                                }
+
+
+
+
+
+
+
+
+
+                                /* DROP DOWN AREA ICON SIDE >>>>>>>>> */
+                                /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+                                    .cameraSnapAreaDropDownIconSideContainer{
+
+                                        width:50px;
+                                        height:50px;
+                                        float:right;
+                                        cursor:pointer;
+                                        display:block;
+                                        background:#2C2C2c;
+                                        border-radius:0px 10px 10px 0px;
+                                        transition:all 600ms ease;
+                                        -o-transition:all 600ms ease;
+                                        -ms-transition:all 600ms ease;
+                                        -moz-transition:all 600ms ease;
+                                        -webkit-transition:all 600ms ease;
+
+                                    }
+
+
+
+    /* BASE 64 CONVERT STYLES --------------------------------------- */
     /* ////////////////////////////////////////////////////////////// */
 
-    /* TRANSLATE TO FORM FUNCTIONS ---------------------------------- */
+    /* TRANSLATE TO FORM STYLES ------------------------------------- */
     /* ////////////////////////////////////////////////////////////// */
