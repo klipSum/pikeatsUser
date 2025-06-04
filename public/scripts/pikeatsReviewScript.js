@@ -375,6 +375,39 @@
 
 
 
+                        // CLEAR OUT DINER SECTION LIST AND READY FOR NEW
+                        // //////////////////////////////////////////
+
+                            // FIRST GET NUMBER OF CHILDREN INSIDE --
+                            // //////////////////////////////////////
+
+                                var getChildrenCount = getDinerDropDownMain.children.length
+
+                            // THEN CHECK IF PARENT HAS CHILDREN ----
+                            // //////////////////////////////////////
+
+                                // IF HAS CHILDREN THEN CLEAR ALL CHILDREN
+                                // //////////////////////////////////
+
+                                    if ( getChildrenCount > 0 ) {
+
+                                        for ( parentEraserCount = getChildrenCount; parentEraserCount != 0; parentEraserCount-- ) {
+
+                                            // REMOVE FIRST CHILD UNTIL NOTHING LEFT
+                                            // //////////////////////
+
+                                                getDinerDropDownMain.removeChild(getDinerDropDownMain.children[0])
+
+                                                console.log("REBOOTED...")
+                                            
+                                        }
+
+                                    }
+
+
+
+
+
 
 
 
@@ -443,8 +476,8 @@
                                 // UPDATE TEXT OF BUTTON ----------------
                                 // //////////////////////////////////////
 
-                                    captureDinerItemClassNames.push(`cameraSnapDinerDropAreaDownContentsItem${classNumbers[dineItemCounter]}Container`)
-                                    captureDinerItemActualClassNames.push(`cameraSnapDinerDropAreaDownContentsItem${classNumbers[dineItemCounter]}Resizer`)
+                                    captureDinerItemClassNames.push(`cameraSnapDinerDropDinerDownContentsItem${classNumbers[dineItemCounter]}Container`)
+                                    captureDinerItemActualClassNames.push(`cameraSnapDinerDropDinerDownContentsItem${classNumbers[dineItemCounter]}Resizer`)
     
     
                                 
