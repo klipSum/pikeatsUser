@@ -19,6 +19,89 @@
 
             var getAreaDropDownSlider = document.querySelector(`.cameraSnapAreaDropAreaDownSliderContainer`)
 
+
+
+        // VARIABLES FOR RATINGS CAPTURE ----------------------------
+        // //////////////////////////////////////////////////////////
+
+            // STAR CLICKERS ----------------------------------------
+            // ------------------------------------------------------
+
+                // STAR ONE CLICKERS --------------------------------
+                // --------------------------------------------------
+
+                    var starClickerOneOn = document.querySelector(`.cameraSnapRatingsAreaStarOneClickerOn`)
+                    var starClickerOneOff = document.querySelector(`.cameraSnapRatingsAreaStarOneClickerOff`)
+
+                // STAR TWO CLICKERS --------------------------------
+                // --------------------------------------------------
+
+                    var starClickerTwoOn = document.querySelector(`.cameraSnapRatingsAreaStarTwoClickerOn`)
+                    var starClickerTwoOff = document.querySelector(`.cameraSnapRatingsAreaStarTwoClickerOff`)
+
+                // STAR THREE CLICKERS ------------------------------
+                // --------------------------------------------------
+
+                    var starClickerThreeOn = document.querySelector(`.cameraSnapRatingsAreaStarThreeClickerOn`)
+                    var starClickerThreeOff = document.querySelector(`.cameraSnapRatingsAreaStarThreeClickerOff`)
+
+                // STAR FOUR CLICKERS -------------------------------
+                // --------------------------------------------------
+
+                    var starClickerFourOn = document.querySelector(`.cameraSnapRatingsAreaStarFourClickerOn`)
+                    var starClickerFourOff = document.querySelector(`.cameraSnapRatingsAreaStarFourClickerOff`)
+
+                // STAR FIVE CLICKERS -------------------------------
+                // --------------------------------------------------
+
+                    var starClickerFiveOn = document.querySelector(`.cameraSnapRatingsAreaStarFiveClickerOn`)
+                    var starClickerFiveOff = document.querySelector(`.cameraSnapRatingsAreaStarFiveClickerOff`)
+
+
+
+            // ACTUAL STARS -----------------------------------------
+            // ------------------------------------------------------
+
+                var getRatingStarOne = document.querySelector(`.cameraSnapRatingsAreaStarActualOne`)
+                var getRatingStarTwo = document.querySelector(`.cameraSnapRatingsAreaStarActualTwo`)
+                var getRatingStarThree = document.querySelector(`.cameraSnapRatingsAreaStarActualThree`)
+                var getRatingStarFour = document.querySelector(`.cameraSnapRatingsAreaStarActualFour`)
+                var getRatingStarFive = document.querySelector(`.cameraSnapRatingsAreaStarActualFive`)
+
+        
+
+    // SRINGS DECLARED ----------------------------------------------
+    // //////////////////////////////////////////////////////////////
+
+        // STRINGS FOR NAV BAR --------------------------------------
+        // //////////////////////////////////////////////////////////
+
+        // STRINGS FOR PICTURE CAPTURE ------------------------------
+        // //////////////////////////////////////////////////////////
+
+        // STRINGS FOR RATINGS CAPTURE ------------------------------
+        // //////////////////////////////////////////////////////////
+
+            // STRINGS FOR RATING IMAGE CAPTURE ---------------------
+            // //////////////////////////////////////////////////////
+
+                var startDefault = `data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAL+SURBVHgB7VrrcdpAEF5eMzDDs4LIFQR3IEpIBbErwKnAdgdOB6QCuwOUCowrgFQAA/zjlW+JxGBFgluxOsQM34zG9unmbj/2vYboiisuD/P5vDudToez2ex9PB47lCJylBJY8GKxONxb8mq1WodSQp5SQqlUegwtudDOHaWEVDQCk2pvNpv3iFeT5XJ502q1JqSMtDTyGrPezOfzD5QC1Imw+UAbTtx7EOnCf5qkDFUiLCAEfTyyrRnhPydDlQiiVPeQNgJgz4N2OFZz9ohwewyq4VhNIwnMxUWidEkJKho5EG6PQU0rWhp5pWRQS5InE+F6ysTBYwVAlNNwfLFpsRmt1+s2BPgKAm0suXQicrncCGcNcO4HzvWQ/UfI/iPRGXEvOCfAgZ09oV0sO3jUk1kMuIwZgCQT/A0ZRtVqdRC3eUfET2Z3hUIh+KTblE14PrmP1Wr1FtRtOyIwmeEptn4m7KLelkiCZJYZQG6nUqn82UYtdixoY0QXBpaZSfDvu/ALe+tcEhmWlWUO/v4UtdjE4Ox9OJNDGUZAYj9E/xd+/XKjT/bCrAiQbeKT+BSKI/OIX8z1KYNAsrwNk2BEligIaR6Y31PGAJO/jyLBiK216vV6D0nnB2UHz8jsvbiXB4vGRqPxwgfQ+fEMK3k6tMGoaITPPOGHep9tiKMkGMbVL/qGHmz0O9nFT5AwGh+JynhohiOZS3YwAIlb082ixorLabIE3PVLsj+12a8CRAlZRIQbLLIElEpfJPulGrFWtsC0WpL9IiI2Gy+p9kVEbFbF+NDS8RGU+LZ7+KZkam9MBC2l9bK+XC43TPcaEznHYGKxWOgnxKREuJvjZoiSQd+06N9wTgIPTwftwA2eFvc30pmA5MMzJoJwaJqgPDwdnjdxgxYscn/DpCSEJElR07Q8iiAQhoSQJCkaEzmQQzwyIBDGHqFv/hlRd+prJHwZLunx/8ylBMIAmTd/7NmJuGNgeo5xP+KPVbdNDgi8SMf+Ce6Z+Peof7ngChv4C+FebC5yhenSAAAAAElFTkSuQmCC`
+                var starSelected = `data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKxSURBVHgB7Zo/kgFBFMafrU1dgAOQyHAAiVAiJCAjkLqAM5ARkJEIJS5AjgNwAA6wu19X9dTsmDH9xuveofZXNTVFqen3zfvT783IfP1Ab8AHvQn/QkxYLBZUr9ep2WzS5XIhm2Rs5QgMhwhNpVKh6XRKtrDmkfF4/Ovzbrej9XpNtrDikdPppMIpSDabpc1mo87SWPHIYDAI/f52u6m8sYG4EITPo8Sez+dKkDSiQmBgMDeS/CYJokJwt03KLMJLuhyLJXuw3MYhXY7FPMINF5Tj/X5PUogIQblNskdI5oqIkKhyG4fkJvm0kGcTF16RSHx2sh+PRxVK+oy7+iy5XI6KxSIVCgWqVqvqMw4OkUJQ78/ns2c0DMads7GZhYE2RotDhdNio/CEwEDEKww/HA7qnEYgCuIgqlareX2bJwR7gO2ZQRr/XqSSHQJeTQTQ4Q6UEMRfPp+nVwM266LglV+46JXEwFZ/i+MJgbJXEaNF+Ev0XflFtep0Os7KLBdUqdlspiqXn9B9BEnU7XYpjaxWqzsRILRFQVkbjUaUNmBTmAgQ2Ws1Gg0aDoeUFvr9vrIpiodNY6vVol6vR38NRMTZEdv9mlzEJqbrG7XxcW61BSciWG08KplE224CkhoVyhTWYFUul8kV3AhI7WsF7obMEuJyRuF24ywhLtsWqx7B6OsKjNccWEJcDl/WPOJ6hocQjhhjIdfrlVxjRYjL/NBw8sRYSNL8wBSX9FUbJwo+TX/IFYKZBn0SzgDPzCaTCcuznDXFhQQFaNBy4OAIsiIkbuEoAUE4gjjJbtz9lkql0O9NBUSx3W7VE/2wrhqPRZfLpdF1jD0CQ/2L4a5iTuE+NQ+C57c4cG14yL9G1HwehrFHEK942Qna7fbTAuLWQaXDOqYVz9p/UVzzNn9z+gbpq5ap2N5CMAAAAABJRU5ErkJggg==`
+
+            // STRINGS FOR RATING NUMBER CAPTURE --------------------
+            // //////////////////////////////////////////////////////
+
+                var captureRatingNumber = 0
+
+        // STRINGS VIDEO CAPTURE ------------------------------------
+        // //////////////////////////////////////////////////////////
+
+        // STRINGS BASE 64 CONVERT ----------------------------------
+        // //////////////////////////////////////////////////////////
+
+        // STRINGS TRANSLATE TO FORM --------------------------------
+        // //////////////////////////////////////////////////////////
+
         
 
     // ARRAYS DECLARED ----------------------------------------------
@@ -77,6 +160,20 @@
 
             var captureDinerItemClassNames = []
             var captureDinerItemActualClassNames = []
+
+        // ARRAYS FOR RATINGS CAPTURE -------------------------------
+        // //////////////////////////////////////////////////////////
+
+            var captureRatingsNumbers = []
+
+                // ARRAYS FOR RATINGS STAR IMAGE --------------------
+                // //////////////////////////////////////////////////
+
+                    var cpatureRatingsStarImages = [
+
+                        startDefault, starSelected
+
+                    ]
 
         
 
@@ -696,6 +793,2677 @@
 
         // POPULATE DROP DOWN AREA ----------------------------------
         // //////////////////////////////////////////////////////////
+
+    // CAPTURE RATINGS EVENTS ---------------------------------------
+    // //////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+        // RATING STAR CLICKER ONE ----------------------------------
+        // //////////////////////////////////////////////////////////
+
+            // CLICKER ON -------------------------------------------
+            // ------------------------------------------------------
+
+                starClickerOneOn.addEventListener("click", function () {
+
+                    // CHANGE STAR COUNTER --------------------------
+                    // //////////////////////////////////////////////
+
+                        captureRatingNumber = 1
+
+                    // SEND ON CLICKER ONE TO BACK ------------------
+                    // //////////////////////////////////////////////
+                        
+                        starClickerOneOn.style = `
+                        
+                            width:100%;
+                            height:100%;
+                            z-index:-1;
+                            left:0px;
+                            right:0;
+                            display:none;
+                            position:absolute;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                    // BRING OFF CLICKER ONE TO FRONT ---------------
+                    // //////////////////////////////////////////////
+
+                        starClickerOneOff.style = `
+                        
+                            width:100%;
+                            height:100%;
+                            z-index:1;
+                            left:0px;
+                            right:0;
+                            display:block;
+                            position:absolute;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                    // SWITCH ON SELECTED STAR ----------------------
+                    // //////////////////////////////////////////////
+
+                        getRatingStarOne.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[1]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+
+
+
+
+
+
+                    // SWITCH OFF OTHER STARS -----------------------
+                    // //////////////////////////////////////////////
+
+                        getRatingStarTwo.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[0]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                        getRatingStarThree.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[0]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                        getRatingStarFour.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[0]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                        getRatingStarFive.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[0]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+
+
+
+
+
+
+                    // SWITCH CLICKERS ------------------------------
+                    // //////////////////////////////////////////////
+
+                        // BRING ON CLICKERS TO DEFAULT POSITION >>>>
+                        // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                            starClickerTwoOn.style = `
+                            
+                                width:100%;
+                                height:100%;
+                                z-index:1;
+                                left:0px;
+                                right:0;
+                                display:block;
+                                position:absolute;
+                                transition:all 600ms ease;
+                                -o-transition:all 600ms ease;
+                                -ms-transition:all 600ms ease;
+                                -moz-transition:all 600ms ease;
+                                -webkit-transition:all 600ms ease;
+
+                            `
+
+                            starClickerThreeOn.style = `
+                            
+                                width:100%;
+                                height:100%;
+                                z-index:1;
+                                left:0px;
+                                right:0;
+                                display:block;
+                                position:absolute;
+                                transition:all 600ms ease;
+                                -o-transition:all 600ms ease;
+                                -ms-transition:all 600ms ease;
+                                -moz-transition:all 600ms ease;
+                                -webkit-transition:all 600ms ease;
+
+                            `
+
+                            starClickerFourOn.style = `
+                            
+                                width:100%;
+                                height:100%;
+                                z-index:1;
+                                left:0px;
+                                right:0;
+                                display:block;
+                                position:absolute;
+                                transition:all 600ms ease;
+                                -o-transition:all 600ms ease;
+                                -ms-transition:all 600ms ease;
+                                -moz-transition:all 600ms ease;
+                                -webkit-transition:all 600ms ease;
+
+                            `
+
+                            starClickerFiveOn.style = `
+                            
+                                width:100%;
+                                height:100%;
+                                z-index:1;
+                                left:0px;
+                                right:0;
+                                display:block;
+                                position:absolute;
+                                transition:all 600ms ease;
+                                -o-transition:all 600ms ease;
+                                -ms-transition:all 600ms ease;
+                                -moz-transition:all 600ms ease;
+                                -webkit-transition:all 600ms ease;
+
+                            `
+
+                        // SEND OFF CLICKERS TO BACK POSITION >>>>>>>
+                        // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                            starClickerTwoOff.style = `
+                            
+                                width:100%;
+                                height:100%;
+                                z-index:-1;
+                                left:0px;
+                                right:0;
+                                display:none;
+                                position:absolute;
+                                transition:all 600ms ease;
+                                -o-transition:all 600ms ease;
+                                -ms-transition:all 600ms ease;
+                                -moz-transition:all 600ms ease;
+                                -webkit-transition:all 600ms ease;
+
+                            `
+
+                            starClickerThreeOff.style = `
+                            
+                                width:100%;
+                                height:100%;
+                                z-index:-1;
+                                left:0px;
+                                right:0;
+                                display:none;
+                                position:absolute;
+                                transition:all 600ms ease;
+                                -o-transition:all 600ms ease;
+                                -ms-transition:all 600ms ease;
+                                -moz-transition:all 600ms ease;
+                                -webkit-transition:all 600ms ease;
+
+                            `
+
+                            starClickerFourOff.style = `
+                            
+                                width:100%;
+                                height:100%;
+                                z-index:-1;
+                                left:0px;
+                                right:0;
+                                display:none;
+                                position:absolute;
+                                transition:all 600ms ease;
+                                -o-transition:all 600ms ease;
+                                -ms-transition:all 600ms ease;
+                                -moz-transition:all 600ms ease;
+                                -webkit-transition:all 600ms ease;
+
+                            `
+
+                            starClickerFiveOff.style = `
+                            
+                                width:100%;
+                                height:100%;
+                                z-index:-1;
+                                left:0px;
+                                right:0;
+                                display:none;
+                                position:absolute;
+                                transition:all 600ms ease;
+                                -o-transition:all 600ms ease;
+                                -ms-transition:all 600ms ease;
+                                -moz-transition:all 600ms ease;
+                                -webkit-transition:all 600ms ease;
+
+                            `
+
+
+
+                })
+
+
+
+
+
+
+
+
+
+            // CLICKER OFF ------------------------------------------
+            // ------------------------------------------------------
+
+                starClickerOneOff.addEventListener("click", function () {
+
+                    // CHANGE STAR COUNTER --------------------------
+                    // //////////////////////////////////////////////
+
+                        captureRatingNumber = 0
+
+                    // SEND ON CLICKER ONE TO FRONT -----------------
+                    // //////////////////////////////////////////////
+                        
+                        starClickerOneOn.style = `
+                        
+                            width:100%;
+                            height:100%;
+                            z-index:1;
+                            left:0px;
+                            right:0;
+                            display:block;
+                            position:absolute;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                    // BRING OFF CLICKER ONE TO BACK ----------------
+                    // //////////////////////////////////////////////
+
+                        starClickerOneOff.style = `
+                        
+                            width:100%;
+                            height:100%;
+                            z-index:-1;
+                            left:0px;
+                            right:0;
+                            display:none;
+                            position:absolute;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                    // SWITCH OFF SELECTED STAR ----------------------
+                    // //////////////////////////////////////////////
+
+                        getRatingStarOne.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[0]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+
+
+
+
+
+
+                    // SWITCH OFF OTHER STARS -----------------------
+                    // //////////////////////////////////////////////
+
+                        getRatingStarTwo.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[0]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                        getRatingStarThree.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[0]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                        getRatingStarFour.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[0]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                        getRatingStarFive.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[0]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+
+
+                })
+
+    
+
+
+
+
+
+
+
+
+        // RATING STAR CLICKER TWO ----------------------------------
+        // //////////////////////////////////////////////////////////
+
+            // CLICKER ON -------------------------------------------
+            // ------------------------------------------------------
+
+                starClickerTwoOn.addEventListener("click", function () {
+
+                    // CHANGE STAR COUNTER --------------------------
+                    // //////////////////////////////////////////////
+
+                        captureRatingNumber = 2
+
+                    // SEND ON CLICKER TWO TO BACK ------------------
+                    // //////////////////////////////////////////////
+                        
+                        starClickerTwoOn.style = `
+                        
+                            width:100%;
+                            height:100%;
+                            z-index:-1;
+                            left:0px;
+                            right:0;
+                            display:none;
+                            position:absolute;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                    // BRING OFF CLICKER TWO TO FRONT ---------------
+                    // //////////////////////////////////////////////
+
+                        starClickerTwoOff.style = `
+                        
+                            width:100%;
+                            height:100%;
+                            z-index:1;
+                            left:0px;
+                            right:0;
+                            display:block;
+                            position:absolute;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                    // SWITCH ON SELECTED STAR ----------------------
+                    // //////////////////////////////////////////////
+
+                        getRatingStarOne.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[1]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                        getRatingStarTwo.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[1]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+
+
+
+
+
+
+                    // SWITCH OFF OTHER STARS -----------------------
+                    // //////////////////////////////////////////////
+
+                        getRatingStarThree.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[0]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                        getRatingStarFour.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[0]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                        getRatingStarFive.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[0]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+
+
+
+
+
+
+                    // SWITCH CLICKERS ------------------------------
+                    // //////////////////////////////////////////////
+
+                        // BRING ON CLICKERS TO DEFAULT POSITION >>>>
+                        // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                            starClickerOneOn.style = `
+                            
+                                width:100%;
+                                height:100%;
+                                z-index:1;
+                                left:0px;
+                                right:0;
+                                display:block;
+                                position:absolute;
+                                transition:all 600ms ease;
+                                -o-transition:all 600ms ease;
+                                -ms-transition:all 600ms ease;
+                                -moz-transition:all 600ms ease;
+                                -webkit-transition:all 600ms ease;
+
+                            `
+
+                            starClickerThreeOn.style = `
+                            
+                                width:100%;
+                                height:100%;
+                                z-index:1;
+                                left:0px;
+                                right:0;
+                                display:block;
+                                position:absolute;
+                                transition:all 600ms ease;
+                                -o-transition:all 600ms ease;
+                                -ms-transition:all 600ms ease;
+                                -moz-transition:all 600ms ease;
+                                -webkit-transition:all 600ms ease;
+
+                            `
+
+                            starClickerFourOn.style = `
+                            
+                                width:100%;
+                                height:100%;
+                                z-index:1;
+                                left:0px;
+                                right:0;
+                                display:block;
+                                position:absolute;
+                                transition:all 600ms ease;
+                                -o-transition:all 600ms ease;
+                                -ms-transition:all 600ms ease;
+                                -moz-transition:all 600ms ease;
+                                -webkit-transition:all 600ms ease;
+
+                            `
+
+                            starClickerFiveOn.style = `
+                            
+                                width:100%;
+                                height:100%;
+                                z-index:1;
+                                left:0px;
+                                right:0;
+                                display:block;
+                                position:absolute;
+                                transition:all 600ms ease;
+                                -o-transition:all 600ms ease;
+                                -ms-transition:all 600ms ease;
+                                -moz-transition:all 600ms ease;
+                                -webkit-transition:all 600ms ease;
+
+                            `
+
+                        // SEND OFF CLICKERS TO BACK POSITION >>>>>>>
+                        // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                            starClickerOneOff.style = `
+                            
+                                width:100%;
+                                height:100%;
+                                z-index:-1;
+                                left:0px;
+                                right:0;
+                                display:none;
+                                position:absolute;
+                                transition:all 600ms ease;
+                                -o-transition:all 600ms ease;
+                                -ms-transition:all 600ms ease;
+                                -moz-transition:all 600ms ease;
+                                -webkit-transition:all 600ms ease;
+
+                            `
+
+                            starClickerThreeOff.style = `
+                            
+                                width:100%;
+                                height:100%;
+                                z-index:-1;
+                                left:0px;
+                                right:0;
+                                display:none;
+                                position:absolute;
+                                transition:all 600ms ease;
+                                -o-transition:all 600ms ease;
+                                -ms-transition:all 600ms ease;
+                                -moz-transition:all 600ms ease;
+                                -webkit-transition:all 600ms ease;
+
+                            `
+
+                            starClickerFourOff.style = `
+                            
+                                width:100%;
+                                height:100%;
+                                z-index:-1;
+                                left:0px;
+                                right:0;
+                                display:none;
+                                position:absolute;
+                                transition:all 600ms ease;
+                                -o-transition:all 600ms ease;
+                                -ms-transition:all 600ms ease;
+                                -moz-transition:all 600ms ease;
+                                -webkit-transition:all 600ms ease;
+
+                            `
+
+                            starClickerFiveOff.style = `
+                            
+                                width:100%;
+                                height:100%;
+                                z-index:-1;
+                                left:0px;
+                                right:0;
+                                display:none;
+                                position:absolute;
+                                transition:all 600ms ease;
+                                -o-transition:all 600ms ease;
+                                -ms-transition:all 600ms ease;
+                                -moz-transition:all 600ms ease;
+                                -webkit-transition:all 600ms ease;
+
+                            `
+
+
+
+                })
+
+
+
+
+
+
+
+
+
+            // CLICKER OFF ------------------------------------------
+            // ------------------------------------------------------
+
+                starClickerTwoOff.addEventListener("click", function () {
+
+                    // CHANGE STAR COUNTER --------------------------
+                    // //////////////////////////////////////////////
+
+                        captureRatingNumber = 0
+
+                    // SEND ON CLICKER TWO TO FRONT -----------------
+                    // //////////////////////////////////////////////
+                        
+                        starClickerTwoOn.style = `
+                        
+                            width:100%;
+                            height:100%;
+                            z-index:1;
+                            left:0px;
+                            right:0;
+                            display:block;
+                            position:absolute;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                    // BRING OFF CLICKER TWO TO BACK ----------------
+                    // //////////////////////////////////////////////
+
+                        starClickerTwoOff.style = `
+                        
+                            width:100%;
+                            height:100%;
+                            z-index:-1;
+                            left:0px;
+                            right:0;
+                            display:none;
+                            position:absolute;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                    // SWITCH OFF SELECTED STAR ----------------------
+                    // //////////////////////////////////////////////
+
+                        getRatingStarTwo.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[0]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+
+
+
+
+
+
+                    // SWITCH OFF OTHER STARS -----------------------
+                    // //////////////////////////////////////////////
+
+                        getRatingStarOne.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[0]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                        getRatingStarThree.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[0]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                        getRatingStarFour.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[0]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                        getRatingStarFive.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[0]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+
+
+                })
+
+    
+
+
+
+
+
+
+
+
+        // RATING STAR CLICKER THREE --------------------------------
+        // //////////////////////////////////////////////////////////
+
+            // CLICKER ON -------------------------------------------
+            // ------------------------------------------------------
+
+                starClickerThreeOn.addEventListener("click", function () {
+
+                    // CHANGE STAR COUNTER --------------------------
+                    // //////////////////////////////////////////////
+
+                        captureRatingNumber = 3
+
+                    // SEND ON CLICKER THREE TO BACK ----------------
+                    // //////////////////////////////////////////////
+                        
+                        starClickerThreeOn.style = `
+                        
+                            width:100%;
+                            height:100%;
+                            z-index:-1;
+                            left:0px;
+                            right:0;
+                            display:none;
+                            position:absolute;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                    // BRING OFF CLICKER THREE TO FRONT -------------
+                    // //////////////////////////////////////////////
+
+                        starClickerThreeOff.style = `
+                        
+                            width:100%;
+                            height:100%;
+                            z-index:1;
+                            left:0px;
+                            right:0;
+                            display:block;
+                            position:absolute;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                    // SWITCH ON SELECTED STAR ----------------------
+                    // //////////////////////////////////////////////
+
+                        getRatingStarOne.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[1]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                        getRatingStarTwo.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[1]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                        getRatingStarThree.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[1]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+
+
+
+
+
+
+                    // SWITCH OFF OTHER STARS -----------------------
+                    // //////////////////////////////////////////////
+
+                        getRatingStarFour.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[0]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                        getRatingStarFive.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[0]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+
+
+
+
+
+
+                    // SWITCH CLICKERS ------------------------------
+                    // //////////////////////////////////////////////
+
+                        // BRING ON CLICKERS TO DEFAULT POSITION >>>>
+                        // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                            starClickerOneOn.style = `
+                            
+                                width:100%;
+                                height:100%;
+                                z-index:1;
+                                left:0px;
+                                right:0;
+                                display:block;
+                                position:absolute;
+                                transition:all 600ms ease;
+                                -o-transition:all 600ms ease;
+                                -ms-transition:all 600ms ease;
+                                -moz-transition:all 600ms ease;
+                                -webkit-transition:all 600ms ease;
+
+                            `
+
+                            starClickerTwoOn.style = `
+                            
+                                width:100%;
+                                height:100%;
+                                z-index:1;
+                                left:0px;
+                                right:0;
+                                display:block;
+                                position:absolute;
+                                transition:all 600ms ease;
+                                -o-transition:all 600ms ease;
+                                -ms-transition:all 600ms ease;
+                                -moz-transition:all 600ms ease;
+                                -webkit-transition:all 600ms ease;
+
+                            `
+
+                            starClickerFourOn.style = `
+                            
+                                width:100%;
+                                height:100%;
+                                z-index:1;
+                                left:0px;
+                                right:0;
+                                display:block;
+                                position:absolute;
+                                transition:all 600ms ease;
+                                -o-transition:all 600ms ease;
+                                -ms-transition:all 600ms ease;
+                                -moz-transition:all 600ms ease;
+                                -webkit-transition:all 600ms ease;
+
+                            `
+
+                            starClickerFiveOn.style = `
+                            
+                                width:100%;
+                                height:100%;
+                                z-index:1;
+                                left:0px;
+                                right:0;
+                                display:block;
+                                position:absolute;
+                                transition:all 600ms ease;
+                                -o-transition:all 600ms ease;
+                                -ms-transition:all 600ms ease;
+                                -moz-transition:all 600ms ease;
+                                -webkit-transition:all 600ms ease;
+
+                            `
+
+                        // SEND OFF CLICKERS TO BACK POSITION >>>>>>>
+                        // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                            starClickerOneOff.style = `
+                            
+                                width:100%;
+                                height:100%;
+                                z-index:-1;
+                                left:0px;
+                                right:0;
+                                display:none;
+                                position:absolute;
+                                transition:all 600ms ease;
+                                -o-transition:all 600ms ease;
+                                -ms-transition:all 600ms ease;
+                                -moz-transition:all 600ms ease;
+                                -webkit-transition:all 600ms ease;
+
+                            `
+
+                            starClickerTwoOff.style = `
+                            
+                                width:100%;
+                                height:100%;
+                                z-index:-1;
+                                left:0px;
+                                right:0;
+                                display:none;
+                                position:absolute;
+                                transition:all 600ms ease;
+                                -o-transition:all 600ms ease;
+                                -ms-transition:all 600ms ease;
+                                -moz-transition:all 600ms ease;
+                                -webkit-transition:all 600ms ease;
+
+                            `
+
+                            starClickerFourOff.style = `
+                            
+                                width:100%;
+                                height:100%;
+                                z-index:-1;
+                                left:0px;
+                                right:0;
+                                display:none;
+                                position:absolute;
+                                transition:all 600ms ease;
+                                -o-transition:all 600ms ease;
+                                -ms-transition:all 600ms ease;
+                                -moz-transition:all 600ms ease;
+                                -webkit-transition:all 600ms ease;
+
+                            `
+
+                            starClickerFiveOff.style = `
+                            
+                                width:100%;
+                                height:100%;
+                                z-index:-1;
+                                left:0px;
+                                right:0;
+                                display:none;
+                                position:absolute;
+                                transition:all 600ms ease;
+                                -o-transition:all 600ms ease;
+                                -ms-transition:all 600ms ease;
+                                -moz-transition:all 600ms ease;
+                                -webkit-transition:all 600ms ease;
+
+                            `
+
+
+
+                })
+
+
+
+
+
+
+
+
+
+            // CLICKER OFF ------------------------------------------
+            // ------------------------------------------------------
+
+                starClickerThreeOff.addEventListener("click", function () {
+
+                    // CHANGE STAR COUNTER --------------------------
+                    // //////////////////////////////////////////////
+
+                        captureRatingNumber = 0
+
+                    // SEND ON CLICKER TWO TO FRONT -----------------
+                    // //////////////////////////////////////////////
+                        
+                        starClickerThreeOn.style = `
+                        
+                            width:100%;
+                            height:100%;
+                            z-index:1;
+                            left:0px;
+                            right:0;
+                            display:block;
+                            position:absolute;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                    // BRING OFF CLICKER TWO TO BACK ----------------
+                    // //////////////////////////////////////////////
+
+                        starClickerThreeOff.style = `
+                        
+                            width:100%;
+                            height:100%;
+                            z-index:-1;
+                            left:0px;
+                            right:0;
+                            display:none;
+                            position:absolute;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                    // SWITCH OFF SELECTED STAR ----------------------
+                    // //////////////////////////////////////////////
+
+                        getRatingStarThree.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[0]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+
+
+
+
+
+
+                    // SWITCH OFF OTHER STARS -----------------------
+                    // //////////////////////////////////////////////
+
+                        getRatingStarOne.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[0]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                        getRatingStarTwo.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[0]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                        getRatingStarFour.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[0]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                        getRatingStarFive.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[0]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+
+
+                })
+
+    
+
+
+
+
+
+
+
+
+        // RATING STAR CLICKER FOUR ---------------------------------
+        // //////////////////////////////////////////////////////////
+
+            // CLICKER ON -------------------------------------------
+            // ------------------------------------------------------
+
+                starClickerFourOn.addEventListener("click", function () {
+
+                    // CHANGE STAR COUNTER --------------------------
+                    // //////////////////////////////////////////////
+
+                        captureRatingNumber = 4
+
+                    // SEND ON CLICKER FOUR TO BACK -----------------
+                    // //////////////////////////////////////////////
+                        
+                        starClickerFourOn.style = `
+                        
+                            width:100%;
+                            height:100%;
+                            z-index:-1;
+                            left:0px;
+                            right:0;
+                            display:none;
+                            position:absolute;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                    // BRING OFF CLICKER FOUR TO FRONT --------------
+                    // //////////////////////////////////////////////
+
+                        starClickerFourOff.style = `
+                        
+                            width:100%;
+                            height:100%;
+                            z-index:1;
+                            left:0px;
+                            right:0;
+                            display:block;
+                            position:absolute;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                    // SWITCH ON SELECTED STAR ----------------------
+                    // //////////////////////////////////////////////
+
+                        getRatingStarOne.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[1]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                        getRatingStarTwo.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[1]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                        getRatingStarThree.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[1]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                        getRatingStarFour.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[1]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+
+
+
+
+
+
+                    // SWITCH OFF OTHER STARS -----------------------
+                    // //////////////////////////////////////////////
+
+                        getRatingStarFive.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[0]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+
+
+
+
+
+
+                    // SWITCH CLICKERS ------------------------------
+                    // //////////////////////////////////////////////
+
+                        // BRING ON CLICKERS TO DEFAULT POSITION >>>>
+                        // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                            starClickerOneOn.style = `
+                            
+                                width:100%;
+                                height:100%;
+                                z-index:1;
+                                left:0px;
+                                right:0;
+                                display:block;
+                                position:absolute;
+                                transition:all 600ms ease;
+                                -o-transition:all 600ms ease;
+                                -ms-transition:all 600ms ease;
+                                -moz-transition:all 600ms ease;
+                                -webkit-transition:all 600ms ease;
+
+                            `
+
+                            starClickerTwoOn.style = `
+                            
+                                width:100%;
+                                height:100%;
+                                z-index:1;
+                                left:0px;
+                                right:0;
+                                display:block;
+                                position:absolute;
+                                transition:all 600ms ease;
+                                -o-transition:all 600ms ease;
+                                -ms-transition:all 600ms ease;
+                                -moz-transition:all 600ms ease;
+                                -webkit-transition:all 600ms ease;
+
+                            `
+
+                            starClickerThreeOn.style = `
+                            
+                                width:100%;
+                                height:100%;
+                                z-index:1;
+                                left:0px;
+                                right:0;
+                                display:block;
+                                position:absolute;
+                                transition:all 600ms ease;
+                                -o-transition:all 600ms ease;
+                                -ms-transition:all 600ms ease;
+                                -moz-transition:all 600ms ease;
+                                -webkit-transition:all 600ms ease;
+
+                            `
+
+                            starClickerFiveOn.style = `
+                            
+                                width:100%;
+                                height:100%;
+                                z-index:1;
+                                left:0px;
+                                right:0;
+                                display:block;
+                                position:absolute;
+                                transition:all 600ms ease;
+                                -o-transition:all 600ms ease;
+                                -ms-transition:all 600ms ease;
+                                -moz-transition:all 600ms ease;
+                                -webkit-transition:all 600ms ease;
+
+                            `
+
+                        // SEND OFF CLICKERS TO BACK POSITION >>>>>>>
+                        // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                            starClickerOneOff.style = `
+                            
+                                width:100%;
+                                height:100%;
+                                z-index:-1;
+                                left:0px;
+                                right:0;
+                                display:none;
+                                position:absolute;
+                                transition:all 600ms ease;
+                                -o-transition:all 600ms ease;
+                                -ms-transition:all 600ms ease;
+                                -moz-transition:all 600ms ease;
+                                -webkit-transition:all 600ms ease;
+
+                            `
+
+                            starClickerTwoOff.style = `
+                            
+                                width:100%;
+                                height:100%;
+                                z-index:-1;
+                                left:0px;
+                                right:0;
+                                display:none;
+                                position:absolute;
+                                transition:all 600ms ease;
+                                -o-transition:all 600ms ease;
+                                -ms-transition:all 600ms ease;
+                                -moz-transition:all 600ms ease;
+                                -webkit-transition:all 600ms ease;
+
+                            `
+
+                            starClickerThreeOff.style = `
+                            
+                                width:100%;
+                                height:100%;
+                                z-index:-1;
+                                left:0px;
+                                right:0;
+                                display:none;
+                                position:absolute;
+                                transition:all 600ms ease;
+                                -o-transition:all 600ms ease;
+                                -ms-transition:all 600ms ease;
+                                -moz-transition:all 600ms ease;
+                                -webkit-transition:all 600ms ease;
+
+                            `
+
+                            starClickerFiveOff.style = `
+                            
+                                width:100%;
+                                height:100%;
+                                z-index:-1;
+                                left:0px;
+                                right:0;
+                                display:none;
+                                position:absolute;
+                                transition:all 600ms ease;
+                                -o-transition:all 600ms ease;
+                                -ms-transition:all 600ms ease;
+                                -moz-transition:all 600ms ease;
+                                -webkit-transition:all 600ms ease;
+
+                            `
+
+
+
+                })
+
+
+
+
+
+
+
+
+
+            // CLICKER OFF ------------------------------------------
+            // ------------------------------------------------------
+
+                starClickerFourOff.addEventListener("click", function () {
+
+                    // CHANGE STAR COUNTER --------------------------
+                    // //////////////////////////////////////////////
+
+                        captureRatingNumber = 0
+
+                    // SEND ON CLICKER TWO TO FRONT -----------------
+                    // //////////////////////////////////////////////
+                        
+                        starClickerFourOn.style = `
+                        
+                            width:100%;
+                            height:100%;
+                            z-index:1;
+                            left:0px;
+                            right:0;
+                            display:block;
+                            position:absolute;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                    // BRING OFF CLICKER TWO TO BACK ----------------
+                    // //////////////////////////////////////////////
+
+                        starClickerFourOff.style = `
+                        
+                            width:100%;
+                            height:100%;
+                            z-index:-1;
+                            left:0px;
+                            right:0;
+                            display:none;
+                            position:absolute;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                    // SWITCH OFF SELECTED STAR ----------------------
+                    // //////////////////////////////////////////////
+
+                        getRatingStarFour.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[0]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+
+
+
+
+
+
+                    // SWITCH OFF OTHER STARS -----------------------
+                    // //////////////////////////////////////////////
+
+                        getRatingStarOne.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[0]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                        getRatingStarTwo.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[0]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                        getRatingStarThree.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[0]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                        getRatingStarFive.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[0]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+
+
+                })
+
+    
+
+
+
+
+
+
+
+
+        // RATING STAR CLICKER FIVE ---------------------------------
+        // //////////////////////////////////////////////////////////
+
+            // CLICKER ON -------------------------------------------
+            // ------------------------------------------------------
+
+                starClickerFiveOn.addEventListener("click", function () {
+
+                    // CHANGE STAR COUNTER --------------------------
+                    // //////////////////////////////////////////////
+
+                        captureRatingNumber = 5
+
+                    // SEND ON CLICKER FIVE TO BACK -----------------
+                    // //////////////////////////////////////////////
+                        
+                        starClickerFiveOn.style = `
+                        
+                            width:100%;
+                            height:100%;
+                            z-index:-1;
+                            left:0px;
+                            right:0;
+                            display:none;
+                            position:absolute;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                    // BRING OFF CLICKER FIVE TO FRONT --------------
+                    // //////////////////////////////////////////////
+
+                        starClickerFiveOff.style = `
+                        
+                            width:100%;
+                            height:100%;
+                            z-index:1;
+                            left:0px;
+                            right:0;
+                            display:block;
+                            position:absolute;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                    // SWITCH ON SELECTED STAR ----------------------
+                    // //////////////////////////////////////////////
+
+                        getRatingStarOne.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[1]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                        getRatingStarTwo.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[1]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                        getRatingStarThree.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[1]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                        getRatingStarFour.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[1]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                        getRatingStarFive.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[1]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+
+
+
+
+
+
+                    // SWITCH OFF OTHER STARS -----------------------
+                    // //////////////////////////////////////////////
+
+
+
+
+
+
+
+                    // SWITCH CLICKERS ------------------------------
+                    // //////////////////////////////////////////////
+
+                        // BRING ON CLICKERS TO DEFAULT POSITION >>>>
+                        // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                            starClickerOneOn.style = `
+                            
+                                width:100%;
+                                height:100%;
+                                z-index:1;
+                                left:0px;
+                                right:0;
+                                display:block;
+                                position:absolute;
+                                transition:all 600ms ease;
+                                -o-transition:all 600ms ease;
+                                -ms-transition:all 600ms ease;
+                                -moz-transition:all 600ms ease;
+                                -webkit-transition:all 600ms ease;
+
+                            `
+
+                            starClickerTwoOn.style = `
+                            
+                                width:100%;
+                                height:100%;
+                                z-index:1;
+                                left:0px;
+                                right:0;
+                                display:block;
+                                position:absolute;
+                                transition:all 600ms ease;
+                                -o-transition:all 600ms ease;
+                                -ms-transition:all 600ms ease;
+                                -moz-transition:all 600ms ease;
+                                -webkit-transition:all 600ms ease;
+
+                            `
+
+                            starClickerThreeOn.style = `
+                            
+                                width:100%;
+                                height:100%;
+                                z-index:1;
+                                left:0px;
+                                right:0;
+                                display:block;
+                                position:absolute;
+                                transition:all 600ms ease;
+                                -o-transition:all 600ms ease;
+                                -ms-transition:all 600ms ease;
+                                -moz-transition:all 600ms ease;
+                                -webkit-transition:all 600ms ease;
+
+                            `
+
+                            starClickerFourOn.style = `
+                            
+                                width:100%;
+                                height:100%;
+                                z-index:1;
+                                left:0px;
+                                right:0;
+                                display:block;
+                                position:absolute;
+                                transition:all 600ms ease;
+                                -o-transition:all 600ms ease;
+                                -ms-transition:all 600ms ease;
+                                -moz-transition:all 600ms ease;
+                                -webkit-transition:all 600ms ease;
+
+                            `
+
+                        // SEND OFF CLICKERS TO BACK POSITION >>>>>>>
+                        // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                            starClickerOneOff.style = `
+                            
+                                width:100%;
+                                height:100%;
+                                z-index:-1;
+                                left:0px;
+                                right:0;
+                                display:none;
+                                position:absolute;
+                                transition:all 600ms ease;
+                                -o-transition:all 600ms ease;
+                                -ms-transition:all 600ms ease;
+                                -moz-transition:all 600ms ease;
+                                -webkit-transition:all 600ms ease;
+
+                            `
+
+                            starClickerTwoOff.style = `
+                            
+                                width:100%;
+                                height:100%;
+                                z-index:-1;
+                                left:0px;
+                                right:0;
+                                display:none;
+                                position:absolute;
+                                transition:all 600ms ease;
+                                -o-transition:all 600ms ease;
+                                -ms-transition:all 600ms ease;
+                                -moz-transition:all 600ms ease;
+                                -webkit-transition:all 600ms ease;
+
+                            `
+
+                            starClickerThreeOff.style = `
+                            
+                                width:100%;
+                                height:100%;
+                                z-index:-1;
+                                left:0px;
+                                right:0;
+                                display:none;
+                                position:absolute;
+                                transition:all 600ms ease;
+                                -o-transition:all 600ms ease;
+                                -ms-transition:all 600ms ease;
+                                -moz-transition:all 600ms ease;
+                                -webkit-transition:all 600ms ease;
+
+                            `
+
+                            starClickerFourOff.style = `
+                            
+                                width:100%;
+                                height:100%;
+                                z-index:-1;
+                                left:0px;
+                                right:0;
+                                display:none;
+                                position:absolute;
+                                transition:all 600ms ease;
+                                -o-transition:all 600ms ease;
+                                -ms-transition:all 600ms ease;
+                                -moz-transition:all 600ms ease;
+                                -webkit-transition:all 600ms ease;
+
+                            `
+
+
+
+                })
+
+
+
+
+
+
+
+
+
+            // CLICKER OFF ------------------------------------------
+            // ------------------------------------------------------
+
+                starClickerFiveOff.addEventListener("click", function () {
+
+                    // CHANGE STAR COUNTER --------------------------
+                    // //////////////////////////////////////////////
+
+                        captureRatingNumber = 0
+
+                    // SEND ON CLICKER TWO TO FRONT -----------------
+                    // //////////////////////////////////////////////
+                        
+                        starClickerFiveOn.style = `
+                        
+                            width:100%;
+                            height:100%;
+                            z-index:1;
+                            left:0px;
+                            right:0;
+                            display:block;
+                            position:absolute;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                    // BRING OFF CLICKER TWO TO BACK ----------------
+                    // //////////////////////////////////////////////
+
+                        starClickerFiveOff.style = `
+                        
+                            width:100%;
+                            height:100%;
+                            z-index:-1;
+                            left:0px;
+                            right:0;
+                            display:none;
+                            position:absolute;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                    // SWITCH OFF SELECTED STAR ----------------------
+                    // //////////////////////////////////////////////
+
+                        getRatingStarFive.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[0]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+
+
+
+
+
+
+                    // SWITCH OFF OTHER STARS -----------------------
+                    // //////////////////////////////////////////////
+
+                        getRatingStarOne.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[0]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                        getRatingStarTwo.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[0]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                        getRatingStarThree.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[0]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                        getRatingStarFour.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[0]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+
+
+                })
+
+
+
 
     // BASE 64 CONVERT EVENTS ---------------------------------------
     // //////////////////////////////////////////////////////////////

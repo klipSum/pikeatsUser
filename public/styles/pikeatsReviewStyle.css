@@ -350,6 +350,13 @@
 
                     }
 
+
+
+
+
+
+
+
                         /* SELECT AREA DROP DOWN CONTAINER ---------- */
                         /* ------------------------------------------ */
 
@@ -357,6 +364,7 @@
 
                                 width:300px;
                                 height:50px;
+                                display:inline-block;
                                 position:relative;
                                 box-shadow:0px 30px 30px -10px rgba(0,0,0,0.15);
                                 transition:all 600ms ease;
@@ -502,6 +510,640 @@
                                         -webkit-transition:all 600ms ease;
 
                                     }
+
+
+
+
+
+
+                    
+
+                        /* SELECT RATING CONTAINER ------------------ */
+                        /* ------------------------------------------ */
+
+                            .cameraSnapRatingsContainer{
+
+                                width:300px;
+                                margin-top:20px;
+                                transition:all 600ms ease;
+                                -o-transition:all 600ms ease;
+                                -ms-transition:all 600ms ease;
+                                -moz-transition:all 600ms ease;
+                                -webkit-transition:all 600ms ease;
+
+                            }
+
+                                .cameraSnapRatingsAreaContainer{
+
+                                    width:300px;
+                                    height:50px;
+                                    position:relative;
+                                    background:#FFFFFF;
+                                    box-shadow:0px 30px 30px -10px rgba(0,0,0,0.15);
+                                    border-radius:10px;
+                                    transition:all 600ms ease;
+                                    -o-transition:all 600ms ease;
+                                    -ms-transition:all 600ms ease;
+                                    -moz-transition:all 600ms ease;
+                                    -webkit-transition:all 600ms ease;
+
+                                }
+
+                                    .cameraSnapRatingsAreaResizer{
+
+                                        width:90%;
+                                        height:90%;
+                                        left:0;
+                                        right:0;
+                                        margin:0px auto;
+                                        position:relative;
+                                        transition:all 600ms ease;
+                                        -o-transition:all 600ms ease;
+                                        -ms-transition:all 600ms ease;
+                                        -moz-transition:all 600ms ease;
+                                        -webkit-transition:all 600ms ease;
+
+                                    }
+
+
+
+
+
+
+
+                                        /* STAR ONE >>>>>>>>>>>>>>>>> */
+                                        /* >>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+                                            .cameraSnapRatingsAreaStarContainerOne{
+
+                                                width:20%;
+                                                height:45px;
+                                                float:left;
+                                                display:block;
+                                                position:relative;
+                                                transition:all 600ms ease;
+                                                -o-transition:all 600ms ease;
+                                                -ms-transition:all 600ms ease;
+                                                -moz-transition:all 600ms ease;
+                                                -webkit-transition:all 600ms ease;
+
+                                            }
+
+                                                /* CLICKERS CONTAINER */
+                                                /* ================== */
+
+                                                    .cameraSnapRatingsAreaStarOneClickerContainer{
+
+                                                        width:25px;
+                                                        height:25px;
+                                                        top:0;
+                                                        left:0;
+                                                        right:0;
+                                                        bottom:0;
+                                                        z-index:1;
+                                                        margin:auto;
+                                                        position:absolute;
+                                                        transition:all 600ms ease;
+                                                        -o-transition:all 600ms ease;
+                                                        -ms-transition:all 600ms ease;
+                                                        -moz-transition:all 600ms ease;
+                                                        -webkit-transition:all 600ms ease;
+
+                                                    }
+
+
+
+
+                                                        /* CLICKERS ONE */
+                                                        /* ///////////// */
+
+                                                            .cameraSnapRatingsAreaStarOneClickerOn{
+
+                                                                width:100%;
+                                                                height:100%;
+                                                                z-index:1;
+                                                                left:0px;
+                                                                right:0;
+                                                                cursor:pointer;
+                                                                display:block;
+                                                                position:absolute;
+                                                                transition:all 600ms ease;
+                                                                -o-transition:all 600ms ease;
+                                                                -ms-transition:all 600ms ease;
+                                                                -moz-transition:all 600ms ease;
+                                                                -webkit-transition:all 600ms ease;
+
+                                                            }
+
+                                                            .cameraSnapRatingsAreaStarOneClickerOff{
+
+                                                                width:100%;
+                                                                height:100%;
+                                                                z-index:-1;
+                                                                left:0px;
+                                                                right:0;
+                                                                cursor:pointer;
+                                                                display:none;
+                                                                position:absolute;
+                                                                transition:all 600ms ease;
+                                                                -o-transition:all 600ms ease;
+                                                                -ms-transition:all 600ms ease;
+                                                                -moz-transition:all 600ms ease;
+                                                                -webkit-transition:all 600ms ease;
+
+                                                            }
+
+
+
+
+
+                                    
+
+                                        /* STAR TWO >>>>>>>>>>>>>>>>> */
+                                        /* >>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+                                            .cameraSnapRatingsAreaStarContainerTwo{
+
+                                                width:20%;
+                                                height:45px;
+                                                float:left;
+                                                display:block;
+                                                position:relative;
+                                                transition:all 600ms ease;
+                                                -o-transition:all 600ms ease;
+                                                -ms-transition:all 600ms ease;
+                                                -moz-transition:all 600ms ease;
+                                                -webkit-transition:all 600ms ease;
+
+                                            }
+
+                                                /* CLICKERS CONTAINER */
+                                                /* ================== */
+
+                                                    .cameraSnapRatingsAreaStarTwoClickerContainer{
+
+                                                        width:25px;
+                                                        height:25px;
+                                                        top:0;
+                                                        left:0;
+                                                        right:0;
+                                                        bottom:0;
+                                                        z-index:1;
+                                                        margin:auto;
+                                                        position:absolute;
+                                                        transition:all 600ms ease;
+                                                        -o-transition:all 600ms ease;
+                                                        -ms-transition:all 600ms ease;
+                                                        -moz-transition:all 600ms ease;
+                                                        -webkit-transition:all 600ms ease;
+
+                                                    }
+
+
+
+
+                                                        /* CLICKERS TWO */
+                                                        /* //////////// */
+
+                                                            .cameraSnapRatingsAreaStarTwoClickerOn{
+
+                                                                width:100%;
+                                                                height:100%;
+                                                                z-index:1;
+                                                                left:0px;
+                                                                right:0;
+                                                                cursor:pointer;
+                                                                display:block;
+                                                                position:absolute;
+                                                                transition:all 600ms ease;
+                                                                -o-transition:all 600ms ease;
+                                                                -ms-transition:all 600ms ease;
+                                                                -moz-transition:all 600ms ease;
+                                                                -webkit-transition:all 600ms ease;
+
+                                                            }
+
+                                                            .cameraSnapRatingsAreaStarTwoClickerOff{
+
+                                                                width:100%;
+                                                                height:100%;
+                                                                z-index:-1;
+                                                                left:0px;
+                                                                right:0;
+                                                                cursor:pointer;
+                                                                display:none;
+                                                                position:absolute;
+                                                                transition:all 600ms ease;
+                                                                -o-transition:all 600ms ease;
+                                                                -ms-transition:all 600ms ease;
+                                                                -moz-transition:all 600ms ease;
+                                                                -webkit-transition:all 600ms ease;
+
+                                                            }
+
+
+
+
+
+                                    
+
+                                        /* STAR THREE >>>>>>>>>>>>>>> */
+                                        /* >>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+                                            .cameraSnapRatingsAreaStarContainerThree{
+
+                                                width:20%;
+                                                height:45px;
+                                                float:left;
+                                                display:block;
+                                                position:relative;
+                                                transition:all 600ms ease;
+                                                -o-transition:all 600ms ease;
+                                                -ms-transition:all 600ms ease;
+                                                -moz-transition:all 600ms ease;
+                                                -webkit-transition:all 600ms ease;
+
+                                            }
+
+                                                /* CLICKERS CONTAINER */
+                                                /* ================== */
+
+                                                    .cameraSnapRatingsAreaStarThreeClickerContainer{
+
+                                                        width:25px;
+                                                        height:25px;
+                                                        top:0;
+                                                        left:0;
+                                                        right:0;
+                                                        bottom:0;
+                                                        z-index:1;
+                                                        margin:auto;
+                                                        position:absolute;
+                                                        transition:all 600ms ease;
+                                                        -o-transition:all 600ms ease;
+                                                        -ms-transition:all 600ms ease;
+                                                        -moz-transition:all 600ms ease;
+                                                        -webkit-transition:all 600ms ease;
+
+                                                    }
+
+
+
+
+                                                        /* CLICKERS THREE */
+                                                        /* //////////// */
+
+                                                            .cameraSnapRatingsAreaStarThreeClickerOn{
+
+                                                                width:100%;
+                                                                height:100%;
+                                                                z-index:1;
+                                                                left:0px;
+                                                                right:0;
+                                                                cursor:pointer;
+                                                                display:block;
+                                                                position:absolute;
+                                                                transition:all 600ms ease;
+                                                                -o-transition:all 600ms ease;
+                                                                -ms-transition:all 600ms ease;
+                                                                -moz-transition:all 600ms ease;
+                                                                -webkit-transition:all 600ms ease;
+
+                                                            }
+
+                                                            .cameraSnapRatingsAreaStarThreeClickerOff{
+
+                                                                width:100%;
+                                                                height:100%;
+                                                                z-index:-1;
+                                                                left:0px;
+                                                                right:0;
+                                                                cursor:pointer;
+                                                                display:none;
+                                                                position:absolute;
+                                                                transition:all 600ms ease;
+                                                                -o-transition:all 600ms ease;
+                                                                -ms-transition:all 600ms ease;
+                                                                -moz-transition:all 600ms ease;
+                                                                -webkit-transition:all 600ms ease;
+
+                                                            }
+
+
+
+
+
+                                    
+
+                                        /* STAR FOUR >>>>>>>>>>>>>>>> */
+                                        /* >>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+                                            .cameraSnapRatingsAreaStarContainerFour{
+
+                                                width:20%;
+                                                height:45px;
+                                                float:left;
+                                                display:block;
+                                                position:relative;
+                                                transition:all 600ms ease;
+                                                -o-transition:all 600ms ease;
+                                                -ms-transition:all 600ms ease;
+                                                -moz-transition:all 600ms ease;
+                                                -webkit-transition:all 600ms ease;
+
+                                            }
+
+                                                /* CLICKERS CONTAINER */
+                                                /* ================== */
+
+                                                    .cameraSnapRatingsAreaStarFourClickerContainer{
+
+                                                        width:25px;
+                                                        height:25px;
+                                                        top:0;
+                                                        left:0;
+                                                        right:0;
+                                                        bottom:0;
+                                                        z-index:1;
+                                                        margin:auto;
+                                                        position:absolute;
+                                                        transition:all 600ms ease;
+                                                        -o-transition:all 600ms ease;
+                                                        -ms-transition:all 600ms ease;
+                                                        -moz-transition:all 600ms ease;
+                                                        -webkit-transition:all 600ms ease;
+
+                                                    }
+
+
+
+
+                                                        /* CLICKERS FOUR */
+                                                        /* //////////// */
+
+                                                            .cameraSnapRatingsAreaStarFourClickerOn{
+
+                                                                width:100%;
+                                                                height:100%;
+                                                                z-index:1;
+                                                                left:0px;
+                                                                right:0;
+                                                                cursor:pointer;
+                                                                display:block;
+                                                                position:absolute;
+                                                                transition:all 600ms ease;
+                                                                -o-transition:all 600ms ease;
+                                                                -ms-transition:all 600ms ease;
+                                                                -moz-transition:all 600ms ease;
+                                                                -webkit-transition:all 600ms ease;
+
+                                                            }
+
+                                                            .cameraSnapRatingsAreaStarFourClickerOff{
+
+                                                                width:100%;
+                                                                height:100%;
+                                                                z-index:-1;
+                                                                left:0px;
+                                                                right:0;
+                                                                cursor:pointer;
+                                                                display:none;
+                                                                position:absolute;
+                                                                transition:all 600ms ease;
+                                                                -o-transition:all 600ms ease;
+                                                                -ms-transition:all 600ms ease;
+                                                                -moz-transition:all 600ms ease;
+                                                                -webkit-transition:all 600ms ease;
+
+                                                            }
+
+
+
+
+
+                                    
+
+                                        /* STAR FIVE >>>>>>>>>>>>>>>> */
+                                        /* >>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+                                            .cameraSnapRatingsAreaStarContainerFive{
+
+                                                width:20%;
+                                                height:45px;
+                                                float:left;
+                                                display:block;
+                                                position:relative;
+                                                transition:all 600ms ease;
+                                                -o-transition:all 600ms ease;
+                                                -ms-transition:all 600ms ease;
+                                                -moz-transition:all 600ms ease;
+                                                -webkit-transition:all 600ms ease;
+
+                                            }
+
+                                                /* CLICKERS CONTAINER */
+                                                /* ================== */
+
+                                                    .cameraSnapRatingsAreaStarFiveClickerContainer{
+
+                                                        width:25px;
+                                                        height:25px;
+                                                        top:0;
+                                                        left:0;
+                                                        right:0;
+                                                        bottom:0;
+                                                        z-index:1;
+                                                        margin:auto;
+                                                        position:absolute;
+                                                        transition:all 600ms ease;
+                                                        -o-transition:all 600ms ease;
+                                                        -ms-transition:all 600ms ease;
+                                                        -moz-transition:all 600ms ease;
+                                                        -webkit-transition:all 600ms ease;
+
+                                                    }
+
+
+
+
+                                                        /* CLICKERS FIVE */
+                                                        /* //////////// */
+
+                                                            .cameraSnapRatingsAreaStarFiveClickerOn{
+
+                                                                width:100%;
+                                                                height:100%;
+                                                                z-index:1;
+                                                                left:0px;
+                                                                right:0;
+                                                                cursor:pointer;
+                                                                display:block;
+                                                                position:absolute;
+                                                                transition:all 600ms ease;
+                                                                -o-transition:all 600ms ease;
+                                                                -ms-transition:all 600ms ease;
+                                                                -moz-transition:all 600ms ease;
+                                                                -webkit-transition:all 600ms ease;
+
+                                                            }
+
+                                                            .cameraSnapRatingsAreaStarFiveClickerOff{
+
+                                                                width:100%;
+                                                                height:100%;
+                                                                z-index:-1;
+                                                                left:0px;
+                                                                right:0;
+                                                                cursor:pointer;
+                                                                display:none;
+                                                                position:absolute;
+                                                                transition:all 600ms ease;
+                                                                -o-transition:all 600ms ease;
+                                                                -ms-transition:all 600ms ease;
+                                                                -moz-transition:all 600ms ease;
+                                                                -webkit-transition:all 600ms ease;
+
+                                                            }
+
+
+
+
+
+
+                                        /* STAR ACTUAL CONTAINER ==== */
+                                        /* ========================== */
+
+                                            /* START ONE ------------ */
+                                            /* ---------------------- */
+
+                                                .cameraSnapRatingsAreaStarActualOne{
+
+                                                    width:25px;
+                                                    height:25px;
+                                                    top:0;
+                                                    left:0;
+                                                    right:0;
+                                                    bottom:0;
+                                                    margin:auto;
+                                                    position:absolute;
+                                                    overflow:hidden;
+                                                    background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAL+SURBVHgB7VrrcdpAEF5eMzDDs4LIFQR3IEpIBbErwKnAdgdOB6QCuwOUCowrgFQAA/zjlW+JxGBFgluxOsQM34zG9unmbj/2vYboiisuD/P5vDudToez2ex9PB47lCJylBJY8GKxONxb8mq1WodSQp5SQqlUegwtudDOHaWEVDQCk2pvNpv3iFeT5XJ502q1JqSMtDTyGrPezOfzD5QC1Imw+UAbTtx7EOnCf5qkDFUiLCAEfTyyrRnhPydDlQiiVPeQNgJgz4N2OFZz9ohwewyq4VhNIwnMxUWidEkJKho5EG6PQU0rWhp5pWRQS5InE+F6ysTBYwVAlNNwfLFpsRmt1+s2BPgKAm0suXQicrncCGcNcO4HzvWQ/UfI/iPRGXEvOCfAgZ09oV0sO3jUk1kMuIwZgCQT/A0ZRtVqdRC3eUfET2Z3hUIh+KTblE14PrmP1Wr1FtRtOyIwmeEptn4m7KLelkiCZJYZQG6nUqn82UYtdixoY0QXBpaZSfDvu/ALe+tcEhmWlWUO/v4UtdjE4Ox9OJNDGUZAYj9E/xd+/XKjT/bCrAiQbeKT+BSKI/OIX8z1KYNAsrwNk2BEligIaR6Y31PGAJO/jyLBiK216vV6D0nnB2UHz8jsvbiXB4vGRqPxwgfQ+fEMK3k6tMGoaITPPOGHep9tiKMkGMbVL/qGHmz0O9nFT5AwGh+JynhohiOZS3YwAIlb082ixorLabIE3PVLsj+12a8CRAlZRIQbLLIElEpfJPulGrFWtsC0WpL9IiI2Gy+p9kVEbFbF+NDS8RGU+LZ7+KZkam9MBC2l9bK+XC43TPcaEznHYGKxWOgnxKREuJvjZoiSQd+06N9wTgIPTwftwA2eFvc30pmA5MMzJoJwaJqgPDwdnjdxgxYscn/DpCSEJElR07Q8iiAQhoSQJCkaEzmQQzwyIBDGHqFv/hlRd+prJHwZLunx/8ylBMIAmTd/7NmJuGNgeo5xP+KPVbdNDgi8SMf+Ce6Z+Peof7ngChv4C+FebC5yhenSAAAAAElFTkSuQmCC");
+                                                    background-size:cover;
+                                                    background-repeat:no-repeat;
+                                                    background-position:top;
+                                                    transition:all 600ms ease;
+                                                    -o-transition:all 600ms ease;
+                                                    -ms-transition:all 600ms ease;
+                                                    -moz-transition:all 600ms ease;
+                                                    -webkit-transition:all 600ms ease;
+
+                                                }
+
+                                            /* START TWO ------------ */
+                                            /* ---------------------- */
+
+                                                .cameraSnapRatingsAreaStarActualTwo{
+
+                                                    width:25px;
+                                                    height:25px;
+                                                    top:0;
+                                                    left:0;
+                                                    right:0;
+                                                    bottom:0;
+                                                    margin:auto;
+                                                    position:absolute;
+                                                    overflow:hidden;
+                                                    background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAL+SURBVHgB7VrrcdpAEF5eMzDDs4LIFQR3IEpIBbErwKnAdgdOB6QCuwOUCowrgFQAA/zjlW+JxGBFgluxOsQM34zG9unmbj/2vYboiisuD/P5vDudToez2ex9PB47lCJylBJY8GKxONxb8mq1WodSQp5SQqlUegwtudDOHaWEVDQCk2pvNpv3iFeT5XJ502q1JqSMtDTyGrPezOfzD5QC1Imw+UAbTtx7EOnCf5qkDFUiLCAEfTyyrRnhPydDlQiiVPeQNgJgz4N2OFZz9ohwewyq4VhNIwnMxUWidEkJKho5EG6PQU0rWhp5pWRQS5InE+F6ysTBYwVAlNNwfLFpsRmt1+s2BPgKAm0suXQicrncCGcNcO4HzvWQ/UfI/iPRGXEvOCfAgZ09oV0sO3jUk1kMuIwZgCQT/A0ZRtVqdRC3eUfET2Z3hUIh+KTblE14PrmP1Wr1FtRtOyIwmeEptn4m7KLelkiCZJYZQG6nUqn82UYtdixoY0QXBpaZSfDvu/ALe+tcEhmWlWUO/v4UtdjE4Ox9OJNDGUZAYj9E/xd+/XKjT/bCrAiQbeKT+BSKI/OIX8z1KYNAsrwNk2BEligIaR6Y31PGAJO/jyLBiK216vV6D0nnB2UHz8jsvbiXB4vGRqPxwgfQ+fEMK3k6tMGoaITPPOGHep9tiKMkGMbVL/qGHmz0O9nFT5AwGh+JynhohiOZS3YwAIlb082ixorLabIE3PVLsj+12a8CRAlZRIQbLLIElEpfJPulGrFWtsC0WpL9IiI2Gy+p9kVEbFbF+NDS8RGU+LZ7+KZkam9MBC2l9bK+XC43TPcaEznHYGKxWOgnxKREuJvjZoiSQd+06N9wTgIPTwftwA2eFvc30pmA5MMzJoJwaJqgPDwdnjdxgxYscn/DpCSEJElR07Q8iiAQhoSQJCkaEzmQQzwyIBDGHqFv/hlRd+prJHwZLunx/8ylBMIAmTd/7NmJuGNgeo5xP+KPVbdNDgi8SMf+Ce6Z+Peof7ngChv4C+FebC5yhenSAAAAAElFTkSuQmCC");
+                                                    background-size:cover;
+                                                    background-repeat:no-repeat;
+                                                    background-position:top;
+                                                    transition:all 600ms ease;
+                                                    -o-transition:all 600ms ease;
+                                                    -ms-transition:all 600ms ease;
+                                                    -moz-transition:all 600ms ease;
+                                                    -webkit-transition:all 600ms ease;
+
+                                                }
+
+                                            /* START THREE ---------- */
+                                            /* ---------------------- */
+
+                                                .cameraSnapRatingsAreaStarActualThree{
+
+                                                    width:25px;
+                                                    height:25px;
+                                                    top:0;
+                                                    left:0;
+                                                    right:0;
+                                                    bottom:0;
+                                                    margin:auto;
+                                                    position:absolute;
+                                                    overflow:hidden;
+                                                    background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAL+SURBVHgB7VrrcdpAEF5eMzDDs4LIFQR3IEpIBbErwKnAdgdOB6QCuwOUCowrgFQAA/zjlW+JxGBFgluxOsQM34zG9unmbj/2vYboiisuD/P5vDudToez2ex9PB47lCJylBJY8GKxONxb8mq1WodSQp5SQqlUegwtudDOHaWEVDQCk2pvNpv3iFeT5XJ502q1JqSMtDTyGrPezOfzD5QC1Imw+UAbTtx7EOnCf5qkDFUiLCAEfTyyrRnhPydDlQiiVPeQNgJgz4N2OFZz9ohwewyq4VhNIwnMxUWidEkJKho5EG6PQU0rWhp5pWRQS5InE+F6ysTBYwVAlNNwfLFpsRmt1+s2BPgKAm0suXQicrncCGcNcO4HzvWQ/UfI/iPRGXEvOCfAgZ09oV0sO3jUk1kMuIwZgCQT/A0ZRtVqdRC3eUfET2Z3hUIh+KTblE14PrmP1Wr1FtRtOyIwmeEptn4m7KLelkiCZJYZQG6nUqn82UYtdixoY0QXBpaZSfDvu/ALe+tcEhmWlWUO/v4UtdjE4Ox9OJNDGUZAYj9E/xd+/XKjT/bCrAiQbeKT+BSKI/OIX8z1KYNAsrwNk2BEligIaR6Y31PGAJO/jyLBiK216vV6D0nnB2UHz8jsvbiXB4vGRqPxwgfQ+fEMK3k6tMGoaITPPOGHep9tiKMkGMbVL/qGHmz0O9nFT5AwGh+JynhohiOZS3YwAIlb082ixorLabIE3PVLsj+12a8CRAlZRIQbLLIElEpfJPulGrFWtsC0WpL9IiI2Gy+p9kVEbFbF+NDS8RGU+LZ7+KZkam9MBC2l9bK+XC43TPcaEznHYGKxWOgnxKREuJvjZoiSQd+06N9wTgIPTwftwA2eFvc30pmA5MMzJoJwaJqgPDwdnjdxgxYscn/DpCSEJElR07Q8iiAQhoSQJCkaEzmQQzwyIBDGHqFv/hlRd+prJHwZLunx/8ylBMIAmTd/7NmJuGNgeo5xP+KPVbdNDgi8SMf+Ce6Z+Peof7ngChv4C+FebC5yhenSAAAAAElFTkSuQmCC");
+                                                    background-size:cover;
+                                                    background-repeat:no-repeat;
+                                                    background-position:top;
+                                                    transition:all 600ms ease;
+                                                    -o-transition:all 600ms ease;
+                                                    -ms-transition:all 600ms ease;
+                                                    -moz-transition:all 600ms ease;
+                                                    -webkit-transition:all 600ms ease;
+
+                                                }
+
+                                            /* START FOUR ----------- */
+                                            /* ---------------------- */
+
+                                                .cameraSnapRatingsAreaStarActualFour{
+
+                                                    width:25px;
+                                                    height:25px;
+                                                    top:0;
+                                                    left:0;
+                                                    right:0;
+                                                    bottom:0;
+                                                    margin:auto;
+                                                    position:absolute;
+                                                    overflow:hidden;
+                                                    background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAL+SURBVHgB7VrrcdpAEF5eMzDDs4LIFQR3IEpIBbErwKnAdgdOB6QCuwOUCowrgFQAA/zjlW+JxGBFgluxOsQM34zG9unmbj/2vYboiisuD/P5vDudToez2ex9PB47lCJylBJY8GKxONxb8mq1WodSQp5SQqlUegwtudDOHaWEVDQCk2pvNpv3iFeT5XJ502q1JqSMtDTyGrPezOfzD5QC1Imw+UAbTtx7EOnCf5qkDFUiLCAEfTyyrRnhPydDlQiiVPeQNgJgz4N2OFZz9ohwewyq4VhNIwnMxUWidEkJKho5EG6PQU0rWhp5pWRQS5InE+F6ysTBYwVAlNNwfLFpsRmt1+s2BPgKAm0suXQicrncCGcNcO4HzvWQ/UfI/iPRGXEvOCfAgZ09oV0sO3jUk1kMuIwZgCQT/A0ZRtVqdRC3eUfET2Z3hUIh+KTblE14PrmP1Wr1FtRtOyIwmeEptn4m7KLelkiCZJYZQG6nUqn82UYtdixoY0QXBpaZSfDvu/ALe+tcEhmWlWUO/v4UtdjE4Ox9OJNDGUZAYj9E/xd+/XKjT/bCrAiQbeKT+BSKI/OIX8z1KYNAsrwNk2BEligIaR6Y31PGAJO/jyLBiK216vV6D0nnB2UHz8jsvbiXB4vGRqPxwgfQ+fEMK3k6tMGoaITPPOGHep9tiKMkGMbVL/qGHmz0O9nFT5AwGh+JynhohiOZS3YwAIlb082ixorLabIE3PVLsj+12a8CRAlZRIQbLLIElEpfJPulGrFWtsC0WpL9IiI2Gy+p9kVEbFbF+NDS8RGU+LZ7+KZkam9MBC2l9bK+XC43TPcaEznHYGKxWOgnxKREuJvjZoiSQd+06N9wTgIPTwftwA2eFvc30pmA5MMzJoJwaJqgPDwdnjdxgxYscn/DpCSEJElR07Q8iiAQhoSQJCkaEzmQQzwyIBDGHqFv/hlRd+prJHwZLunx/8ylBMIAmTd/7NmJuGNgeo5xP+KPVbdNDgi8SMf+Ce6Z+Peof7ngChv4C+FebC5yhenSAAAAAElFTkSuQmCC");
+                                                    background-size:cover;
+                                                    background-repeat:no-repeat;
+                                                    background-position:top;
+                                                    transition:all 600ms ease;
+                                                    -o-transition:all 600ms ease;
+                                                    -ms-transition:all 600ms ease;
+                                                    -moz-transition:all 600ms ease;
+                                                    -webkit-transition:all 600ms ease;
+
+                                                }
+
+                                            /* START FIVE ----------- */
+                                            /* ---------------------- */
+
+                                                .cameraSnapRatingsAreaStarActualFive{
+
+                                                    width:25px;
+                                                    height:25px;
+                                                    top:0;
+                                                    left:0;
+                                                    right:0;
+                                                    bottom:0;
+                                                    margin:auto;
+                                                    position:absolute;
+                                                    overflow:hidden;
+                                                    background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAL+SURBVHgB7VrrcdpAEF5eMzDDs4LIFQR3IEpIBbErwKnAdgdOB6QCuwOUCowrgFQAA/zjlW+JxGBFgluxOsQM34zG9unmbj/2vYboiisuD/P5vDudToez2ex9PB47lCJylBJY8GKxONxb8mq1WodSQp5SQqlUegwtudDOHaWEVDQCk2pvNpv3iFeT5XJ502q1JqSMtDTyGrPezOfzD5QC1Imw+UAbTtx7EOnCf5qkDFUiLCAEfTyyrRnhPydDlQiiVPeQNgJgz4N2OFZz9ohwewyq4VhNIwnMxUWidEkJKho5EG6PQU0rWhp5pWRQS5InE+F6ysTBYwVAlNNwfLFpsRmt1+s2BPgKAm0suXQicrncCGcNcO4HzvWQ/UfI/iPRGXEvOCfAgZ09oV0sO3jUk1kMuIwZgCQT/A0ZRtVqdRC3eUfET2Z3hUIh+KTblE14PrmP1Wr1FtRtOyIwmeEptn4m7KLelkiCZJYZQG6nUqn82UYtdixoY0QXBpaZSfDvu/ALe+tcEhmWlWUO/v4UtdjE4Ox9OJNDGUZAYj9E/xd+/XKjT/bCrAiQbeKT+BSKI/OIX8z1KYNAsrwNk2BEligIaR6Y31PGAJO/jyLBiK216vV6D0nnB2UHz8jsvbiXB4vGRqPxwgfQ+fEMK3k6tMGoaITPPOGHep9tiKMkGMbVL/qGHmz0O9nFT5AwGh+JynhohiOZS3YwAIlb082ixorLabIE3PVLsj+12a8CRAlZRIQbLLIElEpfJPulGrFWtsC0WpL9IiI2Gy+p9kVEbFbF+NDS8RGU+LZ7+KZkam9MBC2l9bK+XC43TPcaEznHYGKxWOgnxKREuJvjZoiSQd+06N9wTgIPTwftwA2eFvc30pmA5MMzJoJwaJqgPDwdnjdxgxYscn/DpCSEJElR07Q8iiAQhoSQJCkaEzmQQzwyIBDGHqFv/hlRd+prJHwZLunx/8ylBMIAmTd/7NmJuGNgeo5xP+KPVbdNDgi8SMf+Ce6Z+Peof7ngChv4C+FebC5yhenSAAAAAElFTkSuQmCC");
+                                                    background-size:cover;
+                                                    background-repeat:no-repeat;
+                                                    background-position:top;
+                                                    transition:all 600ms ease;
+                                                    -o-transition:all 600ms ease;
+                                                    -ms-transition:all 600ms ease;
+                                                    -moz-transition:all 600ms ease;
+                                                    -webkit-transition:all 600ms ease;
+
+                                                }
+
+
 
 
 
