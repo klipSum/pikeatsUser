@@ -17,6 +17,13 @@
             var getCamSnipDisplay = document.querySelector(`.cameraSnipDisplayActual`)
             var getSnappedHeaderDataUrl = document.querySelector(`.cameraSnipDisplayHeaderUrlActual`)
 
+            var getAreaSelectIconLineOne = document.querySelector(`.cameraSnapAreaDropDownIconSideIconLineOne`)
+            var getAreaSelectIconLineThree = document.querySelector(`.cameraSnapAreaDropDownIconSideIconLineThree`)
+
+            var getAreaDropDownOpenClicker = document.querySelector(`.cameraSnapAreaDropDownIconSideOpenClicker`)
+            var getAreaDropDownCloseClicker = document.querySelector(`.cameraSnapAreaDropDownIconSideCloseClicker`)
+
+            var getAreaDropDownMainItemContainer = document.querySelector(`.cameraSnapAreaDropAreaDownContentsContainer`)
             var getAreaDropDownSlider = document.querySelector(`.cameraSnapAreaDropAreaDownSliderContainer`)
 
 
@@ -711,6 +718,354 @@
 
             }
 
+
+
+
+
+
+            
+
+        // DROP DOWN CLICKERS FUNCTIONS -----------------------------
+        // //////////////////////////////////////////////////////////
+
+
+            // DROP DOWN AREA SELECT OPEN CLICKER -------------------
+            // //////////////////////////////////////////////////////
+
+                function openSelectAreaDropDown() {
+
+                    // SEND OPEN CLICKER TO BACK --------------------
+                    // //////////////////////////////////////////////
+
+                        getAreaDropDownOpenClicker.style = `
+                        
+                            width:100%;
+                            height:100%;
+                            left:0;
+                            right:0;
+                            margin:0px auto;
+                            z-index:-1;
+                            display:none;
+                            position:absolute;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                    // BRING CLOSE CLICKER TO FRONT -----------------
+                    // //////////////////////////////////////////////
+
+                        getAreaDropDownCloseClicker.style = `
+                        
+                            width:100%;
+                            height:100%;
+                            left:0;
+                            right:0;
+                            margin:0px auto;
+                            z-index:1;
+                            display:block;
+                            position:absolute;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                    // CHANGE STATE OF DROP DOWN ICON TO OPEN MODE --
+                    // //////////////////////////////////////////////
+
+                        getAreaSelectIconLineOne.style = `
+                        
+                            width:10px;
+                            height:4px;
+                            top:0;
+                            left:-5px;
+                            right:0;
+                            bottom:0;
+                            opacity:1;
+                            margin:auto;
+                            position:absolute;
+                            background:#FFFFFF;
+                            border-radius:1000px;
+                            transform:rotateZ(-45deg);
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                        getAreaSelectIconLineThree.style = `
+                        
+                            width:10px;
+                            height:4px;
+                            top:0;
+                            left:0;
+                            right:-5px;
+                            bottom:0;
+                            opacity:1;
+                            margin:auto;
+                            position:absolute;
+                            background:#FFFFFF;
+                            border-radius:1000px;
+                            transform:rotateZ(45deg);
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                    // OPEN DROP DOWN SLIDER ------------------------
+                    // //////////////////////////////////////////////
+
+                        getAreaDropDownMainItemContainer.style = `
+                        
+                            width:280px;
+                            margin:0px 0px 0px 0px;
+                            opacity:0;
+                            padding:0px 10px 10px 10px;
+                            display:inline-table;
+                            overflow:hidden;
+                            position:relative;
+                            background:#FFFFFF;
+                            border-radius:10px;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                            // FADE IN DROP DOWN SLIDER -------------
+                            // //////////////////////////////////////
+
+                                setTimeout(() => {
+
+                                    getAreaDropDownMainItemContainer.style = `
+                        
+                                        width:280px;
+                                        margin:10px 0px 0px 0px;
+                                        opacity:1;
+                                        padding:0px 10px 10px 10px;
+                                        display:inline-table;
+                                        overflow:hidden;
+                                        position:relative;
+                                        background:#FFFFFF;
+                                        border-radius:10px;
+                                        transition:all 600ms ease;
+                                        -o-transition:all 600ms ease;
+                                        -ms-transition:all 600ms ease;
+                                        -moz-transition:all 600ms ease;
+                                        -webkit-transition:all 600ms ease;
+
+                                    `
+
+                                }, 50)
+
+                }
+
+
+
+
+
+
+        
+
+            // DROP DOWN AREA SELECT CLOSE CLICKER ------------------
+            // //////////////////////////////////////////////////////
+
+                function closeSelectAreaDropDown() {
+
+                    // DECLARE VARIABLES ----------------------------
+                    // //////////////////////////////////////////////
+
+                        var getAreaSelectSlider = document.querySelector(`.cameraSnapAreaDropAreaDownSliderContainer`)
+                        var getAreaSelectSecondSide = document.querySelector(`.cameraSnapDropDownDinerSelectSide`)
+
+                    // BRING OPEN CLICKER TO FRONT ------------------
+                    // //////////////////////////////////////////////
+
+                        getAreaDropDownOpenClicker.style = `
+                        
+                            width:100%;
+                            height:100%;
+                            left:0;
+                            right:0;
+                            margin:0px auto;
+                            z-index:1;
+                            display:block;
+                            position:absolute;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                    // SEND CLOSE CLICKER TO BACK -------------------
+                    // //////////////////////////////////////////////
+
+                        getAreaDropDownCloseClicker.style = `
+                        
+                            width:100%;
+                            height:100%;
+                            left:0;
+                            right:0;
+                            margin:0px auto;
+                            z-index:-1;
+                            display:none;
+                            position:absolute;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                    // CHANGE STATE OF DROP DOWN ICON TO CLOSED MODE 
+                    // //////////////////////////////////////////////
+
+                        getAreaSelectIconLineOne.style = `
+                        
+                            width:10px;
+                            height:4px;
+                            top:0;
+                            left:-5px;
+                            right:0;
+                            bottom:0;
+                            opacity:1;
+                            margin:auto;
+                            position:absolute;
+                            background:#FFFFFF;
+                            border-radius:1000px;
+                            transform:rotateZ(45deg);
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                        getAreaSelectIconLineThree.style = `
+                        
+                            width:10px;
+                            height:4px;
+                            top:0;
+                            left:0;
+                            right:-5px;
+                            bottom:0;
+                            opacity:1;
+                            margin:auto;
+                            position:absolute;
+                            background:#FFFFFF;
+                            border-radius:1000px;
+                            transform:rotateZ(-45deg);
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                    // FADE OUT DROP DOWN SLIDER --------------------
+                    // //////////////////////////////////////////////
+
+                        getAreaDropDownMainItemContainer.style = `
+                        
+                            width:280px;
+                            margin:0px 0px 0px 0px;
+                            opacity:0;
+                            padding:0px 10px 10px 10px;
+                            display:inline-table;
+                            overflow:hidden;
+                            position:relative;
+                            background:#FFFFFF;
+                            border-radius:10px;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                            // CLOSE DROP DOWN SLIDER ---------------
+                            // //////////////////////////////////////
+
+                                setTimeout(() => {
+
+                                    getAreaDropDownMainItemContainer.style = `
+                        
+                                        width:280px;
+                                        margin:0px 0px 0px 0px;
+                                        opacity:0;
+                                        padding:0px 10px 10px 10px;
+                                        display:none;
+                                        overflow:hidden;
+                                        position:relative;
+                                        background:#FFFFFF;
+                                        border-radius:10px;
+                                        transition:all 600ms ease;
+                                        -o-transition:all 600ms ease;
+                                        -ms-transition:all 600ms ease;
+                                        -moz-transition:all 600ms ease;
+                                        -webkit-transition:all 600ms ease;
+
+                                    `
+
+                            // RESET ITEM SLIDERS TO DEFAULT POSITIONS
+                            // //////////////////////////////////////
+
+                                // EMPTY OUT SECOND SLIDER ----------
+                                // //////////////////////////////////
+
+                                    var getChildrenCount = getAreaSelectSecondSide.children.length
+
+                                        if ( getChildrenCount > 0 ) {
+
+                                            for ( parentEraserCount = getChildrenCount; parentEraserCount != 0; parentEraserCount-- ) {
+
+                                                // REMOVE FIRST CHILD UNTIL NOTHING LEFT
+                                                // //////////////////
+
+                                                    getAreaSelectSecondSide.removeChild(getAreaSelectSecondSide.children[0])
+                                                
+                                            }
+
+                                        }
+
+                                // SLIDE SECOND ITEM SLIDER TO DEFAULT
+                                // //////////////////////////////////
+
+                                    getAreaSelectSlider.style = `
+                                    
+                                        width:200%;
+                                        margin-left:0%;
+                                        transition:all 600ms ease;
+                                        -o-transition:all 600ms ease;
+                                        -ms-transition:all 600ms ease;
+                                        -moz-transition:all 600ms ease;
+                                        -webkit-transition:all 600ms ease;
+
+                                    `
+
+                                }, 300)
+
+                }
+
     // VIDEO CAPTURE FUNCTIONS --------------------------------------
     // //////////////////////////////////////////////////////////////
 
@@ -790,6 +1145,27 @@
 
     // CAPTURE AREA EVENTS ------------------------------------------
     // //////////////////////////////////////////////////////////////
+
+        // OPEN CLOSE CLICKERS FOR AREA SELECT ----------------------
+        // //////////////////////////////////////////////////////////
+
+            // FOR OPEN CLICKER -------------------------------------
+            // //////////////////////////////////////////////////////
+
+                getAreaDropDownOpenClicker.addEventListener("click", function () {
+
+                    openSelectAreaDropDown()
+
+                })
+
+            // FOR CLOSE CLICKER ------------------------------------
+            // //////////////////////////////////////////////////////
+
+                getAreaDropDownCloseClicker.addEventListener("click", function () {
+
+                    closeSelectAreaDropDown()
+                    
+                })
 
         // POPULATE DROP DOWN AREA ----------------------------------
         // //////////////////////////////////////////////////////////
