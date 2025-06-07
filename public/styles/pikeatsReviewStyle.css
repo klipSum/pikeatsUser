@@ -7,6 +7,7 @@
         background:#fffde0;
         text-align:center;
         font-family:"poppins", sans-serif;
+        text-transform:lowercase;
         transition:all 600ms ease;
         -o-transition:all 600ms ease;
         -ms-transition:all 600ms ease;
@@ -30,6 +31,24 @@
             -ms-transition:all 600ms ease;
             -moz-transition:all 600ms ease;
             -webkit-transition:all 600ms ease;
+
+        }
+
+
+
+
+
+
+
+/* STYLE INPUT ELEMENTS OF PAGE ------------------------------------- */
+/* ////////////////////////////////////////////////////////////////// */
+
+    /* STYLES FOR TEXT AREA BOXES ----------------------------------- */
+    /* ////////////////////////////////////////////////////////////// */
+
+        textArea{
+
+            resize:none;
 
         }
 
@@ -293,6 +312,7 @@
                     .cameraSnipDisplayHeaderUrlContainer{
 
                         width:300px;
+                        cursor:not-allowed;
                         margin-top:30px;
                         position:relative;
                         background:#FFFFFF;
@@ -314,8 +334,10 @@
                             left:0;
                             right:0;
                             bottom:0;
+                            cursor:not-allowed;
                             margin:0px auto;
                             padding:20px 0px;
+                            overflow:hidden;
                             position:relative;
                             background:#FFFFFF;
                             transition:all 600ms ease;
@@ -1304,6 +1326,125 @@
                                                     -webkit-transition:all 600ms ease;
 
                                                 }
+
+
+
+
+
+
+                    
+
+                        /* CALORIE ESTIMATE CONTAINER STYLES -------- */
+                        /* ------------------------------------------ */
+
+                            .cameraSnapCalorieEstimateContainer{
+
+                                width:300px;
+                                margin-top:20px;
+                                transition:all 600ms ease;
+                                -o-transition:all 600ms ease;
+                                -ms-transition:all 600ms ease;
+                                -moz-transition:all 600ms ease;
+                                -webkit-transition:all 600ms ease;
+
+                            }
+
+                                .cameraSnapCalorieEstimateContainerActual{
+
+                                    width:300px;
+                                    height:50px;
+                                    cursor:not-allowed;
+                                    position:relative;
+                                    background:#FFFFFF;
+                                    box-shadow:0px 30px 30px -10px rgba(0,0,0,0.15);
+                                    border-radius:10px;
+                                    transition:all 600ms ease;
+                                    -o-transition:all 600ms ease;
+                                    -ms-transition:all 600ms ease;
+                                    -moz-transition:all 600ms ease;
+                                    -webkit-transition:all 600ms ease;
+
+                                }
+
+                                    .cameraSnapCalorieEstimateInputActual{
+
+                                        width:90%;
+                                        cursor:not-allowed;
+                                        border:0px solid rgba(0,0,0,0.00);
+                                        outline:none;
+                                        padding:10px 0px;
+                                        position:relative;
+                                        font-size:15px;
+                                        text-align:center;
+                                        background:#FFFFFF;
+                                        line-height:30px;
+                                        font-family:"poppins", sans-serif;
+                                        text-transform:lowercase;
+                                        transition:all 600ms ease;
+                                        -o-transition:all 600ms ease;
+                                        -ms-transition:all 600ms ease;
+                                        -moz-transition:all 600ms ease;
+                                        -webkit-transition:all 600ms ease;
+
+                                    }
+
+
+
+
+
+
+                    
+
+                        /* MAKE COMMENT CONTAINER STYLES ------------ */
+                        /* ------------------------------------------ */
+
+                            .cameraSnapMakeCommentContainer{
+
+                                width:300px;
+                                margin-top:20px;
+                                transition:all 600ms ease;
+                                -o-transition:all 600ms ease;
+                                -ms-transition:all 600ms ease;
+                                -moz-transition:all 600ms ease;
+                                -webkit-transition:all 600ms ease;
+
+                            }
+
+                                .cameraSnapMakeCommentContainerActual{
+
+                                    width:300px;
+                                    padding:20px 0px;
+                                    position:relative;
+                                    background:#FFFFFF;
+                                    box-shadow:0px 30px 30px -10px rgba(0,0,0,0.15);
+                                    border-radius:10px;
+                                    transition:all 600ms ease;
+                                    -o-transition:all 600ms ease;
+                                    -ms-transition:all 600ms ease;
+                                    -moz-transition:all 600ms ease;
+                                    -webkit-transition:all 600ms ease;
+
+                                }
+
+                                    .cameraSnapMakeCommentInputActual{
+
+                                        width:80%;
+                                        border:0px solid rgba(0,0,0,0.00);
+                                        outline:none;
+                                        display:inline-table;
+                                        position:relative;
+                                        font-size:15px;
+                                        text-align:center;
+                                        background:rgba(0,0,0,0.00);
+                                        font-family:"poppins", sans-serif;
+                                        text-transform:lowercase;
+                                        transition:all 600ms ease;
+                                        -o-transition:all 600ms ease;
+                                        -ms-transition:all 600ms ease;
+                                        -moz-transition:all 600ms ease;
+                                        -webkit-transition:all 600ms ease;
+
+                                    }
 
 
 
