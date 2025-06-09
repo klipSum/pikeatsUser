@@ -115,7 +115,6 @@
                             .cameraStartPictureButtonContainer{
 
                                 width:100%;
-                                height:50px;
                                 position:relative;
                                 transition:all 600ms ease;
                                 -o-transition:all 600ms ease;
@@ -125,28 +124,80 @@
 
                             }
 
-                                .cameraStartButtonActual{
 
-                                    width:max-content;
-                                    height:50px;
-                                    left:0;
-                                    right:0;
-                                    color:#FFFFFF;
-                                    cursor:pointer;
-                                    margin:0px auto;
-                                    padding:0px 30px;
-                                    position:relative;
-                                    background:#2C2C2C;
-                                    line-height:50px;
-                                    border-radius:8px;
-                                    letter-spacing:1px;
-                                    transition:all 600ms ease;
-                                    -o-transition:all 600ms ease;
-                                    -ms-transition:all 600ms ease;
-                                    -moz-transition:all 600ms ease;
-                                    -webkit-transition:all 600ms ease;
 
-                                }
+
+                                /* INTRO TEXT SECTION --------------- */
+                                /* ---------------------------------- */
+
+                                    .startPictureIntroTextContainer{
+
+                                        width:100%;
+                                        display:block;
+                                        transition:all 600ms ease;
+                                        -o-transition:all 600ms ease;
+                                        -ms-transition:all 600ms ease;
+                                        -moz-transition:all 600ms ease;
+                                        -webkit-transition:all 600ms ease;
+
+                                    }
+
+                                        .startPictureIntroHeaderTextContainer{
+
+                                            font-size:20px;
+                                            font-weight:900;
+                                            letter-spacing:2px;
+                                            text-transform:uppercase;
+                                            transition:all 600ms ease;
+                                            -o-transition:all 600ms ease;
+                                            -ms-transition:all 600ms ease;
+                                            -moz-transition:all 600ms ease;
+                                            -webkit-transition:all 600ms ease;
+
+                                        }
+
+                                        .startPictureIntroBodyTextContainer{
+
+                                            font-size:12px;
+                                            margin-top:10px;
+                                            letter-spacing:0.5px;
+                                            transition:all 600ms ease;
+                                            -o-transition:all 600ms ease;
+                                            -ms-transition:all 600ms ease;
+                                            -moz-transition:all 600ms ease;
+                                            -webkit-transition:all 600ms ease;
+
+                                        }
+
+
+                            
+
+                                /* INTRO BEGIN BUTTON SECTION ------- */
+                                /* ---------------------------------- */
+
+                                    .cameraStartButtonActual{
+
+                                        width:max-content;
+                                        height:50px;
+                                        left:0;
+                                        right:0;
+                                        color:#FFFFFF;
+                                        cursor:pointer;
+                                        margin:20px 0px 0 0;
+                                        display:inline-block;
+                                        padding:0px 30px;
+                                        position:relative;
+                                        background:#2C2C2C;
+                                        line-height:50px;
+                                        border-radius:8px;
+                                        letter-spacing:1px;
+                                        transition:all 600ms ease;
+                                        -o-transition:all 600ms ease;
+                                        -ms-transition:all 600ms ease;
+                                        -moz-transition:all 600ms ease;
+                                        -webkit-transition:all 600ms ease;
+
+                                    }
 
 
 
@@ -160,7 +211,9 @@
                                 height:230px;
                                 left:0;
                                 right:0;
-                                margin:20px 0px 0px 0px;
+                                margin:40px 0px 0px 0px;
+                                opacity:0;
+                                display:none;
                                 position:relative;
                                 background:#FFFFFF;
                                 box-shadow:0px 50px 30px -20px rgba(0,0,0,0.15);
@@ -200,8 +253,10 @@
 
                                 width:100%;
                                 height:50px;
+                                display:none;
+                                opacity:0;
                                 position:relative;
-                                margin-top:30px;
+                                margin-top:50px;
                                 transition:all 600ms ease;
                                 -o-transition:all 600ms ease;
                                 -ms-transition:all 600ms ease;
@@ -267,7 +322,9 @@
                                 height:230px;
                                 left:0;
                                 right:0;
-                                margin:30px 0px 0px 0px;
+                                margin:50px 0px 0px 0px;
+                                opacity:0;
+                                display:none;
                                 padding:12px 0px;
                                 position:relative;
                                 background:#FFFFFF;
@@ -299,6 +356,104 @@
                                 }
 
 
+                        /* RETAKE OR CONFIRM BUTTONS SHOT CONTAINER - */
+                        /* ------------------------------------------ */
+
+                            .cameraSnipConfirmDiscardContainer{
+
+                                width:100%;
+                                height:50px;
+                                display:none;
+                                opacity:0;
+                                position:relative;
+                                margin-top:40px;
+                                transition:all 600ms ease;
+                                -o-transition:all 600ms ease;
+                                -ms-transition:all 600ms ease;
+                                -moz-transition:all 600ms ease;
+                                -webkit-transition:all 600ms ease;
+                                
+                            }
+
+                                /* RETAKE SHOT BUTTON --------------- */
+                                /* ---------------------------------- */
+
+                                    .cameraSnipDiscardButtonContainer{
+
+                                        width:50%;
+                                        float:left;
+                                        position:relative;
+                                        transition:all 600ms ease;
+                                        -o-transition:all 600ms ease;
+                                        -ms-transition:all 600ms ease;
+                                        -moz-transition:all 600ms ease;
+                                        -webkit-transition:all 600ms ease;
+
+                                    }
+
+                                        .cameraSnipDiscardButtonActualText{
+
+                                            width:95%;
+                                            height:50px;
+                                            left:0;
+                                            right:0;
+                                            color:#FFFFFF;
+                                            cursor:pointer;
+                                            margin:0px auto;
+                                            padding:0px 0px;
+                                            position:relative;
+                                            background:#2C2C2C;
+                                            line-height:50px;
+                                            border-radius:8px;
+                                            letter-spacing:1px;
+                                            transition:all 600ms ease;
+                                            -o-transition:all 600ms ease;
+                                            -ms-transition:all 600ms ease;
+                                            -moz-transition:all 600ms ease;
+                                            -webkit-transition:all 600ms ease;
+
+                                        }
+
+                                /* CONFIRM SHOT BUTTON -------------- */
+                                /* ---------------------------------- */
+
+                                    .cameraSnipConfirmButtonContainer{
+
+                                        width:50%;
+                                        float:left;
+                                        position:relative;
+                                        transition:all 600ms ease;
+                                        -o-transition:all 600ms ease;
+                                        -ms-transition:all 600ms ease;
+                                        -moz-transition:all 600ms ease;
+                                        -webkit-transition:all 600ms ease;
+
+                                    }
+
+                                        .cameraSnipConfirmButtonActualText{
+
+                                            width:95%;
+                                            height:50px;
+                                            left:0;
+                                            right:0;
+                                            color:#FFFFFF;
+                                            cursor:pointer;
+                                            margin:0px auto;
+                                            padding:0px 0px;
+                                            position:relative;
+                                            background:#2C2C2C;
+                                            line-height:50px;
+                                            border-radius:8px;
+                                            letter-spacing:1px;
+                                            transition:all 600ms ease;
+                                            -o-transition:all 600ms ease;
+                                            -ms-transition:all 600ms ease;
+                                            -moz-transition:all 600ms ease;
+                                            -webkit-transition:all 600ms ease;
+
+                                        }
+
+
 
 
 
@@ -314,6 +469,7 @@
                         width:300px;
                         cursor:not-allowed;
                         margin-top:30px;
+                        display:none;
                         position:relative;
                         background:#FFFFFF;
                         box-shadow:0px 50px 30px 0px rgba(0,0,0,0.15);
@@ -359,7 +515,7 @@
                 /* DROP DOWN AND COMMENTS CONTAINER STYLES ////////// */
                 /* ////////////////////////////////////////////////// */
 
-                    .cameraSnapDescriptionContainer{
+                    .cameraShotDescriptionContainer{
 
                         width:300px;
                         margin-top:30px;
@@ -382,7 +538,7 @@
                         /* SELECT AREA DROP DOWN CONTAINER ---------- */
                         /* ------------------------------------------ */
 
-                            .cameraSnapAreaDropDownContainer{
+                            .cameraShotAreaDropDownContainer{
 
                                 width:300px;
                                 height:50px;
@@ -400,7 +556,7 @@
                                 /* DROP DOWN AREA ITEM SIDE >>>>>>>>> */
                                 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
-                                    .cameraSnapAreaDropDownItemsSideContainer{
+                                    .cameraShotAreaDropDownItemsSideContainer{
 
                                         width:250px;
                                         height:50px;
@@ -417,7 +573,7 @@
 
                                     }
 
-                                        .cameraSnapAreaDropDownItemsSideActualTextContainer{
+                                        .cameraShotAreaDropDownItemsSideActualTextContainer{
 
                                             width:90%;
                                             height:60%;
@@ -442,7 +598,7 @@
                                             /* DROP DOWN CONTENTS --- */
                                             /* ////////////////////// */
 
-                                                .cameraSnapAreaDropAreaDownContentsContainer{
+                                                .cameraShotAreaDropAreaDownContentsContainer{
 
                                                     width:280px;
                                                     margin:0px 0px 0px 0px;
@@ -464,7 +620,7 @@
                                                     /* DROP DOWN AREA SELECT SLIDER CONTAINER */
                                                     /* ////////////////////////////////////// */
 
-                                                        .cameraSnapAreaDropAreaDownSliderContainer{
+                                                        .cameraShotAreaDropAreaDownSliderContainer{
 
                                                             width:200%;
                                                             margin-left:0%;
@@ -479,7 +635,7 @@
                                                             /* DROP DOWN AREA SELECT SLIDE SIDE */
                                                             /* //////////////////////////////// */
 
-                                                                .cameraSnapDropDownAreaSelectSide{
+                                                                .cameraShotDropDownAreaSelectSide{
 
                                                                     width:50%;
                                                                     float:left;
@@ -494,7 +650,7 @@
                                                             /* DROP DOWN DINER SELECT SLIDE SIDE */
                                                             /* //////////////////////////////// */
 
-                                                                .cameraSnapDropDownDinerSelectSide{
+                                                                .cameraShotDropDownDinerSelectSide{
 
                                                                     width:50%;
                                                                     float:left;
@@ -517,7 +673,7 @@
                                 /* DROP DOWN AREA ICON SIDE >>>>>>>>> */
                                 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
-                                    .cameraSnapAreaDropDownIconSideContainer{
+                                    .cameraShotAreaDropDownIconSideContainer{
 
                                         width:50px;
                                         height:50px;
@@ -538,7 +694,7 @@
                                         /* CLICKERS CONTAINER /////// */
                                         /* ////////////////////////// */
 
-                                            .cameraSnapAreaDropDownIconSideClickersContainer{
+                                            .cameraShotAreaDropDownIconSideClickersContainer{
 
                                                 width:100%;
                                                 height:100%;
@@ -555,7 +711,7 @@
 
                                             }
 
-                                                .cameraSnapAreaDropDownIconSideOpenClicker{
+                                                .cameraShotAreaDropDownIconSideOpenClicker{
 
                                                     width:100%;
                                                     height:100%;
@@ -573,7 +729,7 @@
 
                                                 }
 
-                                                .cameraSnapAreaDropDownIconSideCloseClicker{
+                                                .cameraShotAreaDropDownIconSideCloseClicker{
 
                                                     width:100%;
                                                     height:100%;
@@ -594,7 +750,7 @@
                                         /* ICON CONTAINER /////////// */
                                         /* ////////////////////////// */
 
-                                            .cameraSnapAreaDropDownIconSideIconContainer{
+                                            .cameraShotAreaDropDownIconSideIconContainer{
 
                                                 width:100%;
                                                 height:100%;
@@ -611,7 +767,7 @@
 
                                             }
 
-                                                .cameraSnapAreaDropDownIconSideIconMover{
+                                                .cameraShotAreaDropDownIconSideIconMover{
 
                                                     width:20px;
                                                     height:20px;
@@ -629,7 +785,7 @@
 
                                                 }
 
-                                                    .cameraSnapAreaDropDownIconSideIconLineOne{
+                                                    .cameraShotAreaDropDownIconSideIconLineOne{
 
                                                         width:10px;
                                                         height:4px;
@@ -651,7 +807,7 @@
 
                                                     }
 
-                                                    .cameraSnapAreaDropDownIconSideIconLineTwo{
+                                                    .cameraShotAreaDropDownIconSideIconLineTwo{
 
                                                         width:10px;
                                                         height:4px;
@@ -673,7 +829,7 @@
 
                                                     }
 
-                                                    .cameraSnapAreaDropDownIconSideIconLineThree{
+                                                    .cameraShotAreaDropDownIconSideIconLineThree{
 
                                                         width:10px;
                                                         height:4px;
@@ -705,7 +861,7 @@
                         /* SELECT RATING CONTAINER ------------------ */
                         /* ------------------------------------------ */
 
-                            .cameraSnapRatingsContainer{
+                            .cameraShotRatingsContainer{
 
                                 width:300px;
                                 margin-top:20px;
@@ -717,7 +873,7 @@
 
                             }
 
-                                .cameraSnapRatingsAreaContainer{
+                                .cameraShotRatingsAreaContainer{
 
                                     width:300px;
                                     height:50px;
@@ -733,7 +889,7 @@
 
                                 }
 
-                                    .cameraSnapRatingsAreaResizer{
+                                    .cameraShotRatingsAreaResizer{
 
                                         width:90%;
                                         height:90%;
@@ -758,7 +914,7 @@
                                         /* STAR ONE >>>>>>>>>>>>>>>>> */
                                         /* >>>>>>>>>>>>>>>>>>>>>>>>>> */
 
-                                            .cameraSnapRatingsAreaStarContainerOne{
+                                            .cameraShotRatingsAreaStarContainerOne{
 
                                                 width:20%;
                                                 height:45px;
@@ -776,7 +932,7 @@
                                                 /* CLICKERS CONTAINER */
                                                 /* ================== */
 
-                                                    .cameraSnapRatingsAreaStarOneClickerContainer{
+                                                    .cameraShotRatingsAreaStarOneClickerContainer{
 
                                                         width:25px;
                                                         height:25px;
@@ -801,7 +957,7 @@
                                                         /* CLICKERS ONE */
                                                         /* ///////////// */
 
-                                                            .cameraSnapRatingsAreaStarOneClickerOn{
+                                                            .cameraShotRatingsAreaStarOneClickerOn{
 
                                                                 width:100%;
                                                                 height:100%;
@@ -819,7 +975,7 @@
 
                                                             }
 
-                                                            .cameraSnapRatingsAreaStarOneClickerOff{
+                                                            .cameraShotRatingsAreaStarOneClickerOff{
 
                                                                 width:100%;
                                                                 height:100%;
@@ -846,7 +1002,7 @@
                                         /* STAR TWO >>>>>>>>>>>>>>>>> */
                                         /* >>>>>>>>>>>>>>>>>>>>>>>>>> */
 
-                                            .cameraSnapRatingsAreaStarContainerTwo{
+                                            .cameraShotRatingsAreaStarContainerTwo{
 
                                                 width:20%;
                                                 height:45px;
@@ -864,7 +1020,7 @@
                                                 /* CLICKERS CONTAINER */
                                                 /* ================== */
 
-                                                    .cameraSnapRatingsAreaStarTwoClickerContainer{
+                                                    .cameraShotRatingsAreaStarTwoClickerContainer{
 
                                                         width:25px;
                                                         height:25px;
@@ -889,7 +1045,7 @@
                                                         /* CLICKERS TWO */
                                                         /* //////////// */
 
-                                                            .cameraSnapRatingsAreaStarTwoClickerOn{
+                                                            .cameraShotRatingsAreaStarTwoClickerOn{
 
                                                                 width:100%;
                                                                 height:100%;
@@ -907,7 +1063,7 @@
 
                                                             }
 
-                                                            .cameraSnapRatingsAreaStarTwoClickerOff{
+                                                            .cameraShotRatingsAreaStarTwoClickerOff{
 
                                                                 width:100%;
                                                                 height:100%;
@@ -934,7 +1090,7 @@
                                         /* STAR THREE >>>>>>>>>>>>>>> */
                                         /* >>>>>>>>>>>>>>>>>>>>>>>>>> */
 
-                                            .cameraSnapRatingsAreaStarContainerThree{
+                                            .cameraShotRatingsAreaStarContainerThree{
 
                                                 width:20%;
                                                 height:45px;
@@ -952,7 +1108,7 @@
                                                 /* CLICKERS CONTAINER */
                                                 /* ================== */
 
-                                                    .cameraSnapRatingsAreaStarThreeClickerContainer{
+                                                    .cameraShotRatingsAreaStarThreeClickerContainer{
 
                                                         width:25px;
                                                         height:25px;
@@ -977,7 +1133,7 @@
                                                         /* CLICKERS THREE */
                                                         /* //////////// */
 
-                                                            .cameraSnapRatingsAreaStarThreeClickerOn{
+                                                            .cameraShotRatingsAreaStarThreeClickerOn{
 
                                                                 width:100%;
                                                                 height:100%;
@@ -995,7 +1151,7 @@
 
                                                             }
 
-                                                            .cameraSnapRatingsAreaStarThreeClickerOff{
+                                                            .cameraShotRatingsAreaStarThreeClickerOff{
 
                                                                 width:100%;
                                                                 height:100%;
@@ -1022,7 +1178,7 @@
                                         /* STAR FOUR >>>>>>>>>>>>>>>> */
                                         /* >>>>>>>>>>>>>>>>>>>>>>>>>> */
 
-                                            .cameraSnapRatingsAreaStarContainerFour{
+                                            .cameraShotRatingsAreaStarContainerFour{
 
                                                 width:20%;
                                                 height:45px;
@@ -1040,7 +1196,7 @@
                                                 /* CLICKERS CONTAINER */
                                                 /* ================== */
 
-                                                    .cameraSnapRatingsAreaStarFourClickerContainer{
+                                                    .cameraShotRatingsAreaStarFourClickerContainer{
 
                                                         width:25px;
                                                         height:25px;
@@ -1065,7 +1221,7 @@
                                                         /* CLICKERS FOUR */
                                                         /* //////////// */
 
-                                                            .cameraSnapRatingsAreaStarFourClickerOn{
+                                                            .cameraShotRatingsAreaStarFourClickerOn{
 
                                                                 width:100%;
                                                                 height:100%;
@@ -1083,7 +1239,7 @@
 
                                                             }
 
-                                                            .cameraSnapRatingsAreaStarFourClickerOff{
+                                                            .cameraShotRatingsAreaStarFourClickerOff{
 
                                                                 width:100%;
                                                                 height:100%;
@@ -1110,7 +1266,7 @@
                                         /* STAR FIVE >>>>>>>>>>>>>>>> */
                                         /* >>>>>>>>>>>>>>>>>>>>>>>>>> */
 
-                                            .cameraSnapRatingsAreaStarContainerFive{
+                                            .cameraShotRatingsAreaStarContainerFive{
 
                                                 width:20%;
                                                 height:45px;
@@ -1128,7 +1284,7 @@
                                                 /* CLICKERS CONTAINER */
                                                 /* ================== */
 
-                                                    .cameraSnapRatingsAreaStarFiveClickerContainer{
+                                                    .cameraShotRatingsAreaStarFiveClickerContainer{
 
                                                         width:25px;
                                                         height:25px;
@@ -1153,7 +1309,7 @@
                                                         /* CLICKERS FIVE */
                                                         /* //////////// */
 
-                                                            .cameraSnapRatingsAreaStarFiveClickerOn{
+                                                            .cameraShotRatingsAreaStarFiveClickerOn{
 
                                                                 width:100%;
                                                                 height:100%;
@@ -1171,7 +1327,7 @@
 
                                                             }
 
-                                                            .cameraSnapRatingsAreaStarFiveClickerOff{
+                                                            .cameraShotRatingsAreaStarFiveClickerOff{
 
                                                                 width:100%;
                                                                 height:100%;
@@ -1200,7 +1356,7 @@
                                             /* START ONE ------------ */
                                             /* ---------------------- */
 
-                                                .cameraSnapRatingsAreaStarActualOne{
+                                                .cameraShotRatingsAreaStarActualOne{
 
                                                     width:25px;
                                                     height:25px;
@@ -1226,7 +1382,7 @@
                                             /* START TWO ------------ */
                                             /* ---------------------- */
 
-                                                .cameraSnapRatingsAreaStarActualTwo{
+                                                .cameraShotRatingsAreaStarActualTwo{
 
                                                     width:25px;
                                                     height:25px;
@@ -1252,7 +1408,7 @@
                                             /* START THREE ---------- */
                                             /* ---------------------- */
 
-                                                .cameraSnapRatingsAreaStarActualThree{
+                                                .cameraShotRatingsAreaStarActualThree{
 
                                                     width:25px;
                                                     height:25px;
@@ -1278,7 +1434,7 @@
                                             /* START FOUR ----------- */
                                             /* ---------------------- */
 
-                                                .cameraSnapRatingsAreaStarActualFour{
+                                                .cameraShotRatingsAreaStarActualFour{
 
                                                     width:25px;
                                                     height:25px;
@@ -1304,7 +1460,7 @@
                                             /* START FIVE ----------- */
                                             /* ---------------------- */
 
-                                                .cameraSnapRatingsAreaStarActualFive{
+                                                .cameraShotRatingsAreaStarActualFive{
 
                                                     width:25px;
                                                     height:25px;
@@ -1337,7 +1493,7 @@
                         /* CALORIE ESTIMATE CONTAINER STYLES -------- */
                         /* ------------------------------------------ */
 
-                            .cameraSnapCalorieEstimateContainer{
+                            .cameraShotCalorieEstimateContainer{
 
                                 width:300px;
                                 margin-top:20px;
@@ -1349,7 +1505,7 @@
 
                             }
 
-                                .cameraSnapCalorieEstimateContainerActual{
+                                .cameraShotCalorieEstimateContainerActual{
 
                                     width:300px;
                                     height:50px;
@@ -1366,7 +1522,7 @@
 
                                 }
 
-                                    .cameraSnapCalorieEstimateInputActual{
+                                    .cameraShotCalorieEstimateInputActual{
 
                                         width:90%;
                                         cursor:not-allowed;
@@ -1398,7 +1554,7 @@
                         /* MAKE COMMENT CONTAINER STYLES ------------ */
                         /* ------------------------------------------ */
 
-                            .cameraSnapMakeCommentContainer{
+                            .cameraShotMakeCommentContainer{
 
                                 width:300px;
                                 margin-top:20px;
@@ -1410,7 +1566,7 @@
 
                             }
 
-                                .cameraSnapMakeCommentContainerActual{
+                                .cameraShotMakeCommentContainerActual{
 
                                     width:300px;
                                     padding:20px 0px;
@@ -1426,7 +1582,7 @@
 
                                 }
 
-                                    .cameraSnapMakeCommentInputActual{
+                                    .cameraShotMakeCommentInputActual{
 
                                         width:80%;
                                         border:0px solid rgba(0,0,0,0.00);

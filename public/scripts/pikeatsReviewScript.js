@@ -4,27 +4,60 @@
     // VARIABLES DECLARED -------------------------------------------
     // //////////////////////////////////////////////////////////////
 
-        // VARIABLES FOR NAV BAR ------------------------------------
-        // //////////////////////////////////////////////////////////
-
         // VARIABLES FOR PICTURE CAPTURE ----------------------------
         // //////////////////////////////////////////////////////////
 
-            var getStartPicButton = document.querySelector(`.cameraStartButtonActual`)
-            var getCamBox = document.querySelector(`.cameraBoxActualPicture`)
-            var getSnapshotButton = document.querySelector(`.cameraTakePictureButtonActual`)
+            var getStartCaptureIntroTextMainContainer = document.querySelector(`.startPictureIntroTextContainer`)
+            var getStartCaptureIntroHeaderText = document.querySelector(`.startPictureIntroHeaderTextContainer`)
+            var getStartCaptureIntroBodyText = document.querySelector(`.startPictureIntroBodyTextContainer`)
 
-            var getCamSnipDisplay = document.querySelector(`.cameraSnipDisplayActual`)
-            var getSnappedHeaderDataUrl = document.querySelector(`.cameraSnipDisplayHeaderUrlActual`)
 
-            var getAreaSelectIconLineOne = document.querySelector(`.cameraSnapAreaDropDownIconSideIconLineOne`)
-            var getAreaSelectIconLineThree = document.querySelector(`.cameraSnapAreaDropDownIconSideIconLineThree`)
+                // SHOT CANVAS AND ELEMENTS SECTION -----------------
+                // --------------------------------------------------
 
-            var getAreaDropDownOpenClicker = document.querySelector(`.cameraSnapAreaDropDownIconSideOpenClicker`)
-            var getAreaDropDownCloseClicker = document.querySelector(`.cameraSnapAreaDropDownIconSideCloseClicker`)
+                    // SHOT TO CANVAS CAPTURE SECTION ---------------
+                    // //////////////////////////////////////////////
 
-            var getAreaDropDownMainItemContainer = document.querySelector(`.cameraSnapAreaDropAreaDownContentsContainer`)
-            var getAreaDropDownSlider = document.querySelector(`.cameraSnapAreaDropAreaDownSliderContainer`)
+                        var getStartPicButton = document.querySelector(`.cameraStartButtonActual`)
+                        var getCamBox = document.querySelector(`.cameraBoxActualPicture`)
+                        var getCamBoxMain = document.querySelector(`.cameraBoxContainer`)
+                        var getShotButtonMainContainer = document.querySelector(`.cameraTakePictureButtonContainer`)
+                        var getShotButton = document.querySelector(`.cameraTakePictureButtonActual`)
+
+                        var getShotSnippetCanvasBoxMain = document.querySelector(`.cameraSnipDisplayBoxContainer`)
+
+                    // SHOT TO CANVAS RETAKE CONFIRM SECTION --------
+                    // //////////////////////////////////////////////
+
+                        var getRetakeConfirmButtonContainerMain = document.querySelector(`.cameraSnipConfirmDiscardContainer`)
+                        var getRetakeButtonActual = document.querySelector(`.cameraSnipDiscardButtonActualText`)
+                        var getConfirmButtonActual = document.querySelector(`.cameraSnipConfirmButtonActualText`)
+
+
+                // SHOT DATA URL SECTION ----------------------------
+                // --------------------------------------------------
+
+                    var getCamSnipDisplay = document.querySelector(`.cameraSnipDisplayActual`)
+                    var getShotHeaderDataUrl = document.querySelector(`.cameraSnipDisplayHeaderUrlActual`)
+
+
+                // SHOT LOCATION AREA SECTION -----------------------
+                // --------------------------------------------------
+
+                    // SHOT LOCATION DROP DOWN BUTTON AND ELEMENTS --
+                    // ----------------------------------------------
+
+                        var getAreaSelectIconLineOne = document.querySelector(`.cameraShotAreaDropDownIconSideIconLineOne`)
+                        var getAreaSelectIconLineThree = document.querySelector(`.cameraShotAreaDropDownIconSideIconLineThree`)
+
+                        var getAreaDropDownOpenClicker = document.querySelector(`.cameraShotAreaDropDownIconSideOpenClicker`)
+                        var getAreaDropDownCloseClicker = document.querySelector(`.cameraShotAreaDropDownIconSideCloseClicker`)
+
+                    // SHOT LOCATION DROP DOWN MAIN ITEMS CONTAINER -
+                    // ----------------------------------------------
+
+                        var getAreaDropDownMainItemContainer = document.querySelector(`.cameraShotAreaDropAreaDownContentsContainer`)
+                        var getAreaDropDownSlider = document.querySelector(`.cameraShotAreaDropAreaDownSliderContainer`)
 
 
 
@@ -37,54 +70,48 @@
                 // STAR ONE CLICKERS --------------------------------
                 // --------------------------------------------------
 
-                    var starClickerOneOn = document.querySelector(`.cameraSnapRatingsAreaStarOneClickerOn`)
-                    var starClickerOneOff = document.querySelector(`.cameraSnapRatingsAreaStarOneClickerOff`)
+                    var starClickerOneOn = document.querySelector(`.cameraShotRatingsAreaStarOneClickerOn`)
+                    var starClickerOneOff = document.querySelector(`.cameraShotRatingsAreaStarOneClickerOff`)
 
                 // STAR TWO CLICKERS --------------------------------
                 // --------------------------------------------------
 
-                    var starClickerTwoOn = document.querySelector(`.cameraSnapRatingsAreaStarTwoClickerOn`)
-                    var starClickerTwoOff = document.querySelector(`.cameraSnapRatingsAreaStarTwoClickerOff`)
+                    var starClickerTwoOn = document.querySelector(`.cameraShotRatingsAreaStarTwoClickerOn`)
+                    var starClickerTwoOff = document.querySelector(`.cameraShotRatingsAreaStarTwoClickerOff`)
 
                 // STAR THREE CLICKERS ------------------------------
                 // --------------------------------------------------
 
-                    var starClickerThreeOn = document.querySelector(`.cameraSnapRatingsAreaStarThreeClickerOn`)
-                    var starClickerThreeOff = document.querySelector(`.cameraSnapRatingsAreaStarThreeClickerOff`)
+                    var starClickerThreeOn = document.querySelector(`.cameraShotRatingsAreaStarThreeClickerOn`)
+                    var starClickerThreeOff = document.querySelector(`.cameraShotRatingsAreaStarThreeClickerOff`)
 
                 // STAR FOUR CLICKERS -------------------------------
                 // --------------------------------------------------
 
-                    var starClickerFourOn = document.querySelector(`.cameraSnapRatingsAreaStarFourClickerOn`)
-                    var starClickerFourOff = document.querySelector(`.cameraSnapRatingsAreaStarFourClickerOff`)
+                    var starClickerFourOn = document.querySelector(`.cameraShotRatingsAreaStarFourClickerOn`)
+                    var starClickerFourOff = document.querySelector(`.cameraShotRatingsAreaStarFourClickerOff`)
 
                 // STAR FIVE CLICKERS -------------------------------
                 // --------------------------------------------------
 
-                    var starClickerFiveOn = document.querySelector(`.cameraSnapRatingsAreaStarFiveClickerOn`)
-                    var starClickerFiveOff = document.querySelector(`.cameraSnapRatingsAreaStarFiveClickerOff`)
+                    var starClickerFiveOn = document.querySelector(`.cameraShotRatingsAreaStarFiveClickerOn`)
+                    var starClickerFiveOff = document.querySelector(`.cameraShotRatingsAreaStarFiveClickerOff`)
 
 
 
             // ACTUAL STARS -----------------------------------------
             // ------------------------------------------------------
 
-                var getRatingStarOne = document.querySelector(`.cameraSnapRatingsAreaStarActualOne`)
-                var getRatingStarTwo = document.querySelector(`.cameraSnapRatingsAreaStarActualTwo`)
-                var getRatingStarThree = document.querySelector(`.cameraSnapRatingsAreaStarActualThree`)
-                var getRatingStarFour = document.querySelector(`.cameraSnapRatingsAreaStarActualFour`)
-                var getRatingStarFive = document.querySelector(`.cameraSnapRatingsAreaStarActualFive`)
+                var getRatingStarOne = document.querySelector(`.cameraShotRatingsAreaStarActualOne`)
+                var getRatingStarTwo = document.querySelector(`.cameraShotRatingsAreaStarActualTwo`)
+                var getRatingStarThree = document.querySelector(`.cameraShotRatingsAreaStarActualThree`)
+                var getRatingStarFour = document.querySelector(`.cameraShotRatingsAreaStarActualFour`)
+                var getRatingStarFive = document.querySelector(`.cameraShotRatingsAreaStarActualFive`)
 
         
 
     // SRINGS DECLARED ----------------------------------------------
     // //////////////////////////////////////////////////////////////
-
-        // STRINGS FOR NAV BAR --------------------------------------
-        // //////////////////////////////////////////////////////////
-
-        // STRINGS FOR PICTURE CAPTURE ------------------------------
-        // //////////////////////////////////////////////////////////
 
         // STRINGS FOR RATINGS CAPTURE ------------------------------
         // //////////////////////////////////////////////////////////
@@ -99,15 +126,6 @@
             // //////////////////////////////////////////////////////
 
                 var captureRatingNumber = 0
-
-        // STRINGS VIDEO CAPTURE ------------------------------------
-        // //////////////////////////////////////////////////////////
-
-        // STRINGS BASE 64 CONVERT ----------------------------------
-        // //////////////////////////////////////////////////////////
-
-        // STRINGS TRANSLATE TO FORM --------------------------------
-        // //////////////////////////////////////////////////////////
 
         
 
@@ -136,14 +154,11 @@
 
             ]
 
-        // ARRAYS FOR NAV BAR ---------------------------------------
-        // //////////////////////////////////////////////////////////
-
         // ARRAYS FOR PICTURE CAPTURE -------------------------------
         // //////////////////////////////////////////////////////////
 
             var captureComment = []
-            var captureSnapshot64 = []
+            var captureShot64 = []
             var captureStarRating = []
             var captureLocationName = []
 
@@ -182,16 +197,20 @@
 
                     ]
 
-        
 
-    // NUMBER MAKERS DECLARED ---------------------------------------
-    // //////////////////////////////////////////////////////////////
 
-        // NUMBER MAKES FOR NAV BAR ---------------------------------
-        // //////////////////////////////////////////////////////////
 
-        // NUMBER MAKES FOR PICTURE CAPTURE -------------------------
-        // //////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -199,6 +218,670 @@
 
 // MAKE FUNCTIONS FOR ENTIRE PAGE -----------------------------------
 // //////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+    // --------------------------------------------------------------
+    // MAKE LIVE FUNCTIONS ------------------------------------------
+    // --------------------------------------------------------------
+
+        // REMAKE LIVE CAPTURE SECTION ------------------------------
+        // ----------------------------------------------------------
+
+            function reOpenCameraViewSection () {
+
+
+
+                // REOPEN CAMERA VIEW AND CAPTURE BUTTON ------------
+                // //////////////////////////////////////////////////
+
+                    // FADE IN AND REOPEN CAMERA VIEW BLOCK ---------
+                    // //////////////////////////////////////////////
+
+                        // MAKE LIVE CAMERA VIEW BLOCK --------------
+                        // //////////////////////////////////////////
+
+                            getCamBoxMain.style = `
+                            
+                                width:300px;
+                                height:230px;
+                                left:0;
+                                right:0;
+                                margin:40px 0px 0px 0px;
+                                opacity:0;
+                                display:block;
+                                position:relative;
+                                background:#FFFFFF;
+                                box-shadow:0px 50px 30px -20px rgba(0,0,0,0.15);
+                                border-radius:10px;
+                                transition:all 600ms ease;
+                                -o-transition:all 600ms ease;
+                                -ms-transition:all 600ms ease;
+                                -moz-transition:all 600ms ease;
+                                -webkit-transition:all 600ms ease;
+
+                            `
+
+                        // FADE IN CAMERA VIEW BLOCK ----------------
+                        // //////////////////////////////////////////
+
+                            setTimeout(() => {
+
+                                getCamBoxMain.style = `
+                            
+                                    width:300px;
+                                    height:230px;
+                                    left:0;
+                                    right:0;
+                                    margin:20px 0px 0px 0px;
+                                    opacity:1;
+                                    display:block;
+                                    position:relative;
+                                    background:#FFFFFF;
+                                    box-shadow:0px 50px 30px -20px rgba(0,0,0,0.15);
+                                    border-radius:10px;
+                                    transition:all 600ms ease;
+                                    -o-transition:all 600ms ease;
+                                    -ms-transition:all 600ms ease;
+                                    -moz-transition:all 600ms ease;
+                                    -webkit-transition:all 600ms ease;
+
+                                `
+
+                            }, 50)
+
+
+
+
+
+
+                
+
+                    // FADE IN AND REOPEN CAPTURE BUTTON BLOCK ------
+                    // //////////////////////////////////////////////
+
+                        // MAKE LIVE CAPTURE BUTTON BLOCK -----------
+                        // //////////////////////////////////////////
+
+                            getShotButtonMainContainer.style = `
+                            
+                                width:100%;
+                                height:50px;
+                                display:block;
+                                opacity:0;
+                                position:relative;
+                                margin-top:50px;
+                                transition:all 600ms ease;
+                                -o-transition:all 600ms ease;
+                                -ms-transition:all 600ms ease;
+                                -moz-transition:all 600ms ease;
+                                -webkit-transition:all 600ms ease;
+
+                            `
+
+                        // FADE IN CAPTURE BUTTON BLOCK -------------
+                        // //////////////////////////////////////////
+
+                            setTimeout(() => {
+
+                                getShotButtonMainContainer.style = `
+                                
+                                    width:100%;
+                                    height:50px;
+                                    display:block;
+                                    opacity:1;
+                                    position:relative;
+                                    margin-top:20px;
+                                    transition:all 600ms ease;
+                                    -o-transition:all 600ms ease;
+                                    -ms-transition:all 600ms ease;
+                                    -moz-transition:all 600ms ease;
+                                    -webkit-transition:all 600ms ease;
+    
+                                `
+
+                            }, 50)
+
+
+
+            }
+
+        // REMAKE CAPTURED SHOT SECTION -----------------------------
+        // ----------------------------------------------------------
+
+            function reOpenCapturedShotSection () {
+
+
+
+            // MAKE LIVE AND FADE IN CAPTURED SHOT AND CONTROLS >>>>>
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                // MAKE LIVE CAPTURED SHOT BOX >>>>>>>>>>>>>>>>>>>>>>
+                // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                    getShotSnippetCanvasBoxMain.style = `
+                    
+                        width:300px;
+                        height:230px;
+                        left:0;
+                        right:0;
+                        margin:50px 0px 0px 0px;
+                        opacity:0;
+                        display:block;
+                        padding:12px 0px;
+                        position:relative;
+                        background:#FFFFFF;
+                        box-shadow:0px 50px 30px -20px rgba(0,0,0,0.15);
+                        border-radius:10px;
+                        transition:all 600ms ease;
+                        -o-transition:all 600ms ease;
+                        -ms-transition:all 600ms ease;
+                        -moz-transition:all 600ms ease;
+                        -webkit-transition:all 600ms ease;
+
+                    `
+
+
+
+                // MAKE LIVE CAPTURED SHOT CONTROLS >>>>>>>>>>>>>>>>>
+                // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                    getRetakeConfirmButtonContainerMain.style = `
+                    
+                        width:100%;
+                        height:50px;
+                        display:block;
+                        opacity:0;
+                        position:relative;
+                        margin-top:40px;
+                        transition:all 600ms ease;
+                        -o-transition:all 600ms ease;
+                        -ms-transition:all 600ms ease;
+                        -moz-transition:all 600ms ease;
+                        -webkit-transition:all 600ms ease;
+                    
+                    `
+
+
+
+
+
+
+
+
+
+
+
+                // FADE IN CAPTURED SHOT BOX >>>>>>>>>>>>>>>>>>>>>>>>
+                // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                    setTimeout(() => {
+
+                        getShotSnippetCanvasBoxMain.style = `
+                    
+                            width:300px;
+                            height:230px;
+                            left:0;
+                            right:0;
+                            margin:30px 0px 0px 0px;
+                            opacity:1;
+                            display:block;
+                            padding:12px 0px;
+                            position:relative;
+                            background:#FFFFFF;
+                            box-shadow:0px 50px 30px -20px rgba(0,0,0,0.15);
+                            border-radius:10px;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                    }, 50)
+
+                // FADE IN CAPTURED SHOT CONTROLS >>>>>>>>>>>>>>>>>>>
+                // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                    setTimeout(() => {
+
+                        getRetakeConfirmButtonContainerMain.style = `
+                        
+                            width:100%;
+                            height:50px;
+                            display:block;
+                            opacity:1;
+                            position:relative;
+                            margin-top:20px;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                    }, 50)
+
+
+
+            }
+
+                // CLEAR CAPTURE CONTROLS SECTION -------------------
+                // --------------------------------------------------
+
+                    function reOpenPreviewShotControlsSection () {
+
+                        // MAKE LIVE CAPTURED SHOT CONTROLS ---------
+                        // ------------------------------------------
+
+                            getRetakeConfirmButtonContainerMain.style = `
+                                
+                                width:100%;
+                                height:50px;
+                                display:block;
+                                opacity:0;
+                                position:relative;
+                                margin-top:40px;
+                                transition:all 600ms ease;
+                                -o-transition:all 600ms ease;
+                                -ms-transition:all 600ms ease;
+                                -moz-transition:all 600ms ease;
+                                -webkit-transition:all 600ms ease;
+
+                            `
+
+                        // FADE IN CAPTURED SHOT CONTROLS -----------
+                        // ------------------------------------------
+
+                            setTimeout(() => {
+
+                                getRetakeConfirmButtonContainerMain.style = `
+                                
+                                    width:100%;
+                                    height:50px;
+                                    display:block;
+                                    opacity:1;
+                                    position:relative;
+                                    margin-top:20px;
+                                    transition:all 600ms ease;
+                                    -o-transition:all 600ms ease;
+                                    -ms-transition:all 600ms ease;
+                                    -moz-transition:all 600ms ease;
+                                    -webkit-transition:all 600ms ease;
+
+                                `
+
+                            }, 50)
+
+                    }
+
+        // REMAKE DATA CAPTURE SECTION ------------------------------
+        // ----------------------------------------------------------
+
+        // REMAKE RATINGS CAPTURE SECTION ---------------------------
+        // ----------------------------------------------------------
+
+            function reOpenSelectAreaSection () {
+
+
+
+                // MAKE LIVE AND FADE IN AREA SELECT AND CONTROLS >>>>>>>
+                // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    
+                    // MAKE LIVE SELECT AREA >>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                    // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+            }
+
+        // REMAKE CALORIE ESTIMATES CAPTURE SECTION -----------------
+        // ----------------------------------------------------------
+
+        // REMAKE COMMENTS CAPTURE SECTION --------------------------
+        // ----------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+    // --------------------------------------------------------------
+    // CLEARING FUNCTIONS -------------------------------------------
+    // --------------------------------------------------------------
+
+        // CLEAR CAPTURE SECTION ------------------------------------
+        // ----------------------------------------------------------
+
+            function closeMainCaptureSection () {
+
+
+
+            // REMOVE CAMERA CAPTURE BLOCKS AND ELEMENTS xxxxxxxxxxx
+            // xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+                // FADE OUT CAMERA BLOCK xxxxxxxxxxxxxxxxxxxxxxxxxxx
+                // xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+                    getCamBoxMain.style = `
+                    
+                        width:300px;
+                        height:230px;
+                        left:0;
+                        right:0;
+                        margin:40px 0px 0px 0px;
+                        opacity:0;
+                        display:block;
+                        position:relative;
+                        background:#FFFFFF;
+                        box-shadow:0px 50px 30px -20px rgba(0,0,0,0.15);
+                        border-radius:10px;
+                        transition:all 600ms ease;
+                        -o-transition:all 600ms ease;
+                        -ms-transition:all 600ms ease;
+                        -moz-transition:all 600ms ease;
+                        -webkit-transition:all 600ms ease;
+
+                    `
+
+                // FADE OUT SHOT CAPTURE BUTTON BLOCK xxxxxxxxxxxxxx
+                // xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+                    getShotButtonMainContainer.style = `
+                    
+                        width:100%;
+                        height:50px;
+                        display:block;
+                        opacity:0;
+                        position:relative;
+                        margin-top:50px;
+                        transition:all 600ms ease;
+                        -o-transition:all 600ms ease;
+                        -ms-transition:all 600ms ease;
+                        -moz-transition:all 600ms ease;
+                        -webkit-transition:all 600ms ease;
+
+                    `
+
+
+
+
+
+
+                // HIDE CAMERA BLOCK xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                // xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+                    setTimeout(() => {
+
+                        getCamBoxMain.style = `
+                    
+                            width:300px;
+                            height:230px;
+                            left:0;
+                            right:0;
+                            margin:40px 0px 0px 0px;
+                            opacity:0;
+                            display:none;
+                            position:relative;
+                            background:#FFFFFF;
+                            box-shadow:0px 50px 30px -20px rgba(0,0,0,0.15);
+                            border-radius:10px;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                    }, 300)
+
+                // HIDE SHOT CAPTURE BUTTON BLOCK xxxxxxxxxxxxxxxxxx
+                // xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+                    setTimeout(() => {
+
+                        getShotButtonMainContainer.style = `
+                    
+                            width:100%;
+                            height:50px;
+                            display:none;
+                            opacity:0;
+                            position:relative;
+                            margin-top:50px;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                    }, 300)
+
+
+            }
+
+        // CLEAR CAPTURED PREVIEW SHOT SECTION ----------------------
+        // ----------------------------------------------------------
+
+            function closePreviewShotSection () {
+
+
+
+                // CLOSE CAPTURED IMAGE PREVIEW AND BUTTONS xxxxxxxxx
+                // xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+                    // FADE OUT AND HIDE CAPTURED IMAGE BLOCK xxxxxxx
+                    // xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+                        // FADE OUT CAPTURED IMAGE BLOCK xxxxxxxxxxxx
+                        // xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+                            getShotSnippetCanvasBoxMain.style = `
+                            
+                                width:300px;
+                                height:230px;
+                                left:0;
+                                right:0;
+                                margin:50px 0px 0px 0px;
+                                opacity:0;
+                                display:block;
+                                padding:12px 0px;
+                                position:relative;
+                                background:#FFFFFF;
+                                box-shadow:0px 50px 30px -20px rgba(0,0,0,0.15);
+                                border-radius:10px;
+                                transition:all 600ms ease;
+                                -o-transition:all 600ms ease;
+                                -ms-transition:all 600ms ease;
+                                -moz-transition:all 600ms ease;
+                                -webkit-transition:all 600ms ease;
+
+                            `
+
+                        // HIDE CAPTURED IMAGE BLOCK xxxxxxxxxxxxxxxx
+                        // xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+                            setTimeout(() => {
+
+                                getShotSnippetCanvasBoxMain.style = `
+                                
+                                    width:300px;
+                                    height:230px;
+                                    left:0;
+                                    right:0;
+                                    margin:50px 0px 0px 0px;
+                                    opacity:0;
+                                    display:none;
+                                    padding:12px 0px;
+                                    position:relative;
+                                    background:#FFFFFF;
+                                    box-shadow:0px 50px 30px -20px rgba(0,0,0,0.15);
+                                    border-radius:10px;
+                                    transition:all 600ms ease;
+                                    -o-transition:all 600ms ease;
+                                    -ms-transition:all 600ms ease;
+                                    -moz-transition:all 600ms ease;
+                                    -webkit-transition:all 600ms ease;
+
+                                `
+
+                            }, 300)
+
+                    // FADE OUT AND HIDE CAPTURED IMAGE CONTROLS xxxx
+                    // xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+                        // FADE IN CAPTURED IMAGE CONTROLS xxxxxxxxxx
+                        // xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+                            getRetakeConfirmButtonContainerMain.style = `
+                            
+                                width:100%;
+                                height:50px;
+                                display:block;
+                                opacity:0;
+                                position:relative;
+                                margin-top:40px;
+                                transition:all 600ms ease;
+                                -o-transition:all 600ms ease;
+                                -ms-transition:all 600ms ease;
+                                -moz-transition:all 600ms ease;
+                                -webkit-transition:all 600ms ease;
+
+                            `
+
+                        // HIDE CAPTURED IMAGE CONTROLS xxxxxxxxxxxxx
+                        // xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+                            setTimeout(() => {
+
+                                getRetakeConfirmButtonContainerMain.style = `
+                                
+                                    width:100%;
+                                    height:50px;
+                                    display:none;
+                                    opacity:0;
+                                    position:relative;
+                                    margin-top:40px;
+                                    transition:all 600ms ease;
+                                    -o-transition:all 600ms ease;
+                                    -ms-transition:all 600ms ease;
+                                    -moz-transition:all 600ms ease;
+                                    -webkit-transition:all 600ms ease;
+
+                                `
+                                
+                            }, 300);
+
+
+
+            }
+
+                // CLEAR CAPTURE CONTROLS SECTION -------------------
+                // --------------------------------------------------
+
+                    function closePreviewShotControlsSection () {
+
+                        // FADE OUT CAPTURED SHOT CONTROLS ----------
+                        // ------------------------------------------
+
+                            getRetakeConfirmButtonContainerMain.style = `
+                            
+                                width:100%;
+                                height:50px;
+                                display:block;
+                                opacity:0;
+                                position:relative;
+                                margin-top:40px;
+                                transition:all 600ms ease;
+                                -o-transition:all 600ms ease;
+                                -ms-transition:all 600ms ease;
+                                -moz-transition:all 600ms ease;
+                                -webkit-transition:all 600ms ease;
+
+                            `
+
+                        // HIDE CAPTURED SHOT CONTROLS --------------
+                        // ------------------------------------------
+
+                            setTimeout(() => {
+
+                                getRetakeConfirmButtonContainerMain.style = `
+                                
+                                    width:100%;
+                                    height:50px;
+                                    display:none;
+                                    opacity:0;
+                                    position:relative;
+                                    margin-top:40px;
+                                    transition:all 600ms ease;
+                                    -o-transition:all 600ms ease;
+                                    -ms-transition:all 600ms ease;
+                                    -moz-transition:all 600ms ease;
+                                    -webkit-transition:all 600ms ease;
+    
+                                `
+
+                            }, 300)
+
+                    }
+                    
+
+        // CLEAR DATA CAPTURE SECTION -------------------------------
+        // ----------------------------------------------------------
+
+            function closeDataUrlSection () {
+
+
+
+                // ERASE DATA URL SECTION AND ELEMENTS xxxxxxxxxxxxxx
+                // xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+                    // ERASE DATA URL TEXT IN USER FORM xxxxxxxxxxxxx
+                    // xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+                        getShotHeaderDataUrl.textContent = "shot data url"
+
+                    // ERASE DATA URL TEXT IN SUBMIT FORM xxxxxxxxxxx
+                    // xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+            }
+
+        // CLEAR DATA CAPTURE SECTION -------------------------------
+        // ----------------------------------------------------------
+
+        // CLEAR RATINGS CAPTURE SECTION ----------------------------
+        // ----------------------------------------------------------
+
+        // CLEAR CALORIE ESTIMATES CAPTURE SECTION ------------------
+        // ----------------------------------------------------------
+
+        // CLEAR COMMENTS CAPTURE SECTION ---------------------------
+        // ----------------------------------------------------------
+
+
+
+
+
+
+
+
+
 
     // NAV BAR FUNCTIONS --------------------------------------------
     // //////////////////////////////////////////////////////////////
@@ -214,7 +897,7 @@
                 // DECLARE VARIABLES FOR USE ------------------------
                 // //////////////////////////////////////////////////
 
-                    var getAreaDropDownMain = document.querySelector(`.cameraSnapDropDownAreaSelectSide`)
+                    var getAreaDropDownMain = document.querySelector(`.cameraShotDropDownAreaSelectSide`)
 
 
 
@@ -248,8 +931,8 @@
                                     var makeAreaDropDownItem = document.createElement("div")
                                     var makeAreaDropDownItemButton = document.createElement("div")
     
-                                    makeAreaDropDownItem.className = `cameraSnapAreaDropAreaDownContentsItem${classNumbers[areaItemCounter]}Container`
-                                    makeAreaDropDownItemButton.className = `cameraSnapAreaDropAreaDownContentsItem${classNumbers[areaItemCounter]}Resizer`
+                                    makeAreaDropDownItem.className = `cameraShotAreaDropAreaDownContentsItem${classNumbers[areaItemCounter]}Container`
+                                    makeAreaDropDownItemButton.className = `cameraShotAreaDropAreaDownContentsItem${classNumbers[areaItemCounter]}Resizer`
     
     
                                 
@@ -306,8 +989,8 @@
                                 // UPDATE CLASSNAMES IN ARRAY -----------
                                 // //////////////////////////////////////
 
-                                    captureLocationItemClassNames.push(`cameraSnapAreaDropAreaDownContentsItem${classNumbers[areaItemCounter]}Container`)
-                                    captureLocationItemActualClassNames.push(`cameraSnapAreaDropAreaDownContentsItem${classNumbers[areaItemCounter]}Resizer`)
+                                    captureLocationItemClassNames.push(`cameraShotAreaDropAreaDownContentsItem${classNumbers[areaItemCounter]}Container`)
+                                    captureLocationItemActualClassNames.push(`cameraShotAreaDropAreaDownContentsItem${classNumbers[areaItemCounter]}Resizer`)
     
     
                                 
@@ -447,13 +1130,7 @@
 
 
             }
-
-
-
-
-
-
-            
+                
 
         // POPULATE DROP DOWN DINER SELECTION FUNCTIONS -------------
         // //////////////////////////////////////////////////////////
@@ -463,7 +1140,7 @@
                 // DECLARE VARIABLES FOR USE ------------------------
                 // //////////////////////////////////////////////////
 
-                    var getDinerDropDownMain = document.querySelector(`.cameraSnapDropDownDinerSelectSide`)
+                    var getDinerDropDownMain = document.querySelector(`.cameraShotDropDownDinerSelectSide`)
 
 
 
@@ -530,8 +1207,8 @@
                                     var makeDinerDropDownItem = document.createElement("div")
                                     var makeDinerDropDownItemButton = document.createElement("div")
     
-                                    makeDinerDropDownItem.className = `cameraSnapDinerDropDinerDownContentsItem${classNumbers[dineItemCounter]}Container`
-                                    makeDinerDropDownItemButton.className = `cameraSnapDinerDropDinerDownContentsItem${classNumbers[dineItemCounter]}Resizer`
+                                    makeDinerDropDownItem.className = `cameraShotDinerDropDinerDownContentsItem${classNumbers[dineItemCounter]}Container`
+                                    makeDinerDropDownItemButton.className = `cameraShotDinerDropDinerDownContentsItem${classNumbers[dineItemCounter]}Resizer`
     
     
                                 
@@ -580,8 +1257,8 @@
                                 // UPDATE TEXT OF BUTTON ----------------
                                 // //////////////////////////////////////
 
-                                    captureDinerItemClassNames.push(`cameraSnapDinerDropDinerDownContentsItem${classNumbers[dineItemCounter]}Container`)
-                                    captureDinerItemActualClassNames.push(`cameraSnapDinerDropDinerDownContentsItem${classNumbers[dineItemCounter]}Resizer`)
+                                    captureDinerItemClassNames.push(`cameraShotDinerDropDinerDownContentsItem${classNumbers[dineItemCounter]}Container`)
+                                    captureDinerItemActualClassNames.push(`cameraShotDinerDropDinerDownContentsItem${classNumbers[dineItemCounter]}Resizer`)
     
     
                                 
@@ -717,13 +1394,7 @@
                             })
 
             }
-
-
-
-
-
-
-            
+                
 
         // DROP DOWN CLICKERS FUNCTIONS -----------------------------
         // //////////////////////////////////////////////////////////
@@ -872,13 +1543,7 @@
                                 }, 50)
 
                 }
-
-
-
-
-
-
-        
+                
 
             // DROP DOWN AREA SELECT CLOSE CLICKER ------------------
             // //////////////////////////////////////////////////////
@@ -888,8 +1553,8 @@
                     // DECLARE VARIABLES ----------------------------
                     // //////////////////////////////////////////////
 
-                        var getAreaSelectSlider = document.querySelector(`.cameraSnapAreaDropAreaDownSliderContainer`)
-                        var getAreaSelectSecondSide = document.querySelector(`.cameraSnapDropDownDinerSelectSide`)
+                        var getAreaSelectSlider = document.querySelector(`.cameraShotAreaDropAreaDownSliderContainer`)
+                        var getAreaSelectSecondSide = document.querySelector(`.cameraShotDropDownDinerSelectSide`)
 
                     // BRING OPEN CLICKER TO FRONT ------------------
                     // //////////////////////////////////////////////
@@ -1066,14 +1731,55 @@
 
                 }
 
-    // VIDEO CAPTURE FUNCTIONS --------------------------------------
+
+    // RETAKE CONFIRM PICTURE FUNCTIONS -----------------------------
     // //////////////////////////////////////////////////////////////
 
-    // BASE 64 CONVERT FUNCTIONS ------------------------------------
-    // //////////////////////////////////////////////////////////////
+        // RETAKE PICTURE FUNCTIONS ---------------------------------
+        // //////////////////////////////////////////////////////////
 
-    // TRANSLATE TO FORM FUNCTIONS ----------------------------------
-    // //////////////////////////////////////////////////////////////
+            function retakeImage () {
+
+
+
+                // REOPEN CAPTURE IMAGE SECTION ---------------------
+                // //////////////////////////////////////////////////
+
+                    reOpenCameraViewSection()
+
+
+
+                // CLOSE PREVIEW SHOT SECTION -----------------------
+                // //////////////////////////////////////////////////
+
+                    closePreviewShotSection()
+
+
+
+                // ERASE DATA URL SECTION ---------------------------
+                // //////////////////////////////////////////////////
+
+                    closeDataUrlSection()
+                    
+                    
+
+            }
+
+        // CONFIRM PICTURE FUNCTIONS --------------------------------
+        // //////////////////////////////////////////////////////////
+
+            function confirmImage () {
+
+
+
+                // CLOSE PREVIEW SHOT CONTROLS SECTION --------------
+                // //////////////////////////////////////////////////
+
+                    closePreviewShotControlsSection()
+
+
+
+            }
 
 
 
@@ -1081,9 +1787,6 @@
 
 // MAKE EVENTS FOR ENTIRE PAGE --------------------------------------
 // //////////////////////////////////////////////////////////////////
-
-    // NAV BAR EVENTS -----------------------------------------------
-    // //////////////////////////////////////////////////////////////
 
     // SETUP STREAM VIDEO EVENTS ------------------------------------
     // //////////////////////////////////////////////////////////////
@@ -1113,21 +1816,142 @@
 
                 getCamBox.srcObject = stream;
 
+            // INLINE STYLES FOR INTRO TEXT >>>>>>>>>>>>>>>>>>>>>>>>>
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                getStartCaptureIntroTextMainContainer.style.display = `none`
+
             // INLINE STYLES FOR STREAM BOX >>>>>>>>>>>>>>>>>>>>>>>>>
             // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
                 getCamBox.style.display = `block`;
                 getStartPicButton.style.display = `none`;
-                getSnapshotButton.style.display = `block`;
+                getShotButton.style.display = `block`;
+
+
+
+
+
+
+
+            // MAKE LIVE AND FADE IN CAM CAPTURE BOX ITEMS >>>>>>>>>>
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                // MAKE LIVE CAM BOX >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                    getCamBoxMain.style = `
+                    
+                        width:300px;
+                        height:230px;
+                        left:0;
+                        right:0;
+                        margin:40px 0px 0px 0px;
+                        opacity:0;
+                        display:block;
+                        position:relative;
+                        background:#FFFFFF;
+                        box-shadow:0px 50px 30px -20px rgba(0,0,0,0.15);
+                        border-radius:10px;
+                        transition:all 600ms ease;
+                        -o-transition:all 600ms ease;
+                        -ms-transition:all 600ms ease;
+                        -moz-transition:all 600ms ease;
+                        -webkit-transition:all 600ms ease;
+
+                    `
+
+                // MAKE LIVE CAM CAPTURE BUTTON >>>>>>>>>>>>>>>>>>>>>
+                // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                    getShotButtonMainContainer.style = `
+                    
+                        width:100%;
+                        height:50px;
+                        display:block;
+                        opacity:0;
+                        position:relative;
+                        margin-top:50px;
+                        transition:all 600ms ease;
+                        -o-transition:all 600ms ease;
+                        -ms-transition:all 600ms ease;
+                        -moz-transition:all 600ms ease;
+                        -webkit-transition:all 600ms ease;
+
+                    `
+
+                // FADE IN CAM BOX >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                    setTimeout(() => {
+
+                        getCamBoxMain.style = `
+                        
+                            width:300px;
+                            height:230px;
+                            left:0;
+                            right:0;
+                            margin:20px 0px 0px 0px;
+                            opacity:1;
+                            display:block;
+                            position:relative;
+                            background:#FFFFFF;
+                            box-shadow:0px 50px 30px -20px rgba(0,0,0,0.15);
+                            border-radius:10px;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+    
+                        `
+
+                    }, 50)
+
+                // FADE IN CAM BOX CAPTURE BUTTON >>>>>>>>>>>>>>>>>>>
+                // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                    setTimeout(() => {
+
+                        getShotButtonMainContainer.style = `
+                        
+                            width:100%;
+                            height:50px;
+                            display:block;
+                            opacity:1;
+                            position:relative;
+                            margin-top:30px;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                    }, 50)
 
         })
 
-    // SNAP SHOT CAPTURE EVENTS -------------------------------------
+    // SHOT CAPTURE EVENTS ------------------------------------------
     // //////////////////////////////////////////////////////////////
 
-        getSnapshotButton.addEventListener("click", function () {
+        getShotButton.addEventListener("click", function () {
 
-            // DRAW SNAPPED IMAGE TO CANVAS -------------------------
+
+            // CLOSE CAMERA VIEW SECTION ----------------------------
+            // //////////////////////////////////////////////////////
+
+                closeMainCaptureSection()
+
+
+            // REOPEN SHOT PREVIEW SECTION --------------------------
+            // //////////////////////////////////////////////////////
+
+                reOpenCapturedShotSection()
+            
+            
+            // DRAW SHOT IMAGE TO CANVAS ----------------------------
             // //////////////////////////////////////////////////////
 
                 getCamSnipDisplay.getContext("2d").drawImage(getCamBox, 0, 0, getCamSnipDisplay.width, getCamSnipDisplay.height);
@@ -1138,10 +1962,11 @@
 
                 let imageDataHeaderUrlText = getCamSnipDisplay.toDataURL(`image/jpeg`);
 
-                    getSnappedHeaderDataUrl.textContent = imageDataHeaderUrlText
+                    getShotHeaderDataUrl.textContent = imageDataHeaderUrlText
 
 
         })
+
 
     // CAPTURE AREA EVENTS ------------------------------------------
     // //////////////////////////////////////////////////////////////
@@ -1170,17 +1995,14 @@
         // POPULATE DROP DOWN AREA ----------------------------------
         // //////////////////////////////////////////////////////////
 
+
+
+
+
+
+
     // CAPTURE RATINGS EVENTS ---------------------------------------
     // //////////////////////////////////////////////////////////////
-
-
-
-
-
-
-
-
-
 
         // RATING STAR CLICKER ONE ----------------------------------
         // //////////////////////////////////////////////////////////
@@ -1518,13 +2340,6 @@
                 })
 
 
-
-
-
-
-
-
-
             // CLICKER OFF ------------------------------------------
             // ------------------------------------------------------
 
@@ -1705,15 +2520,7 @@
 
 
                 })
-
-    
-
-
-
-
-
-
-
+                
 
         // RATING STAR CLICKER TWO ----------------------------------
         // //////////////////////////////////////////////////////////
@@ -2049,14 +2856,7 @@
 
 
                 })
-
-
-
-
-
-
-
-
+                
 
             // CLICKER OFF ------------------------------------------
             // ------------------------------------------------------
@@ -2238,15 +3038,7 @@
 
 
                 })
-
-    
-
-
-
-
-
-
-
+                
 
         // RATING STAR CLICKER THREE --------------------------------
         // //////////////////////////////////////////////////////////
@@ -2582,14 +3374,7 @@
 
 
                 })
-
-
-
-
-
-
-
-
+                
 
             // CLICKER OFF ------------------------------------------
             // ------------------------------------------------------
@@ -2771,15 +3556,7 @@
 
 
                 })
-
-    
-
-
-
-
-
-
-
+                
 
         // RATING STAR CLICKER FOUR ---------------------------------
         // //////////////////////////////////////////////////////////
@@ -3115,14 +3892,7 @@
 
 
                 })
-
-
-
-
-
-
-
-
+                
 
             // CLICKER OFF ------------------------------------------
             // ------------------------------------------------------
@@ -3304,15 +4074,7 @@
 
 
                 })
-
-    
-
-
-
-
-
-
-
+                
 
         // RATING STAR CLICKER FIVE ---------------------------------
         // //////////////////////////////////////////////////////////
@@ -3648,14 +4410,7 @@
 
 
                 })
-
-
-
-
-
-
-
-
+                
 
             // CLICKER OFF ------------------------------------------
             // ------------------------------------------------------
@@ -3841,11 +4596,26 @@
 
 
 
-    // BASE 64 CONVERT EVENTS ---------------------------------------
+    // RETAKE CONFIRM PICTURE EVENTS --------------------------------
     // //////////////////////////////////////////////////////////////
 
-    // TRANSLATE TO FORM EVENTS -------------------------------------
-    // //////////////////////////////////////////////////////////////
+        // RETAKE PICTURE EVENTS ------------------------------------
+        // //////////////////////////////////////////////////////////
+
+            getRetakeButtonActual.addEventListener("click", function () {
+
+                retakeImage()
+
+            })
+
+        // CONFIRM PICTURE EVENTS -----------------------------------
+        // //////////////////////////////////////////////////////////
+
+            getConfirmButtonActual.addEventListener("click", function () {
+
+                confirmImage()
+
+            })
 
 
 
@@ -3854,15 +4624,6 @@
 // MAKE AUTORUNS FOR ENTIRE PAGE ------------------------------------
 // //////////////////////////////////////////////////////////////////
 
-    // NAV BAR AUTORUN EVENTS ---------------------------------------
-    // //////////////////////////////////////////////////////////////
-
-    // SETUP STREAM VIDEO AUTORUN EVENTS ----------------------------
-    // //////////////////////////////////////////////////////////////
-
-    // SNAP SHOT CAPTURE AUTORUN EVENTS -----------------------------
-    // //////////////////////////////////////////////////////////////
-
     // CAPTURE AREA AUTORUN EVENTS ----------------------------------
     // //////////////////////////////////////////////////////////////
 
@@ -3870,9 +4631,3 @@
         // //////////////////////////////////////////////////////////
 
             populateAreaDropDownItems()
-
-    // BASE 64 CONVERT AUTORUN EVENTS -------------------------------
-    // //////////////////////////////////////////////////////////////
-
-    // TRANSLATE TO FORM AUTORUN EVENTS -----------------------------
-    // //////////////////////////////////////////////////////////////
