@@ -137,16 +137,20 @@
 
                 var getCommentsSectionMainContainer = document.querySelector(`.cameraShotMakeCommentContainer`)
 
+                var getCommentsSectioninput = document.querySelector(`.cameraShotMakeCommentInputActual`)
+
 
 
         // VARIABLES FOR SUBMIT FORM --------------------------------
         // //////////////////////////////////////////////////////////
 
-            var getImageFormCollect = document.querySelector(`.userImageConverted`)
-            var getAreaFormCollect = document.querySelector(`.userArea`)
-            var getRatingsFormCollect = document.querySelector(`.userRatings`)
-            var getCaloriesFormCollect = document.querySelector(`.userCalories`)
-            var getCommentsFormCollect = document.querySelector(`.userComments`)
+            var getImageFormCollect = document.querySelector(`.submitImageConvertedStringInputContainer`).children[0]
+            var getAreaFormCollect = document.querySelector(`.submitAreaStringInputContainer`).children[0]
+            var getRatingsFormCollect = document.querySelector(`.submitRatingsStringInputContainer`).children[0]
+            var getCaloriesFormCollect = document.querySelector(`.submitCaloriesStringInputContainer`).children[0]
+            var getCommentsFormCollect = document.querySelector(`.submitCommentsStringInputContainer`).children[0]
+
+            var getSubmitButtonMain = document.querySelector(`.submitButtonContainer`)
 
         
 
@@ -1390,10 +1394,182 @@
     // RETAKE CONFIRM PICTURE FUNCTIONS -----------------------------
     // //////////////////////////////////////////////////////////////
 
+        // START STREAM FUNCTIONS -----------------------------------
+        // //////////////////////////////////////////////////////////
+
+            async function startStream () {
+
+                
+
+            // START THE STREAM >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                let stream = null;
+
+                    try {
+
+                        stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: false});
+
+                    }
+
+                    catch (error) {
+
+                        alert(error.message);
+                        return;
+
+                    }
+
+            // STREAM VIDEO CAPTURE TO CAMERA BOX ON PAGE >>>>>>>>>>>
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                getCamBox.srcObject = stream;
+
+            // INLINE STYLES FOR INTRO TEXT >>>>>>>>>>>>>>>>>>>>>>>>>
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                getStartCaptureIntroTextMainContainer.style.display = `none`
+
+            // INLINE STYLES FOR STREAM BOX >>>>>>>>>>>>>>>>>>>>>>>>>
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                getCamBox.style.display = `block`;
+                getStartPicButton.style.display = `none`;
+                getShotButton.style.display = `block`;
+
+
+
+
+
+
+
+            // MAKE LIVE AND FADE IN CAM CAPTURE BOX ITEMS >>>>>>>>>>
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                // MAKE LIVE CAM BOX >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                    getCamBoxMain.style = `
+                    
+                        width:300px;
+                        height:230px;
+                        left:0;
+                        right:0;
+                        margin:40px 0px 0px 0px;
+                        opacity:0;
+                        display:block;
+                        position:relative;
+                        background:#FFFFFF;
+                        box-shadow:0px 50px 30px -20px rgba(0,0,0,0.15);
+                        border-radius:10px;
+                        transition:all 600ms ease;
+                        -o-transition:all 600ms ease;
+                        -ms-transition:all 600ms ease;
+                        -moz-transition:all 600ms ease;
+                        -webkit-transition:all 600ms ease;
+
+                    `
+
+                // MAKE LIVE CAM CAPTURE BUTTON >>>>>>>>>>>>>>>>>>>>>
+                // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                    getShotButtonMainContainer.style = `
+                    
+                        width:100%;
+                        height:50px;
+                        display:block;
+                        opacity:0;
+                        position:relative;
+                        margin-top:50px;
+                        transition:all 600ms ease;
+                        -o-transition:all 600ms ease;
+                        -ms-transition:all 600ms ease;
+                        -moz-transition:all 600ms ease;
+                        -webkit-transition:all 600ms ease;
+
+                    `
+
+                // FADE IN CAM BOX >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                    setTimeout(() => {
+
+                        getCamBoxMain.style = `
+                        
+                            width:300px;
+                            height:230px;
+                            left:0;
+                            right:0;
+                            margin:20px 0px 0px 0px;
+                            opacity:1;
+                            display:block;
+                            position:relative;
+                            background:#FFFFFF;
+                            box-shadow:0px 50px 30px -20px rgba(0,0,0,0.15);
+                            border-radius:10px;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+    
+                        `
+
+                    }, 50)
+
+                // FADE IN CAM BOX CAPTURE BUTTON >>>>>>>>>>>>>>>>>>>
+                // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                    setTimeout(() => {
+
+                        getShotButtonMainContainer.style = `
+                        
+                            width:100%;
+                            height:50px;
+                            display:block;
+                            opacity:1;
+                            position:relative;
+                            margin-top:30px;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                    }, 50)
+
+            }
+
         // RETAKE PICTURE FUNCTIONS ---------------------------------
         // //////////////////////////////////////////////////////////
 
-            function retakeImage () {
+            async function retakeImage () {
+
+
+
+                // START THE STREAM >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                    let stream = null;
+
+                        try {
+
+                            stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: false});
+
+                        }
+
+                        catch (error) {
+
+                            alert(error.message);
+                            return;
+
+                        }
+
+                // STREAM VIDEO CAPTURE TO CAMERA BOX ON PAGE >>>>>>>
+                // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                    getCamBox.srcObject = stream;
 
 
 
@@ -2331,6 +2507,11 @@
                     // //////////////////////////////////////////////
 
                         getDropDownSelectedAreaTextContainer.textContent = selectedAreaText
+
+                    // UPDATE FORM INPUT FOR SELECTED DISPLAY WITH SELECTED AREA
+                    // //////////////////////////////////////////////
+
+                        getAreaFormCollect.value = selectedAreaText
 
                 }
                 
@@ -4950,6 +5131,156 @@
     // COMMENTS SECTION FUNCTIONS -----------------------------------
     // //////////////////////////////////////////////////////////////
 
+        function makeComments () {
+
+            // UPDATE FORM WITH UPDATED COMMENTS SECTION ------------
+            // //////////////////////////////////////////////////////
+
+                // CHECK IF EMPTY OR NOT ----------------------------
+                // //////////////////////////////////////////////////
+
+                    // IF EMPTY THEN HIDE SUBMIT BUTTON -------------
+                    // //////////////////////////////////////////////
+
+                        if ( getCommentsSectioninput.value.length < 50 ) {
+
+                            // UPDATE FORM TO DEFAULT EMPTY SLOT ----
+                            // //////////////////////////////////////
+
+                                getCommentsFormCollect.value = ""
+
+                            // CHECK IF SUBMIT BUTTON IS ALREADY DEAD
+                            // //////////////////////////////////////
+
+                                // IF BUTTON IS ALREADY DEAD --------
+                                // //////////////////////////////////
+
+                                    if ( getSubmitButtonMain.style.display == `none` ) {
+
+                                        console.log("ALREADY DEAD...")
+
+                                    }
+
+                                // IF BUTTON IS STILL ALIVE --------
+                                // //////////////////////////////////
+
+                                    else {
+
+
+
+                                        // FADE OUT SUBMIT BUTTON ---
+                                        // //////////////////////////
+
+                                            getSubmitButtonMain.style = `
+                                            
+                                                width:100%;
+                                                margin:40px 0px 0px 0px;
+                                                display:block;
+                                                opacity:0;
+                                                transition:all 600ms ease;
+                                                -o-transition:all 600ms ease;
+                                                -ms-transition:all 600ms ease;
+                                                -moz-transition:all 600ms ease;
+                                                -webkit-transition:all 600ms ease;
+
+                                            `
+
+                                                // HIDE SUBMIT BUTTON
+                                                // //////////////////
+
+                                                    setTimeout(() => {
+
+                                                        getSubmitButtonMain.style = `
+                                            
+                                                            width:100%;
+                                                            margin:40px 0px 0px 0px;
+                                                            display:none;
+                                                            opacity:0;
+                                                            transition:all 600ms ease;
+                                                            -o-transition:all 600ms ease;
+                                                            -ms-transition:all 600ms ease;
+                                                            -moz-transition:all 600ms ease;
+                                                            -webkit-transition:all 600ms ease;
+
+                                                        `
+
+                                                    }, 300)
+
+                                    }
+
+                        }
+
+                    // IF NOT EMPTY THEN SHOW SUBMIT BUTTON ---------
+                    // //////////////////////////////////////////////
+
+                        else {
+
+                            // UPDATE FORM TO DEFAULT EMPTY SLOT ----
+                            // //////////////////////////////////////
+
+                                getCommentsFormCollect.value = getCommentsSectioninput.value
+
+                            // FADE IN SUBMIT BUTTON ----------------
+                            // //////////////////////////////////////
+
+                                // CHECK IF BUTTON ALREADY IS LIVE --
+                                // //////////////////////////////////
+
+                                    if ( getSubmitButtonMain.style.display == `block` ) {
+
+                                        console.log("EXISTS...")
+
+                                    }
+
+                                // AND IF BUTTON IS NOT LIVE --------
+                                // //////////////////////////////////
+
+                                    else {
+
+                                        // MAKE LIVE SUBMIT BUTTON --
+                                        // //////////////////////////
+
+                                            getSubmitButtonMain.style = `
+                                
+                                                width:100%;
+                                                margin:40px 0px 0px 0px;
+                                                display:block;
+                                                opacity:0;
+                                                transition:all 600ms ease;
+                                                -o-transition:all 600ms ease;
+                                                -ms-transition:all 600ms ease;
+                                                -moz-transition:all 600ms ease;
+                                                -webkit-transition:all 600ms ease;
+
+                                            `
+
+                                                // FADE IN SUBMIT BUTTON
+                                                // //////////////////
+
+                                                    setTimeout(() => {
+
+                                                        getSubmitButtonMain.style = `
+                                
+                                                            width:100%;
+                                                            margin:20px 0px 0px 0px;
+                                                            display:block;
+                                                            opacity:1;
+                                                            transition:all 600ms ease;
+                                                            -o-transition:all 600ms ease;
+                                                            -ms-transition:all 600ms ease;
+                                                            -moz-transition:all 600ms ease;
+                                                            -webkit-transition:all 600ms ease;
+
+                                                        `
+
+                                                    }, 50)
+
+                                    }
+
+                        }
+
+        }
+
 
 
 
@@ -4978,145 +5309,9 @@
     // SETUP STREAM VIDEO EVENTS ------------------------------------
     // //////////////////////////////////////////////////////////////
 
-        getStartPicButton.addEventListener("click", async function () {
+        getStartPicButton.addEventListener("click", function () {
 
-            // START THE STREAM >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
-                let stream = null;
-
-                    try {
-
-                        stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: false});
-
-                    }
-
-                    catch (error) {
-
-                        alert(error.message);
-                        return;
-
-                    }
-
-            // STREAM VIDEO CAPTURE TO CAMERA BOX ON PAGE >>>>>>>>>>>
-            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
-                getCamBox.srcObject = stream;
-
-            // INLINE STYLES FOR INTRO TEXT >>>>>>>>>>>>>>>>>>>>>>>>>
-            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
-                getStartCaptureIntroTextMainContainer.style.display = `none`
-
-            // INLINE STYLES FOR STREAM BOX >>>>>>>>>>>>>>>>>>>>>>>>>
-            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
-                getCamBox.style.display = `block`;
-                getStartPicButton.style.display = `none`;
-                getShotButton.style.display = `block`;
-
-
-
-
-
-
-
-            // MAKE LIVE AND FADE IN CAM CAPTURE BOX ITEMS >>>>>>>>>>
-            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
-                // MAKE LIVE CAM BOX >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-                // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
-                    getCamBoxMain.style = `
-                    
-                        width:300px;
-                        height:230px;
-                        left:0;
-                        right:0;
-                        margin:40px 0px 0px 0px;
-                        opacity:0;
-                        display:block;
-                        position:relative;
-                        background:#FFFFFF;
-                        box-shadow:0px 50px 30px -20px rgba(0,0,0,0.15);
-                        border-radius:10px;
-                        transition:all 600ms ease;
-                        -o-transition:all 600ms ease;
-                        -ms-transition:all 600ms ease;
-                        -moz-transition:all 600ms ease;
-                        -webkit-transition:all 600ms ease;
-
-                    `
-
-                // MAKE LIVE CAM CAPTURE BUTTON >>>>>>>>>>>>>>>>>>>>>
-                // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
-                    getShotButtonMainContainer.style = `
-                    
-                        width:100%;
-                        height:50px;
-                        display:block;
-                        opacity:0;
-                        position:relative;
-                        margin-top:50px;
-                        transition:all 600ms ease;
-                        -o-transition:all 600ms ease;
-                        -ms-transition:all 600ms ease;
-                        -moz-transition:all 600ms ease;
-                        -webkit-transition:all 600ms ease;
-
-                    `
-
-                // FADE IN CAM BOX >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-                // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
-                    setTimeout(() => {
-
-                        getCamBoxMain.style = `
-                        
-                            width:300px;
-                            height:230px;
-                            left:0;
-                            right:0;
-                            margin:20px 0px 0px 0px;
-                            opacity:1;
-                            display:block;
-                            position:relative;
-                            background:#FFFFFF;
-                            box-shadow:0px 50px 30px -20px rgba(0,0,0,0.15);
-                            border-radius:10px;
-                            transition:all 600ms ease;
-                            -o-transition:all 600ms ease;
-                            -ms-transition:all 600ms ease;
-                            -moz-transition:all 600ms ease;
-                            -webkit-transition:all 600ms ease;
-    
-                        `
-
-                    }, 50)
-
-                // FADE IN CAM BOX CAPTURE BUTTON >>>>>>>>>>>>>>>>>>>
-                // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
-                    setTimeout(() => {
-
-                        getShotButtonMainContainer.style = `
-                        
-                            width:100%;
-                            height:50px;
-                            display:block;
-                            opacity:1;
-                            position:relative;
-                            margin-top:30px;
-                            transition:all 600ms ease;
-                            -o-transition:all 600ms ease;
-                            -ms-transition:all 600ms ease;
-                            -moz-transition:all 600ms ease;
-                            -webkit-transition:all 600ms ease;
-
-                        `
-
-                    }, 50)
+            startStream()
 
         })
 
@@ -5149,7 +5344,25 @@
 
                 let imageDataHeaderUrlText = getCamSnipDisplay.toDataURL(`image/jpeg`);
 
-                    getShotHeaderDataUrl.textContent = imageDataHeaderUrlText
+                    // EMPTY OUT ELEMENTS ---------------------------
+                    // //////////////////////////////////////////////
+
+                        getShotHeaderDataUrl.textContent = ""
+
+                        getImageFormCollect.value = 0
+
+                    // REPOPULATE ELEMENTS --------------------------
+                    // //////////////////////////////////////////////
+
+                        getShotHeaderDataUrl.textContent = imageDataHeaderUrlText
+
+                        getImageFormCollect.value = imageDataHeaderUrlText
+
+
+            // CLOSE STREAM -----------------------------------------
+            // //////////////////////////////////////////////////////
+
+                getCamBox.srcObject.getTracks().forEach(track => track.stop())
 
 
         })
@@ -5486,6 +5699,30 @@
                         closeCommentsSection()
 
                 })
+
+
+
+
+
+
+
+    // CAPTURE CALORIES EVENTS --------------------------------------
+    // //////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+    // CAPTURE COMMENTS EVENTS --------------------------------------
+    // //////////////////////////////////////////////////////////////
+
+        getCommentsSectioninput.addEventListener("keyup", function () {
+
+            makeComments()
+
+        })
 
 
 
