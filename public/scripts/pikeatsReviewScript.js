@@ -56,6 +56,10 @@
                     // SHOT LOCATION DROP DOWN MAIN ITEMS CONTAINER -
                     // ----------------------------------------------
 
+                        var getDropDownDownMainContainer = document.querySelector(`.cameraShotAreaDropDownContainer`)
+                        
+                        var getDropDownSelectedAreaTextContainer = document.querySelector(`.cameraShotAreaDropDownItemsSideActualTextContainer`)
+
                         var getAreaDropDownMainItemContainer = document.querySelector(`.cameraShotAreaDropAreaDownContentsContainer`)
                         var getAreaDropDownSlider = document.querySelector(`.cameraShotAreaDropAreaDownSliderContainer`)
 
@@ -63,6 +67,11 @@
 
         // VARIABLES FOR RATINGS CAPTURE ----------------------------
         // //////////////////////////////////////////////////////////
+
+            // STAR RATINGS MAIN CONTAINER --------------------------
+            // ------------------------------------------------------
+
+                var getRatingsMainContainer = document.querySelector(`.cameraShotRatingsContainer`)
 
             // STAR CLICKERS ----------------------------------------
             // ------------------------------------------------------
@@ -107,6 +116,37 @@
                 var getRatingStarThree = document.querySelector(`.cameraShotRatingsAreaStarActualThree`)
                 var getRatingStarFour = document.querySelector(`.cameraShotRatingsAreaStarActualFour`)
                 var getRatingStarFive = document.querySelector(`.cameraShotRatingsAreaStarActualFive`)
+
+
+
+        // VARIABLES FOR CALORIE ESTIMATES CAPTURE ------------------
+        // //////////////////////////////////////////////////////////
+
+            // CALORIE ESTIMATE MAIN CONTAINER ----------------------
+            // ------------------------------------------------------
+
+                var getCalorieEstimateMainContainer = document.querySelector(`.cameraShotCalorieEstimateContainer`)
+
+
+
+        // VARIABLES FOR COMMENTS SECTION CAPTURE -------------------
+        // //////////////////////////////////////////////////////////
+
+            // COMMENTS SECTION MAIN CONTAINER ----------------------
+            // ------------------------------------------------------
+
+                var getCommentsSectionMainContainer = document.querySelector(`.cameraShotMakeCommentContainer`)
+
+
+
+        // VARIABLES FOR SUBMIT FORM --------------------------------
+        // //////////////////////////////////////////////////////////
+
+            var getImageFormCollect = document.querySelector(`.userImageConverted`)
+            var getAreaFormCollect = document.querySelector(`.userArea`)
+            var getRatingsFormCollect = document.querySelector(`.userRatings`)
+            var getCaloriesFormCollect = document.querySelector(`.userCalories`)
+            var getCommentsFormCollect = document.querySelector(`.userComments`)
 
         
 
@@ -218,16 +258,6 @@
 
 // MAKE FUNCTIONS FOR ENTIRE PAGE -----------------------------------
 // //////////////////////////////////////////////////////////////////
-
-
-
-
-
-
-
-
-
-
 
     // --------------------------------------------------------------
     // MAKE LIVE FUNCTIONS ------------------------------------------
@@ -528,26 +558,255 @@
         // REMAKE DATA CAPTURE SECTION ------------------------------
         // ----------------------------------------------------------
 
-        // REMAKE RATINGS CAPTURE SECTION ---------------------------
+        // REMAKE SELECT AREA SECTION -------------------------------
         // ----------------------------------------------------------
 
             function reOpenSelectAreaSection () {
 
 
 
-                // MAKE LIVE AND FADE IN AREA SELECT AND CONTROLS >>>>>>>
-                // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                // MAKE LIVE AND FADE IN AREA SELECT AND CONTROLS >>>
+                // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
     
-                    // MAKE LIVE SELECT AREA >>>>>>>>>>>>>>>>>>>>>>>>>>>>
-                    // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                    // MAKE LIVE SELECT AREA >>>>>>>>>>>>>>>>>>>>>>>>
+                    // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                        getDropDownDownMainContainer.style = `
+                        
+                            width:300px;
+                            height:50px;
+                            margin:20px 0px 0px 0px;
+                            opacity:0;
+                            display:inline-block;
+                            position:relative;
+                            box-shadow:0px 30px 30px -10px rgba(0,0,0,0.15);
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+
+
+
+
+
+
+
+
+
+
+                    // FADE IN SELECTED AREA BOX >>>>>>>>>>>>>>>>>>>>
+                    // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                        setTimeout(() => {
+
+                            getDropDownDownMainContainer.style = `
+                            
+                                width:300px;
+                                height:50px;
+                                margin:0px 0px 0px 0px;
+                                opacity:1;
+                                display:inline-block;
+                                position:relative;
+                                box-shadow:0px 30px 30px -10px rgba(0,0,0,0.15);
+                                transition:all 600ms ease;
+                                -o-transition:all 600ms ease;
+                                -ms-transition:all 600ms ease;
+                                -moz-transition:all 600ms ease;
+                                -webkit-transition:all 600ms ease;
+    
+                            `
+
+                        }, 50)
+
+            }
+
+        // REMAKE RATINGS CAPTURE SECTION ---------------------------
+        // ----------------------------------------------------------
+
+            function reOpenRatingsSection () {
+
+
+
+                // MAKE LIVE AND FADE IN RATINGS >>>>>>>>>>>>>>>>>>>>
+                // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    
+                    // MAKE LIVE RATINGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                    // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                        getRatingsMainContainer.style = `
+                        
+                            width:300px;
+                            opacity:0;
+                            display:block;
+                            margin-top:40px;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+
+
+
+
+
+
+
+
+
+
+                    // FADE IN RATINGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                    // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                        setTimeout(() => {
+
+                            getRatingsMainContainer.style = `
+                            
+                                width:300px;
+                                opacity:1;
+                                display:block;
+                                margin-top:20px;
+                                transition:all 600ms ease;
+                                -o-transition:all 600ms ease;
+                                -ms-transition:all 600ms ease;
+                                -moz-transition:all 600ms ease;
+                                -webkit-transition:all 600ms ease;
+
+                            `
+
+                        }, 50)
 
             }
 
         // REMAKE CALORIE ESTIMATES CAPTURE SECTION -----------------
         // ----------------------------------------------------------
 
+            function reOpenCalorieEstimateSection () {
+
+
+
+                // MAKE LIVE AND FADE IN RATINGS >>>>>>>>>>>>>>>>>>>>
+                // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    
+                    // MAKE LIVE RATINGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                    // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                        getCalorieEstimateMainContainer.style = `
+                        
+                            width:300px;
+                            opacity:0;
+                            display:block;
+                            margin-top:40px;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+
+
+
+
+
+
+
+
+
+
+                    // FADE IN RATINGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                    // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                        setTimeout(() => {
+
+                            getCalorieEstimateMainContainer.style = `
+                        
+                                width:300px;
+                                opacity:1;
+                                display:block;
+                                margin-top:20px;
+                                transition:all 600ms ease;
+                                -o-transition:all 600ms ease;
+                                -ms-transition:all 600ms ease;
+                                -moz-transition:all 600ms ease;
+                                -webkit-transition:all 600ms ease;
+
+                            `
+
+                        }, 50)
+
+
+
+            }
+
         // REMAKE COMMENTS CAPTURE SECTION --------------------------
         // ----------------------------------------------------------
+
+            function reOpenCommentsSection () {
+
+
+
+                // MAKE LIVE AND FADE IN COMMENTS >>>>>>>>>>>>>>>>>>>
+                // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    
+                    // MAKE LIVE COMMENTS >>>>>>>>>>>>>>>>>>>>>>>>>>>
+                    // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                        getCommentsSectionMainContainer.style = `
+                        
+                            width:300px;
+                            opacity:0;
+                            display:block;
+                            margin-top:40px;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+
+
+
+
+
+
+
+
+
+
+                    // FADE IN COMMENTS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                    // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                        setTimeout(() => {
+
+                            getCommentsSectionMainContainer.style = `
+                        
+                                width:300px;
+                                opacity:1;
+                                display:block;
+                                margin-top:20px;
+                                transition:all 600ms ease;
+                                -o-transition:all 600ms ease;
+                                -ms-transition:all 600ms ease;
+                                -moz-transition:all 600ms ease;
+                                -webkit-transition:all 600ms ease;
+
+                            `
+
+                        }, 50)
+
+
+
+            }
 
 
 
@@ -862,17 +1121,259 @@
 
             }
 
-        // CLEAR DATA CAPTURE SECTION -------------------------------
+        // CLEAR SELECT AREA SECTION --------------------------------
         // ----------------------------------------------------------
+
+            function closeSelectAreaSection () {
+
+
+
+                // HIDE AND FADE IN AREA SELECT AND CONTROLS >>>>>>>>
+                // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    
+                    // FADE OUT SELECT AREA >>>>>>>>>>>>>>>>>>>>>>>>>
+                    // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                        getDropDownDownMainContainer.style = `
+                        
+                            width:300px;
+                            height:50px;
+                            margin:20px 0px 0px 0px;
+                            opacity:0;
+                            display:inline-block;
+                            position:relative;
+                            box-shadow:0px 30px 30px -10px rgba(0,0,0,0.15);
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+
+
+
+
+
+
+
+
+
+
+                    // HIDE SELECTED AREA BOX >>>>>>>>>>>>>>>>>>>>>>>
+                    // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                        setTimeout(() => {
+
+                            getDropDownDownMainContainer.style = `
+                        
+                                width:300px;
+                                height:50px;
+                                margin:20px 0px 0px 0px;
+                                opacity:0;
+                                display:none;
+                                position:relative;
+                                box-shadow:0px 30px 30px -10px rgba(0,0,0,0.15);
+                                transition:all 600ms ease;
+                                -o-transition:all 600ms ease;
+                                -ms-transition:all 600ms ease;
+                                -moz-transition:all 600ms ease;
+                                -webkit-transition:all 600ms ease;
+
+                            `
+                            
+                        }, 300);
+
+            }
 
         // CLEAR RATINGS CAPTURE SECTION ----------------------------
         // ----------------------------------------------------------
 
+            function closeRatingsSection () {
+
+
+
+                // HIDE AND FADE IN RATINGS >>>>>>>>>>>>>>>>>>>>>>>>>
+                // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    
+                    // FADE OUT RATINGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                    // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                        getRatingsMainContainer.style = `
+                        
+                            width:300px;
+                            opacity:0;
+                            display:block;
+                            margin-top:40px;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+
+
+
+
+
+
+
+
+
+
+                    // HIDE RATINGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                    // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                        setTimeout(() => {
+
+                            getRatingsMainContainer.style = `
+                            
+                                width:300px;
+                                opacity:0;
+                                display:none;
+                                margin-top:40px;
+                                transition:all 600ms ease;
+                                -o-transition:all 600ms ease;
+                                -ms-transition:all 600ms ease;
+                                -moz-transition:all 600ms ease;
+                                -webkit-transition:all 600ms ease;
+
+                            `
+
+
+                        }, 300)
+
+
+
+            }
+
         // CLEAR CALORIE ESTIMATES CAPTURE SECTION ------------------
         // ----------------------------------------------------------
 
+            function closeCalorieEstimateSection () {
+
+
+
+                // HIDE AND FADE IN RATINGS >>>>>>>>>>>>>>>>>>>>>>>>>
+                // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    
+                    // FADE OUT RATINGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                    // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                        getCalorieEstimateMainContainer.style = `
+                        
+                            width:300px;
+                            opacity:0;
+                            display:block;
+                            margin-top:40px;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+
+
+
+
+
+
+
+
+
+
+                    // HIDE RATINGS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                    // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                        setTimeout(() => {
+
+                            getCalorieEstimateMainContainer.style = `
+                        
+                                width:300px;
+                                opacity:0;
+                                display:none;
+                                margin-top:40px;
+                                transition:all 600ms ease;
+                                -o-transition:all 600ms ease;
+                                -ms-transition:all 600ms ease;
+                                -moz-transition:all 600ms ease;
+                                -webkit-transition:all 600ms ease;
+
+                            `
+
+                        }, 300)
+
+
+
+            }
+
         // CLEAR COMMENTS CAPTURE SECTION ---------------------------
         // ----------------------------------------------------------
+
+            function closeCommentsSection () {
+
+
+
+                // HIDE AND FADE IN COMMENTS >>>>>>>>>>>>>>>>>>>>>>>>
+                // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    
+                    // FADE OUT COMMENTS >>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                    // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                        getCommentsSectionMainContainer.style = `
+                        
+                            width:300px;
+                            opacity:0;
+                            display:block;
+                            margin-top:40px;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+
+
+
+
+
+
+
+
+
+
+                    // HIDE COMMENTS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                    // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                        setTimeout(() => {
+
+                            getCommentsSectionMainContainer.style = `
+                        
+                                width:300px;
+                                opacity:0;
+                                display:none;
+                                margin-top:40px;
+                                transition:all 600ms ease;
+                                -o-transition:all 600ms ease;
+                                -ms-transition:all 600ms ease;
+                                -moz-transition:all 600ms ease;
+                                -webkit-transition:all 600ms ease;
+
+                            `
+
+                        }, 300)
+
+
+
+            }
+
 
 
 
@@ -885,6 +1386,62 @@
 
     // NAV BAR FUNCTIONS --------------------------------------------
     // //////////////////////////////////////////////////////////////
+
+    // RETAKE CONFIRM PICTURE FUNCTIONS -----------------------------
+    // //////////////////////////////////////////////////////////////
+
+        // RETAKE PICTURE FUNCTIONS ---------------------------------
+        // //////////////////////////////////////////////////////////
+
+            function retakeImage () {
+
+
+
+                // REOPEN CAPTURE IMAGE SECTION ---------------------
+                // //////////////////////////////////////////////////
+
+                    reOpenCameraViewSection()
+
+
+
+                // CLOSE PREVIEW SHOT SECTION -----------------------
+                // //////////////////////////////////////////////////
+
+                    closePreviewShotSection()
+
+
+
+                // ERASE DATA URL SECTION ---------------------------
+                // //////////////////////////////////////////////////
+
+                    closeDataUrlSection()
+                    
+                    
+
+            }
+
+        // CONFIRM PICTURE FUNCTIONS --------------------------------
+        // //////////////////////////////////////////////////////////
+
+            function confirmImage () {
+
+
+
+                // REOPEN SELECT AREA SECTION ------------------------
+                // //////////////////////////////////////////////////
+
+                    reOpenSelectAreaSection()
+
+
+
+                // CLOSE PREVIEW SHOT CONTROLS SECTION --------------
+                // //////////////////////////////////////////////////
+
+                    closePreviewShotControlsSection()
+
+
+
+            }
 
     // CAPTURE AREA FUNCTIONS ---------------------------------------
     // //////////////////////////////////////////////////////////////
@@ -1263,7 +1820,7 @@
     
                                 
     
-                                // UPDATE CLASSNAMES IN ARRAY -----------
+                                // UPDATE BUTTON NAMES FROM ARRAY -------
                                 // //////////////////////////////////////
 
                                     makeDinerDropDownItemButton.textContent = `${captureDinerItemsList[selectDinerSet][dineItemCounter]}`
@@ -1318,6 +1875,13 @@
 
 
 
+                                                // DECLARE VARIABLES FOR THIS INSTANCE
+                                                // //////////////////
+
+                                                    var getButtonText = makeElement.children[0].textContent
+
+
+
                                                 // SLIDE ITEM SLIDER TO AREA DINER SELECT AREA
                                                 // //////////////////
 
@@ -1332,6 +1896,26 @@
                                                         -webkit-transition:all 600ms ease;
 
                                                     `
+
+
+
+                                                // UPDATE AREA DISPLAY TEXT WITH SELECTED AREA
+                                                // //////////////////
+
+                                                    updateSelectedArea(getButtonText)
+
+
+                                                // CLOSE DOWN SELECT AREA AND RESET DROP DOWNS
+                                                // //////////////////
+
+                                                    closeSelectAreaDropDown()
+
+
+
+                                                // OPEN RATINGS SECTION
+                                                // //////////////////
+
+                                                    reOpenRatingsSection()
 
 
 
@@ -1730,292 +2314,49 @@
                                 }, 300)
 
                 }
+                
 
-
-    // RETAKE CONFIRM PICTURE FUNCTIONS -----------------------------
-    // //////////////////////////////////////////////////////////////
-
-        // RETAKE PICTURE FUNCTIONS ---------------------------------
+        // SELECT AREA SELECTED AREA FUNCTIONS ----------------------
         // //////////////////////////////////////////////////////////
 
-            function retakeImage () {
+            // FOR AUTOSELECTED AREA FUNCTIONS ----------------------
+            // //////////////////////////////////////////////////////
 
+            // FOR MANUAL SELECTED AREA FUNCTIONS -------------------
+            // //////////////////////////////////////////////////////
 
+                function updateSelectedArea (selectedAreaText) {
 
-                // REOPEN CAPTURE IMAGE SECTION ---------------------
-                // //////////////////////////////////////////////////
+                    // UPDATE AREA SELECTED DISPLAY WITH SELECTED AREA
+                    // //////////////////////////////////////////////
 
-                    reOpenCameraViewSection()
+                        getDropDownSelectedAreaTextContainer.textContent = selectedAreaText
 
+                }
+                
 
-
-                // CLOSE PREVIEW SHOT SECTION -----------------------
-                // //////////////////////////////////////////////////
-
-                    closePreviewShotSection()
-
-
-
-                // ERASE DATA URL SECTION ---------------------------
-                // //////////////////////////////////////////////////
-
-                    closeDataUrlSection()
-                    
-                    
-
-            }
-
-        // CONFIRM PICTURE FUNCTIONS --------------------------------
-        // //////////////////////////////////////////////////////////
-
-            function confirmImage () {
-
-
-
-                // CLOSE PREVIEW SHOT CONTROLS SECTION --------------
-                // //////////////////////////////////////////////////
-
-                    closePreviewShotControlsSection()
-
-
-
-            }
-
-
-
-
-
-// MAKE EVENTS FOR ENTIRE PAGE --------------------------------------
-// //////////////////////////////////////////////////////////////////
-
-    // SETUP STREAM VIDEO EVENTS ------------------------------------
+    // RATING STARS FUNCTIONS ---------------------------------------
     // //////////////////////////////////////////////////////////////
 
-        getStartPicButton.addEventListener("click", async function () {
+        // STAR RATINGS CLICKS FUNCTIONS ----------------------------
+        // ----------------------------------------------------------
 
-            // START THE STREAM >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
-                let stream = null;
-
-                    try {
-
-                        stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: false});
-
-                    }
-
-                    catch (error) {
-
-                        alert(error.message);
-                        return;
-
-                    }
-
-            // STREAM VIDEO CAPTURE TO CAMERA BOX ON PAGE >>>>>>>>>>>
-            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
-                getCamBox.srcObject = stream;
-
-            // INLINE STYLES FOR INTRO TEXT >>>>>>>>>>>>>>>>>>>>>>>>>
-            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
-                getStartCaptureIntroTextMainContainer.style.display = `none`
-
-            // INLINE STYLES FOR STREAM BOX >>>>>>>>>>>>>>>>>>>>>>>>>
-            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
-                getCamBox.style.display = `block`;
-                getStartPicButton.style.display = `none`;
-                getShotButton.style.display = `block`;
-
-
-
-
-
-
-
-            // MAKE LIVE AND FADE IN CAM CAPTURE BOX ITEMS >>>>>>>>>>
-            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
-                // MAKE LIVE CAM BOX >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-                // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
-                    getCamBoxMain.style = `
-                    
-                        width:300px;
-                        height:230px;
-                        left:0;
-                        right:0;
-                        margin:40px 0px 0px 0px;
-                        opacity:0;
-                        display:block;
-                        position:relative;
-                        background:#FFFFFF;
-                        box-shadow:0px 50px 30px -20px rgba(0,0,0,0.15);
-                        border-radius:10px;
-                        transition:all 600ms ease;
-                        -o-transition:all 600ms ease;
-                        -ms-transition:all 600ms ease;
-                        -moz-transition:all 600ms ease;
-                        -webkit-transition:all 600ms ease;
-
-                    `
-
-                // MAKE LIVE CAM CAPTURE BUTTON >>>>>>>>>>>>>>>>>>>>>
-                // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
-                    getShotButtonMainContainer.style = `
-                    
-                        width:100%;
-                        height:50px;
-                        display:block;
-                        opacity:0;
-                        position:relative;
-                        margin-top:50px;
-                        transition:all 600ms ease;
-                        -o-transition:all 600ms ease;
-                        -ms-transition:all 600ms ease;
-                        -moz-transition:all 600ms ease;
-                        -webkit-transition:all 600ms ease;
-
-                    `
-
-                // FADE IN CAM BOX >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-                // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
-                    setTimeout(() => {
-
-                        getCamBoxMain.style = `
-                        
-                            width:300px;
-                            height:230px;
-                            left:0;
-                            right:0;
-                            margin:20px 0px 0px 0px;
-                            opacity:1;
-                            display:block;
-                            position:relative;
-                            background:#FFFFFF;
-                            box-shadow:0px 50px 30px -20px rgba(0,0,0,0.15);
-                            border-radius:10px;
-                            transition:all 600ms ease;
-                            -o-transition:all 600ms ease;
-                            -ms-transition:all 600ms ease;
-                            -moz-transition:all 600ms ease;
-                            -webkit-transition:all 600ms ease;
-    
-                        `
-
-                    }, 50)
-
-                // FADE IN CAM BOX CAPTURE BUTTON >>>>>>>>>>>>>>>>>>>
-                // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
-                    setTimeout(() => {
-
-                        getShotButtonMainContainer.style = `
-                        
-                            width:100%;
-                            height:50px;
-                            display:block;
-                            opacity:1;
-                            position:relative;
-                            margin-top:30px;
-                            transition:all 600ms ease;
-                            -o-transition:all 600ms ease;
-                            -ms-transition:all 600ms ease;
-                            -moz-transition:all 600ms ease;
-                            -webkit-transition:all 600ms ease;
-
-                        `
-
-                    }, 50)
-
-        })
-
-    // SHOT CAPTURE EVENTS ------------------------------------------
-    // //////////////////////////////////////////////////////////////
-
-        getShotButton.addEventListener("click", function () {
-
-
-            // CLOSE CAMERA VIEW SECTION ----------------------------
-            // //////////////////////////////////////////////////////
-
-                closeMainCaptureSection()
-
-
-            // REOPEN SHOT PREVIEW SECTION --------------------------
-            // //////////////////////////////////////////////////////
-
-                reOpenCapturedShotSection()
-            
-            
-            // DRAW SHOT IMAGE TO CANVAS ----------------------------
-            // //////////////////////////////////////////////////////
-
-                getCamSnipDisplay.getContext("2d").drawImage(getCamBox, 0, 0, getCamSnipDisplay.width, getCamSnipDisplay.height);
-
-
-            // GET HEADER URL DATA ----------------------------------
-            // //////////////////////////////////////////////////////
-
-                let imageDataHeaderUrlText = getCamSnipDisplay.toDataURL(`image/jpeg`);
-
-                    getShotHeaderDataUrl.textContent = imageDataHeaderUrlText
-
-
-        })
-
-
-    // CAPTURE AREA EVENTS ------------------------------------------
-    // //////////////////////////////////////////////////////////////
-
-        // OPEN CLOSE CLICKERS FOR AREA SELECT ----------------------
-        // //////////////////////////////////////////////////////////
-
-            // FOR OPEN CLICKER -------------------------------------
-            // //////////////////////////////////////////////////////
-
-                getAreaDropDownOpenClicker.addEventListener("click", function () {
-
-                    openSelectAreaDropDown()
-
-                })
-
-            // FOR CLOSE CLICKER ------------------------------------
-            // //////////////////////////////////////////////////////
-
-                getAreaDropDownCloseClicker.addEventListener("click", function () {
-
-                    closeSelectAreaDropDown()
-                    
-                })
-
-        // POPULATE DROP DOWN AREA ----------------------------------
-        // //////////////////////////////////////////////////////////
-
-
-
-
-
-
-
-    // CAPTURE RATINGS EVENTS ---------------------------------------
-    // //////////////////////////////////////////////////////////////
-
-        // RATING STAR CLICKER ONE ----------------------------------
-        // //////////////////////////////////////////////////////////
-
-            // CLICKER ON -------------------------------------------
+            // FOR CLICKERS ON --------------------------------------
             // ------------------------------------------------------
 
-                starClickerOneOn.addEventListener("click", function () {
+                function ratingStarClickerOnOne () {
+
+                    
 
                     // CHANGE STAR COUNTER --------------------------
                     // //////////////////////////////////////////////
 
                         captureRatingNumber = 1
+
+                    // UPDATE RATING NUMBER IN FORM -----------------
+                    // //////////////////////////////////////////////
+
+                        getRatingsFormCollect.value = captureRatingNumber
 
                     // SEND ON CLICKER ONE TO BACK ------------------
                     // //////////////////////////////////////////////
@@ -2335,205 +2676,22 @@
 
                             `
 
+                }
 
 
-                })
+                function ratingStarClickerOnTwo () {
 
-
-            // CLICKER OFF ------------------------------------------
-            // ------------------------------------------------------
-
-                starClickerOneOff.addEventListener("click", function () {
-
-                    // CHANGE STAR COUNTER --------------------------
-                    // //////////////////////////////////////////////
-
-                        captureRatingNumber = 0
-
-                    // SEND ON CLICKER ONE TO FRONT -----------------
-                    // //////////////////////////////////////////////
-                        
-                        starClickerOneOn.style = `
-                        
-                            width:100%;
-                            height:100%;
-                            z-index:1;
-                            left:0px;
-                            right:0;
-                            display:block;
-                            position:absolute;
-                            transition:all 600ms ease;
-                            -o-transition:all 600ms ease;
-                            -ms-transition:all 600ms ease;
-                            -moz-transition:all 600ms ease;
-                            -webkit-transition:all 600ms ease;
-
-                        `
-
-                    // BRING OFF CLICKER ONE TO BACK ----------------
-                    // //////////////////////////////////////////////
-
-                        starClickerOneOff.style = `
-                        
-                            width:100%;
-                            height:100%;
-                            z-index:-1;
-                            left:0px;
-                            right:0;
-                            display:none;
-                            position:absolute;
-                            transition:all 600ms ease;
-                            -o-transition:all 600ms ease;
-                            -ms-transition:all 600ms ease;
-                            -moz-transition:all 600ms ease;
-                            -webkit-transition:all 600ms ease;
-
-                        `
-
-                    // SWITCH OFF SELECTED STAR ----------------------
-                    // //////////////////////////////////////////////
-
-                        getRatingStarOne.style = `
-                        
-                            width:25px;
-                            height:25px;
-                            top:0;
-                            left:0;
-                            right:0;
-                            bottom:0;
-                            margin:auto;
-                            position:absolute;
-                            overflow:hidden;
-                            background:url("${cpatureRatingsStarImages[0]}");
-                            background-size:cover;
-                            background-repeat:no-repeat;
-                            background-position:top;
-                            transition:all 600ms ease;
-                            -o-transition:all 600ms ease;
-                            -ms-transition:all 600ms ease;
-                            -moz-transition:all 600ms ease;
-                            -webkit-transition:all 600ms ease;
-
-                        `
-
-
-
-
-
-
-
-                    // SWITCH OFF OTHER STARS -----------------------
-                    // //////////////////////////////////////////////
-
-                        getRatingStarTwo.style = `
-                        
-                            width:25px;
-                            height:25px;
-                            top:0;
-                            left:0;
-                            right:0;
-                            bottom:0;
-                            margin:auto;
-                            position:absolute;
-                            overflow:hidden;
-                            background:url("${cpatureRatingsStarImages[0]}");
-                            background-size:cover;
-                            background-repeat:no-repeat;
-                            background-position:top;
-                            transition:all 600ms ease;
-                            -o-transition:all 600ms ease;
-                            -ms-transition:all 600ms ease;
-                            -moz-transition:all 600ms ease;
-                            -webkit-transition:all 600ms ease;
-
-                        `
-
-                        getRatingStarThree.style = `
-                        
-                            width:25px;
-                            height:25px;
-                            top:0;
-                            left:0;
-                            right:0;
-                            bottom:0;
-                            margin:auto;
-                            position:absolute;
-                            overflow:hidden;
-                            background:url("${cpatureRatingsStarImages[0]}");
-                            background-size:cover;
-                            background-repeat:no-repeat;
-                            background-position:top;
-                            transition:all 600ms ease;
-                            -o-transition:all 600ms ease;
-                            -ms-transition:all 600ms ease;
-                            -moz-transition:all 600ms ease;
-                            -webkit-transition:all 600ms ease;
-
-                        `
-
-                        getRatingStarFour.style = `
-                        
-                            width:25px;
-                            height:25px;
-                            top:0;
-                            left:0;
-                            right:0;
-                            bottom:0;
-                            margin:auto;
-                            position:absolute;
-                            overflow:hidden;
-                            background:url("${cpatureRatingsStarImages[0]}");
-                            background-size:cover;
-                            background-repeat:no-repeat;
-                            background-position:top;
-                            transition:all 600ms ease;
-                            -o-transition:all 600ms ease;
-                            -ms-transition:all 600ms ease;
-                            -moz-transition:all 600ms ease;
-                            -webkit-transition:all 600ms ease;
-
-                        `
-
-                        getRatingStarFive.style = `
-                        
-                            width:25px;
-                            height:25px;
-                            top:0;
-                            left:0;
-                            right:0;
-                            bottom:0;
-                            margin:auto;
-                            position:absolute;
-                            overflow:hidden;
-                            background:url("${cpatureRatingsStarImages[0]}");
-                            background-size:cover;
-                            background-repeat:no-repeat;
-                            background-position:top;
-                            transition:all 600ms ease;
-                            -o-transition:all 600ms ease;
-                            -ms-transition:all 600ms ease;
-                            -moz-transition:all 600ms ease;
-                            -webkit-transition:all 600ms ease;
-
-                        `
-
-
-
-                })
-                
-
-        // RATING STAR CLICKER TWO ----------------------------------
-        // //////////////////////////////////////////////////////////
-
-            // CLICKER ON -------------------------------------------
-            // ------------------------------------------------------
-
-                starClickerTwoOn.addEventListener("click", function () {
+                    
 
                     // CHANGE STAR COUNTER --------------------------
                     // //////////////////////////////////////////////
 
                         captureRatingNumber = 2
+
+                    // UPDATE RATING NUMBER IN FORM -----------------
+                    // //////////////////////////////////////////////
+
+                        getRatingsFormCollect.value = captureRatingNumber
 
                     // SEND ON CLICKER TWO TO BACK ------------------
                     // //////////////////////////////////////////////
@@ -2853,205 +3011,22 @@
 
                             `
 
+                }
 
 
-                })
-                
+                function ratingStarClickerOnThree () {
 
-            // CLICKER OFF ------------------------------------------
-            // ------------------------------------------------------
-
-                starClickerTwoOff.addEventListener("click", function () {
-
-                    // CHANGE STAR COUNTER --------------------------
-                    // //////////////////////////////////////////////
-
-                        captureRatingNumber = 0
-
-                    // SEND ON CLICKER TWO TO FRONT -----------------
-                    // //////////////////////////////////////////////
-                        
-                        starClickerTwoOn.style = `
-                        
-                            width:100%;
-                            height:100%;
-                            z-index:1;
-                            left:0px;
-                            right:0;
-                            display:block;
-                            position:absolute;
-                            transition:all 600ms ease;
-                            -o-transition:all 600ms ease;
-                            -ms-transition:all 600ms ease;
-                            -moz-transition:all 600ms ease;
-                            -webkit-transition:all 600ms ease;
-
-                        `
-
-                    // BRING OFF CLICKER TWO TO BACK ----------------
-                    // //////////////////////////////////////////////
-
-                        starClickerTwoOff.style = `
-                        
-                            width:100%;
-                            height:100%;
-                            z-index:-1;
-                            left:0px;
-                            right:0;
-                            display:none;
-                            position:absolute;
-                            transition:all 600ms ease;
-                            -o-transition:all 600ms ease;
-                            -ms-transition:all 600ms ease;
-                            -moz-transition:all 600ms ease;
-                            -webkit-transition:all 600ms ease;
-
-                        `
-
-                    // SWITCH OFF SELECTED STAR ----------------------
-                    // //////////////////////////////////////////////
-
-                        getRatingStarTwo.style = `
-                        
-                            width:25px;
-                            height:25px;
-                            top:0;
-                            left:0;
-                            right:0;
-                            bottom:0;
-                            margin:auto;
-                            position:absolute;
-                            overflow:hidden;
-                            background:url("${cpatureRatingsStarImages[0]}");
-                            background-size:cover;
-                            background-repeat:no-repeat;
-                            background-position:top;
-                            transition:all 600ms ease;
-                            -o-transition:all 600ms ease;
-                            -ms-transition:all 600ms ease;
-                            -moz-transition:all 600ms ease;
-                            -webkit-transition:all 600ms ease;
-
-                        `
-
-
-
-
-
-
-
-                    // SWITCH OFF OTHER STARS -----------------------
-                    // //////////////////////////////////////////////
-
-                        getRatingStarOne.style = `
-                        
-                            width:25px;
-                            height:25px;
-                            top:0;
-                            left:0;
-                            right:0;
-                            bottom:0;
-                            margin:auto;
-                            position:absolute;
-                            overflow:hidden;
-                            background:url("${cpatureRatingsStarImages[0]}");
-                            background-size:cover;
-                            background-repeat:no-repeat;
-                            background-position:top;
-                            transition:all 600ms ease;
-                            -o-transition:all 600ms ease;
-                            -ms-transition:all 600ms ease;
-                            -moz-transition:all 600ms ease;
-                            -webkit-transition:all 600ms ease;
-
-                        `
-
-                        getRatingStarThree.style = `
-                        
-                            width:25px;
-                            height:25px;
-                            top:0;
-                            left:0;
-                            right:0;
-                            bottom:0;
-                            margin:auto;
-                            position:absolute;
-                            overflow:hidden;
-                            background:url("${cpatureRatingsStarImages[0]}");
-                            background-size:cover;
-                            background-repeat:no-repeat;
-                            background-position:top;
-                            transition:all 600ms ease;
-                            -o-transition:all 600ms ease;
-                            -ms-transition:all 600ms ease;
-                            -moz-transition:all 600ms ease;
-                            -webkit-transition:all 600ms ease;
-
-                        `
-
-                        getRatingStarFour.style = `
-                        
-                            width:25px;
-                            height:25px;
-                            top:0;
-                            left:0;
-                            right:0;
-                            bottom:0;
-                            margin:auto;
-                            position:absolute;
-                            overflow:hidden;
-                            background:url("${cpatureRatingsStarImages[0]}");
-                            background-size:cover;
-                            background-repeat:no-repeat;
-                            background-position:top;
-                            transition:all 600ms ease;
-                            -o-transition:all 600ms ease;
-                            -ms-transition:all 600ms ease;
-                            -moz-transition:all 600ms ease;
-                            -webkit-transition:all 600ms ease;
-
-                        `
-
-                        getRatingStarFive.style = `
-                        
-                            width:25px;
-                            height:25px;
-                            top:0;
-                            left:0;
-                            right:0;
-                            bottom:0;
-                            margin:auto;
-                            position:absolute;
-                            overflow:hidden;
-                            background:url("${cpatureRatingsStarImages[0]}");
-                            background-size:cover;
-                            background-repeat:no-repeat;
-                            background-position:top;
-                            transition:all 600ms ease;
-                            -o-transition:all 600ms ease;
-                            -ms-transition:all 600ms ease;
-                            -moz-transition:all 600ms ease;
-                            -webkit-transition:all 600ms ease;
-
-                        `
-
-
-
-                })
-                
-
-        // RATING STAR CLICKER THREE --------------------------------
-        // //////////////////////////////////////////////////////////
-
-            // CLICKER ON -------------------------------------------
-            // ------------------------------------------------------
-
-                starClickerThreeOn.addEventListener("click", function () {
+                    
 
                     // CHANGE STAR COUNTER --------------------------
                     // //////////////////////////////////////////////
 
                         captureRatingNumber = 3
+
+                    // UPDATE RATING NUMBER IN FORM -----------------
+                    // //////////////////////////////////////////////
+
+                        getRatingsFormCollect.value = captureRatingNumber
 
                     // SEND ON CLICKER THREE TO BACK ----------------
                     // //////////////////////////////////////////////
@@ -3371,205 +3346,22 @@
 
                             `
 
+                }
 
 
-                })
-                
+                function ratingStarClickerOnFour () {
 
-            // CLICKER OFF ------------------------------------------
-            // ------------------------------------------------------
-
-                starClickerThreeOff.addEventListener("click", function () {
-
-                    // CHANGE STAR COUNTER --------------------------
-                    // //////////////////////////////////////////////
-
-                        captureRatingNumber = 0
-
-                    // SEND ON CLICKER TWO TO FRONT -----------------
-                    // //////////////////////////////////////////////
-                        
-                        starClickerThreeOn.style = `
-                        
-                            width:100%;
-                            height:100%;
-                            z-index:1;
-                            left:0px;
-                            right:0;
-                            display:block;
-                            position:absolute;
-                            transition:all 600ms ease;
-                            -o-transition:all 600ms ease;
-                            -ms-transition:all 600ms ease;
-                            -moz-transition:all 600ms ease;
-                            -webkit-transition:all 600ms ease;
-
-                        `
-
-                    // BRING OFF CLICKER TWO TO BACK ----------------
-                    // //////////////////////////////////////////////
-
-                        starClickerThreeOff.style = `
-                        
-                            width:100%;
-                            height:100%;
-                            z-index:-1;
-                            left:0px;
-                            right:0;
-                            display:none;
-                            position:absolute;
-                            transition:all 600ms ease;
-                            -o-transition:all 600ms ease;
-                            -ms-transition:all 600ms ease;
-                            -moz-transition:all 600ms ease;
-                            -webkit-transition:all 600ms ease;
-
-                        `
-
-                    // SWITCH OFF SELECTED STAR ----------------------
-                    // //////////////////////////////////////////////
-
-                        getRatingStarThree.style = `
-                        
-                            width:25px;
-                            height:25px;
-                            top:0;
-                            left:0;
-                            right:0;
-                            bottom:0;
-                            margin:auto;
-                            position:absolute;
-                            overflow:hidden;
-                            background:url("${cpatureRatingsStarImages[0]}");
-                            background-size:cover;
-                            background-repeat:no-repeat;
-                            background-position:top;
-                            transition:all 600ms ease;
-                            -o-transition:all 600ms ease;
-                            -ms-transition:all 600ms ease;
-                            -moz-transition:all 600ms ease;
-                            -webkit-transition:all 600ms ease;
-
-                        `
-
-
-
-
-
-
-
-                    // SWITCH OFF OTHER STARS -----------------------
-                    // //////////////////////////////////////////////
-
-                        getRatingStarOne.style = `
-                        
-                            width:25px;
-                            height:25px;
-                            top:0;
-                            left:0;
-                            right:0;
-                            bottom:0;
-                            margin:auto;
-                            position:absolute;
-                            overflow:hidden;
-                            background:url("${cpatureRatingsStarImages[0]}");
-                            background-size:cover;
-                            background-repeat:no-repeat;
-                            background-position:top;
-                            transition:all 600ms ease;
-                            -o-transition:all 600ms ease;
-                            -ms-transition:all 600ms ease;
-                            -moz-transition:all 600ms ease;
-                            -webkit-transition:all 600ms ease;
-
-                        `
-
-                        getRatingStarTwo.style = `
-                        
-                            width:25px;
-                            height:25px;
-                            top:0;
-                            left:0;
-                            right:0;
-                            bottom:0;
-                            margin:auto;
-                            position:absolute;
-                            overflow:hidden;
-                            background:url("${cpatureRatingsStarImages[0]}");
-                            background-size:cover;
-                            background-repeat:no-repeat;
-                            background-position:top;
-                            transition:all 600ms ease;
-                            -o-transition:all 600ms ease;
-                            -ms-transition:all 600ms ease;
-                            -moz-transition:all 600ms ease;
-                            -webkit-transition:all 600ms ease;
-
-                        `
-
-                        getRatingStarFour.style = `
-                        
-                            width:25px;
-                            height:25px;
-                            top:0;
-                            left:0;
-                            right:0;
-                            bottom:0;
-                            margin:auto;
-                            position:absolute;
-                            overflow:hidden;
-                            background:url("${cpatureRatingsStarImages[0]}");
-                            background-size:cover;
-                            background-repeat:no-repeat;
-                            background-position:top;
-                            transition:all 600ms ease;
-                            -o-transition:all 600ms ease;
-                            -ms-transition:all 600ms ease;
-                            -moz-transition:all 600ms ease;
-                            -webkit-transition:all 600ms ease;
-
-                        `
-
-                        getRatingStarFive.style = `
-                        
-                            width:25px;
-                            height:25px;
-                            top:0;
-                            left:0;
-                            right:0;
-                            bottom:0;
-                            margin:auto;
-                            position:absolute;
-                            overflow:hidden;
-                            background:url("${cpatureRatingsStarImages[0]}");
-                            background-size:cover;
-                            background-repeat:no-repeat;
-                            background-position:top;
-                            transition:all 600ms ease;
-                            -o-transition:all 600ms ease;
-                            -ms-transition:all 600ms ease;
-                            -moz-transition:all 600ms ease;
-                            -webkit-transition:all 600ms ease;
-
-                        `
-
-
-
-                })
-                
-
-        // RATING STAR CLICKER FOUR ---------------------------------
-        // //////////////////////////////////////////////////////////
-
-            // CLICKER ON -------------------------------------------
-            // ------------------------------------------------------
-
-                starClickerFourOn.addEventListener("click", function () {
+                    
 
                     // CHANGE STAR COUNTER --------------------------
                     // //////////////////////////////////////////////
 
                         captureRatingNumber = 4
+
+                    // UPDATE RATING NUMBER IN FORM -----------------
+                    // //////////////////////////////////////////////
+
+                        getRatingsFormCollect.value = captureRatingNumber
 
                     // SEND ON CLICKER FOUR TO BACK -----------------
                     // //////////////////////////////////////////////
@@ -3889,205 +3681,22 @@
 
                             `
 
+                }
 
 
-                })
-                
+                function ratingStarClickerOnFive () {
 
-            // CLICKER OFF ------------------------------------------
-            // ------------------------------------------------------
-
-                starClickerFourOff.addEventListener("click", function () {
-
-                    // CHANGE STAR COUNTER --------------------------
-                    // //////////////////////////////////////////////
-
-                        captureRatingNumber = 0
-
-                    // SEND ON CLICKER TWO TO FRONT -----------------
-                    // //////////////////////////////////////////////
-                        
-                        starClickerFourOn.style = `
-                        
-                            width:100%;
-                            height:100%;
-                            z-index:1;
-                            left:0px;
-                            right:0;
-                            display:block;
-                            position:absolute;
-                            transition:all 600ms ease;
-                            -o-transition:all 600ms ease;
-                            -ms-transition:all 600ms ease;
-                            -moz-transition:all 600ms ease;
-                            -webkit-transition:all 600ms ease;
-
-                        `
-
-                    // BRING OFF CLICKER TWO TO BACK ----------------
-                    // //////////////////////////////////////////////
-
-                        starClickerFourOff.style = `
-                        
-                            width:100%;
-                            height:100%;
-                            z-index:-1;
-                            left:0px;
-                            right:0;
-                            display:none;
-                            position:absolute;
-                            transition:all 600ms ease;
-                            -o-transition:all 600ms ease;
-                            -ms-transition:all 600ms ease;
-                            -moz-transition:all 600ms ease;
-                            -webkit-transition:all 600ms ease;
-
-                        `
-
-                    // SWITCH OFF SELECTED STAR ----------------------
-                    // //////////////////////////////////////////////
-
-                        getRatingStarFour.style = `
-                        
-                            width:25px;
-                            height:25px;
-                            top:0;
-                            left:0;
-                            right:0;
-                            bottom:0;
-                            margin:auto;
-                            position:absolute;
-                            overflow:hidden;
-                            background:url("${cpatureRatingsStarImages[0]}");
-                            background-size:cover;
-                            background-repeat:no-repeat;
-                            background-position:top;
-                            transition:all 600ms ease;
-                            -o-transition:all 600ms ease;
-                            -ms-transition:all 600ms ease;
-                            -moz-transition:all 600ms ease;
-                            -webkit-transition:all 600ms ease;
-
-                        `
-
-
-
-
-
-
-
-                    // SWITCH OFF OTHER STARS -----------------------
-                    // //////////////////////////////////////////////
-
-                        getRatingStarOne.style = `
-                        
-                            width:25px;
-                            height:25px;
-                            top:0;
-                            left:0;
-                            right:0;
-                            bottom:0;
-                            margin:auto;
-                            position:absolute;
-                            overflow:hidden;
-                            background:url("${cpatureRatingsStarImages[0]}");
-                            background-size:cover;
-                            background-repeat:no-repeat;
-                            background-position:top;
-                            transition:all 600ms ease;
-                            -o-transition:all 600ms ease;
-                            -ms-transition:all 600ms ease;
-                            -moz-transition:all 600ms ease;
-                            -webkit-transition:all 600ms ease;
-
-                        `
-
-                        getRatingStarTwo.style = `
-                        
-                            width:25px;
-                            height:25px;
-                            top:0;
-                            left:0;
-                            right:0;
-                            bottom:0;
-                            margin:auto;
-                            position:absolute;
-                            overflow:hidden;
-                            background:url("${cpatureRatingsStarImages[0]}");
-                            background-size:cover;
-                            background-repeat:no-repeat;
-                            background-position:top;
-                            transition:all 600ms ease;
-                            -o-transition:all 600ms ease;
-                            -ms-transition:all 600ms ease;
-                            -moz-transition:all 600ms ease;
-                            -webkit-transition:all 600ms ease;
-
-                        `
-
-                        getRatingStarThree.style = `
-                        
-                            width:25px;
-                            height:25px;
-                            top:0;
-                            left:0;
-                            right:0;
-                            bottom:0;
-                            margin:auto;
-                            position:absolute;
-                            overflow:hidden;
-                            background:url("${cpatureRatingsStarImages[0]}");
-                            background-size:cover;
-                            background-repeat:no-repeat;
-                            background-position:top;
-                            transition:all 600ms ease;
-                            -o-transition:all 600ms ease;
-                            -ms-transition:all 600ms ease;
-                            -moz-transition:all 600ms ease;
-                            -webkit-transition:all 600ms ease;
-
-                        `
-
-                        getRatingStarFive.style = `
-                        
-                            width:25px;
-                            height:25px;
-                            top:0;
-                            left:0;
-                            right:0;
-                            bottom:0;
-                            margin:auto;
-                            position:absolute;
-                            overflow:hidden;
-                            background:url("${cpatureRatingsStarImages[0]}");
-                            background-size:cover;
-                            background-repeat:no-repeat;
-                            background-position:top;
-                            transition:all 600ms ease;
-                            -o-transition:all 600ms ease;
-                            -ms-transition:all 600ms ease;
-                            -moz-transition:all 600ms ease;
-                            -webkit-transition:all 600ms ease;
-
-                        `
-
-
-
-                })
-                
-
-        // RATING STAR CLICKER FIVE ---------------------------------
-        // //////////////////////////////////////////////////////////
-
-            // CLICKER ON -------------------------------------------
-            // ------------------------------------------------------
-
-                starClickerFiveOn.addEventListener("click", function () {
+                    
 
                     // CHANGE STAR COUNTER --------------------------
                     // //////////////////////////////////////////////
 
                         captureRatingNumber = 5
+
+                    // UPDATE RATING NUMBER IN FORM -----------------
+                    // //////////////////////////////////////////////
+
+                        getRatingsFormCollect.value = captureRatingNumber
 
                     // SEND ON CLICKER FIVE TO BACK -----------------
                     // //////////////////////////////////////////////
@@ -4407,20 +4016,765 @@
 
                             `
 
+                }
 
 
-                })
-                
 
-            // CLICKER OFF ------------------------------------------
+
+            // FOR CLICKERS OFF -------------------------------------
             // ------------------------------------------------------
 
-                starClickerFiveOff.addEventListener("click", function () {
+                function ratingStarClickerOffOne () {
+
+
 
                     // CHANGE STAR COUNTER --------------------------
                     // //////////////////////////////////////////////
 
                         captureRatingNumber = 0
+
+                    // UPDATE RATING NUMBER IN FORM -----------------
+                    // //////////////////////////////////////////////
+
+                        getRatingsFormCollect.value = captureRatingNumber
+
+                    // SEND ON CLICKER ONE TO FRONT -----------------
+                    // //////////////////////////////////////////////
+                        
+                        starClickerOneOn.style = `
+                        
+                            width:100%;
+                            height:100%;
+                            z-index:1;
+                            left:0px;
+                            right:0;
+                            display:block;
+                            position:absolute;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                    // BRING OFF CLICKER ONE TO BACK ----------------
+                    // //////////////////////////////////////////////
+
+                        starClickerOneOff.style = `
+                        
+                            width:100%;
+                            height:100%;
+                            z-index:-1;
+                            left:0px;
+                            right:0;
+                            display:none;
+                            position:absolute;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                    // SWITCH OFF SELECTED STAR ----------------------
+                    // //////////////////////////////////////////////
+
+                        getRatingStarOne.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[0]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+
+
+
+
+
+
+                    // SWITCH OFF OTHER STARS -----------------------
+                    // //////////////////////////////////////////////
+
+                        getRatingStarTwo.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[0]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                        getRatingStarThree.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[0]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                        getRatingStarFour.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[0]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                        getRatingStarFive.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[0]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+
+                }
+
+
+                function ratingStarClickerOffTwo () {
+
+                    
+
+                    // CHANGE STAR COUNTER --------------------------
+                    // //////////////////////////////////////////////
+
+                        captureRatingNumber = 0
+
+                    // UPDATE RATING NUMBER IN FORM -----------------
+                    // //////////////////////////////////////////////
+
+                        getRatingsFormCollect.value = captureRatingNumber
+
+                    // SEND ON CLICKER TWO TO FRONT -----------------
+                    // //////////////////////////////////////////////
+                        
+                        starClickerTwoOn.style = `
+                        
+                            width:100%;
+                            height:100%;
+                            z-index:1;
+                            left:0px;
+                            right:0;
+                            display:block;
+                            position:absolute;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                    // BRING OFF CLICKER TWO TO BACK ----------------
+                    // //////////////////////////////////////////////
+
+                        starClickerTwoOff.style = `
+                        
+                            width:100%;
+                            height:100%;
+                            z-index:-1;
+                            left:0px;
+                            right:0;
+                            display:none;
+                            position:absolute;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                    // SWITCH OFF SELECTED STAR ----------------------
+                    // //////////////////////////////////////////////
+
+                        getRatingStarTwo.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[0]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+
+
+
+
+
+
+                    // SWITCH OFF OTHER STARS -----------------------
+                    // //////////////////////////////////////////////
+
+                        getRatingStarOne.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[0]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                        getRatingStarThree.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[0]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                        getRatingStarFour.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[0]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                        getRatingStarFive.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[0]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                }
+
+
+                function ratingStarClickerOffThree () {
+
+                    
+
+                    // CHANGE STAR COUNTER --------------------------
+                    // //////////////////////////////////////////////
+
+                        captureRatingNumber = 0
+
+                    // UPDATE RATING NUMBER IN FORM -----------------
+                    // //////////////////////////////////////////////
+
+                        getRatingsFormCollect.value = captureRatingNumber
+
+                    // SEND ON CLICKER TWO TO FRONT -----------------
+                    // //////////////////////////////////////////////
+                        
+                        starClickerThreeOn.style = `
+                        
+                            width:100%;
+                            height:100%;
+                            z-index:1;
+                            left:0px;
+                            right:0;
+                            display:block;
+                            position:absolute;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                    // BRING OFF CLICKER TWO TO BACK ----------------
+                    // //////////////////////////////////////////////
+
+                        starClickerThreeOff.style = `
+                        
+                            width:100%;
+                            height:100%;
+                            z-index:-1;
+                            left:0px;
+                            right:0;
+                            display:none;
+                            position:absolute;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                    // SWITCH OFF SELECTED STAR ----------------------
+                    // //////////////////////////////////////////////
+
+                        getRatingStarThree.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[0]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+
+
+
+
+
+
+                    // SWITCH OFF OTHER STARS -----------------------
+                    // //////////////////////////////////////////////
+
+                        getRatingStarOne.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[0]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                        getRatingStarTwo.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[0]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                        getRatingStarFour.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[0]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                        getRatingStarFive.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[0]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                }
+
+
+                function ratingStarClickerOffFour () {
+
+                    
+
+                    // CHANGE STAR COUNTER --------------------------
+                    // //////////////////////////////////////////////
+
+                        captureRatingNumber = 0
+
+                    // UPDATE RATING NUMBER IN FORM -----------------
+                    // //////////////////////////////////////////////
+
+                        getRatingsFormCollect.value = captureRatingNumber
+
+                    // SEND ON CLICKER TWO TO FRONT -----------------
+                    // //////////////////////////////////////////////
+                        
+                        starClickerFourOn.style = `
+                        
+                            width:100%;
+                            height:100%;
+                            z-index:1;
+                            left:0px;
+                            right:0;
+                            display:block;
+                            position:absolute;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                    // BRING OFF CLICKER TWO TO BACK ----------------
+                    // //////////////////////////////////////////////
+
+                        starClickerFourOff.style = `
+                        
+                            width:100%;
+                            height:100%;
+                            z-index:-1;
+                            left:0px;
+                            right:0;
+                            display:none;
+                            position:absolute;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                    // SWITCH OFF SELECTED STAR ----------------------
+                    // //////////////////////////////////////////////
+
+                        getRatingStarFour.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[0]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+
+
+
+
+
+
+                    // SWITCH OFF OTHER STARS -----------------------
+                    // //////////////////////////////////////////////
+
+                        getRatingStarOne.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[0]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                        getRatingStarTwo.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[0]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                        getRatingStarThree.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[0]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                        getRatingStarFive.style = `
+                        
+                            width:25px;
+                            height:25px;
+                            top:0;
+                            left:0;
+                            right:0;
+                            bottom:0;
+                            margin:auto;
+                            position:absolute;
+                            overflow:hidden;
+                            background:url("${cpatureRatingsStarImages[0]}");
+                            background-size:cover;
+                            background-repeat:no-repeat;
+                            background-position:top;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+
+                }
+
+
+                function ratingStarClickerOffFive () {
+
+                    
+
+                    // CHANGE STAR COUNTER --------------------------
+                    // //////////////////////////////////////////////
+
+                        captureRatingNumber = 0
+
+                    // UPDATE RATING NUMBER IN FORM -----------------
+                    // //////////////////////////////////////////////
+
+                        getRatingsFormCollect.value = captureRatingNumber
 
                     // SEND ON CLICKER TWO TO FRONT -----------------
                     // //////////////////////////////////////////////
@@ -4590,11 +4944,215 @@
                         `
 
 
+                }
+                
 
-                })
+    // COMMENTS SECTION FUNCTIONS -----------------------------------
+    // //////////////////////////////////////////////////////////////
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// MAKE EVENTS FOR ENTIRE PAGE --------------------------------------
+// //////////////////////////////////////////////////////////////////
+
+    // SETUP STREAM VIDEO EVENTS ------------------------------------
+    // //////////////////////////////////////////////////////////////
+
+        getStartPicButton.addEventListener("click", async function () {
+
+            // START THE STREAM >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                let stream = null;
+
+                    try {
+
+                        stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: false});
+
+                    }
+
+                    catch (error) {
+
+                        alert(error.message);
+                        return;
+
+                    }
+
+            // STREAM VIDEO CAPTURE TO CAMERA BOX ON PAGE >>>>>>>>>>>
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                getCamBox.srcObject = stream;
+
+            // INLINE STYLES FOR INTRO TEXT >>>>>>>>>>>>>>>>>>>>>>>>>
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                getStartCaptureIntroTextMainContainer.style.display = `none`
+
+            // INLINE STYLES FOR STREAM BOX >>>>>>>>>>>>>>>>>>>>>>>>>
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                getCamBox.style.display = `block`;
+                getStartPicButton.style.display = `none`;
+                getShotButton.style.display = `block`;
+
+
+
+
+
+
+
+            // MAKE LIVE AND FADE IN CAM CAPTURE BOX ITEMS >>>>>>>>>>
+            // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                // MAKE LIVE CAM BOX >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                    getCamBoxMain.style = `
+                    
+                        width:300px;
+                        height:230px;
+                        left:0;
+                        right:0;
+                        margin:40px 0px 0px 0px;
+                        opacity:0;
+                        display:block;
+                        position:relative;
+                        background:#FFFFFF;
+                        box-shadow:0px 50px 30px -20px rgba(0,0,0,0.15);
+                        border-radius:10px;
+                        transition:all 600ms ease;
+                        -o-transition:all 600ms ease;
+                        -ms-transition:all 600ms ease;
+                        -moz-transition:all 600ms ease;
+                        -webkit-transition:all 600ms ease;
+
+                    `
+
+                // MAKE LIVE CAM CAPTURE BUTTON >>>>>>>>>>>>>>>>>>>>>
+                // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                    getShotButtonMainContainer.style = `
+                    
+                        width:100%;
+                        height:50px;
+                        display:block;
+                        opacity:0;
+                        position:relative;
+                        margin-top:50px;
+                        transition:all 600ms ease;
+                        -o-transition:all 600ms ease;
+                        -ms-transition:all 600ms ease;
+                        -moz-transition:all 600ms ease;
+                        -webkit-transition:all 600ms ease;
+
+                    `
+
+                // FADE IN CAM BOX >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+                // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                    setTimeout(() => {
+
+                        getCamBoxMain.style = `
+                        
+                            width:300px;
+                            height:230px;
+                            left:0;
+                            right:0;
+                            margin:20px 0px 0px 0px;
+                            opacity:1;
+                            display:block;
+                            position:relative;
+                            background:#FFFFFF;
+                            box-shadow:0px 50px 30px -20px rgba(0,0,0,0.15);
+                            border-radius:10px;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+    
+                        `
+
+                    }, 50)
+
+                // FADE IN CAM BOX CAPTURE BUTTON >>>>>>>>>>>>>>>>>>>
+                // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+                    setTimeout(() => {
+
+                        getShotButtonMainContainer.style = `
+                        
+                            width:100%;
+                            height:50px;
+                            display:block;
+                            opacity:1;
+                            position:relative;
+                            margin-top:30px;
+                            transition:all 600ms ease;
+                            -o-transition:all 600ms ease;
+                            -ms-transition:all 600ms ease;
+                            -moz-transition:all 600ms ease;
+                            -webkit-transition:all 600ms ease;
+
+                        `
+
+                    }, 50)
+
+        })
+
+    // SHOT CAPTURE EVENTS ------------------------------------------
+    // //////////////////////////////////////////////////////////////
+
+        getShotButton.addEventListener("click", function () {
+
+
+            // CLOSE CAMERA VIEW SECTION ----------------------------
+            // //////////////////////////////////////////////////////
+
+                closeMainCaptureSection()
+
+
+            // REOPEN SHOT PREVIEW SECTION --------------------------
+            // //////////////////////////////////////////////////////
+
+                reOpenCapturedShotSection()
+            
+            
+            // DRAW SHOT IMAGE TO CANVAS ----------------------------
+            // //////////////////////////////////////////////////////
+
+                getCamSnipDisplay.getContext("2d").drawImage(getCamBox, 0, 0, getCamSnipDisplay.width, getCamSnipDisplay.height);
+
+
+            // GET HEADER URL DATA ----------------------------------
+            // //////////////////////////////////////////////////////
+
+                let imageDataHeaderUrlText = getCamSnipDisplay.toDataURL(`image/jpeg`);
+
+                    getShotHeaderDataUrl.textContent = imageDataHeaderUrlText
+
+
+        })
 
     // RETAKE CONFIRM PICTURE EVENTS --------------------------------
     // //////////////////////////////////////////////////////////////
@@ -4616,6 +5174,318 @@
                 confirmImage()
 
             })
+
+
+    // CAPTURE AREA EVENTS ------------------------------------------
+    // //////////////////////////////////////////////////////////////
+
+        // OPEN CLOSE CLICKERS FOR AREA SELECT ----------------------
+        // //////////////////////////////////////////////////////////
+
+            // FOR OPEN CLICKER -------------------------------------
+            // //////////////////////////////////////////////////////
+
+                getAreaDropDownOpenClicker.addEventListener("click", function () {
+
+                    openSelectAreaDropDown()
+
+                })
+
+            // FOR CLOSE CLICKER ------------------------------------
+            // //////////////////////////////////////////////////////
+
+                getAreaDropDownCloseClicker.addEventListener("click", function () {
+
+                    closeSelectAreaDropDown()
+                    
+                })
+
+        // EVENTS --------------
+        // //////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+    // CAPTURE RATINGS EVENTS ---------------------------------------
+    // //////////////////////////////////////////////////////////////
+
+        // RATING STAR CLICKER ONE ----------------------------------
+        // //////////////////////////////////////////////////////////
+
+            // CLICKER ON -------------------------------------------
+            // ------------------------------------------------------
+
+                starClickerOneOn.addEventListener("click", function () {
+
+                    
+                    // SWITCH ON STAR ONE ---------------------------
+                    // ----------------------------------------------
+
+                        ratingStarClickerOnOne()
+
+                    
+                    // SWITCH ON CALORIE ESTIMATE SECTION -----------
+                    // ----------------------------------------------
+
+                        reOpenCalorieEstimateSection()
+
+                    
+                    // SWITCH ON COMMENTS SECTION -------------------
+                    // ----------------------------------------------
+
+                        reOpenCommentsSection()
+
+
+                })
+
+
+            // CLICKER OFF ------------------------------------------
+            // ------------------------------------------------------
+
+                starClickerOneOff.addEventListener("click", function () {
+
+                    
+                    // SWITCH OFF STAR ONE --------------------------
+                    // ----------------------------------------------
+
+                        ratingStarClickerOffOne()
+
+                    
+                    // SWITCH OFF CALORIE ESTIMATE SECTION ----------
+                    // ----------------------------------------------
+
+                        closeCalorieEstimateSection()
+
+                    
+                    // SWITCH OFF COMMENTS SECTION ------------------
+                    // ----------------------------------------------
+
+                        closeCommentsSection()
+
+                })
+                
+
+        // RATING STAR CLICKER TWO ----------------------------------
+        // //////////////////////////////////////////////////////////
+
+            // CLICKER ON -------------------------------------------
+            // ------------------------------------------------------
+
+                starClickerTwoOn.addEventListener("click", function () {
+
+                    
+                    // SWITCH ON STAR TWO ---------------------------
+                    // ----------------------------------------------
+
+                        ratingStarClickerOnTwo()
+
+                    
+                    // SWITCH ON CALORIE ESTIMATE SECTION -----------
+                    // ----------------------------------------------
+
+                        reOpenCalorieEstimateSection()
+
+                    
+                    // SWITCH ON COMMENTS SECTION -------------------
+                    // ----------------------------------------------
+
+                        reOpenCommentsSection()
+
+                })
+                
+
+            // CLICKER OFF ------------------------------------------
+            // ------------------------------------------------------
+
+                starClickerTwoOff.addEventListener("click", function () {
+
+                    
+                    // SWITCH OFF STAR TWO --------------------------
+                    // ----------------------------------------------
+
+                        ratingStarClickerOffTwo()
+
+                    
+                    // SWITCH OFF CALORIE ESTIMATE SECTION ----------
+                    // ----------------------------------------------
+
+                        closeCalorieEstimateSection()
+
+                    
+                    // SWITCH OFF COMMENTS SECTION ------------------
+                    // ----------------------------------------------
+
+                        closeCommentsSection()
+
+                })
+                
+
+        // RATING STAR CLICKER THREE --------------------------------
+        // //////////////////////////////////////////////////////////
+
+            // CLICKER ON -------------------------------------------
+            // ------------------------------------------------------
+
+                starClickerThreeOn.addEventListener("click", function () {
+
+                    
+                    // SWITCH ON STAR THREE -------------------------
+                    // ----------------------------------------------
+
+                        ratingStarClickerOnThree()
+
+                    
+                    // SWITCH ON CALORIE ESTIMATE SECTION -----------
+                    // ----------------------------------------------
+
+                        reOpenCalorieEstimateSection()
+
+                    
+                    // SWITCH ON COMMENTS SECTION -------------------
+                    // ----------------------------------------------
+
+                        reOpenCommentsSection()
+
+                })
+                
+
+            // CLICKER OFF ------------------------------------------
+            // ------------------------------------------------------
+
+                starClickerThreeOff.addEventListener("click", function () {
+
+                    
+                    // SWITCH OFF STAR THREE ------------------------
+                    // ----------------------------------------------
+
+                        ratingStarClickerOffThree()
+
+                    
+                    // SWITCH OFF CALORIE ESTIMATE SECTION ----------
+                    // ----------------------------------------------
+
+                        closeCalorieEstimateSection()
+
+                    
+                    // SWITCH OFF COMMENTS SECTION ------------------
+                    // ----------------------------------------------
+
+                        closeCommentsSection()
+
+                })
+                
+
+        // RATING STAR CLICKER FOUR ---------------------------------
+        // //////////////////////////////////////////////////////////
+
+            // CLICKER ON -------------------------------------------
+            // ------------------------------------------------------
+
+                starClickerFourOn.addEventListener("click", function () {
+
+                    
+                    // SWITCH ON STAR FOUR --------------------------
+                    // ----------------------------------------------
+
+                        ratingStarClickerOnFour()
+
+                    
+                    // SWITCH ON CALORIE ESTIMATE SECTION -----------
+                    // ----------------------------------------------
+
+                        reOpenCalorieEstimateSection()
+
+                    
+                    // SWITCH ON COMMENTS SECTION -------------------
+                    // ----------------------------------------------
+
+                        reOpenCommentsSection()
+
+                })
+                
+
+            // CLICKER OFF ------------------------------------------
+            // ------------------------------------------------------
+
+                starClickerFourOff.addEventListener("click", function () {
+
+                    
+                    // SWITCH OFF STAR FOUR -------------------------
+                    // ----------------------------------------------
+
+                        ratingStarClickerOffFour()
+
+                    
+                    // SWITCH OFF CALORIE ESTIMATE SECTION ----------
+                    // ----------------------------------------------
+
+                        closeCalorieEstimateSection()
+
+                    
+                    // SWITCH OFF COMMENTS SECTION ------------------
+                    // ----------------------------------------------
+
+                        closeCommentsSection()
+
+                })
+                
+
+        // RATING STAR CLICKER FIVE ---------------------------------
+        // //////////////////////////////////////////////////////////
+
+            // CLICKER ON -------------------------------------------
+            // ------------------------------------------------------
+
+                starClickerFiveOn.addEventListener("click", function () {
+
+                    
+                    // SWITCH ON STAR FIVE --------------------------
+                    // ----------------------------------------------
+
+                        ratingStarClickerOnFive()
+
+                    
+                    // SWITCH ON CALORIE ESTIMATE SECTION -----------
+                    // ----------------------------------------------
+
+                        reOpenCalorieEstimateSection()
+
+                    
+                    // SWITCH ON COMMENTS SECTION -------------------
+                    // ----------------------------------------------
+
+                        reOpenCommentsSection()
+
+                })
+                
+
+            // CLICKER OFF ------------------------------------------
+            // ------------------------------------------------------
+
+                starClickerFiveOff.addEventListener("click", function () {
+
+                    
+                    // SWITCH OFF STAR FIVE -------------------------
+                    // ----------------------------------------------
+
+                        ratingStarClickerOffFive()
+
+                    
+                    // SWITCH OFF CALORIE ESTIMATE SECTION ----------
+                    // ----------------------------------------------
+
+                        closeCalorieEstimateSection()
+
+                    
+                    // SWITCH OFF COMMENTS SECTION ------------------
+                    // ----------------------------------------------
+
+                        closeCommentsSection()
+
+                })
 
 
 
