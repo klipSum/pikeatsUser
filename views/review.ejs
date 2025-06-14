@@ -622,7 +622,13 @@
                         <!-- FORM FOR INFO SUBMIT ----------------- -->
                         <!-- ////////////////////////////////////// -->
 
-                            <form class="submitInfoFormActual">
+                            <form 
+                            
+                                class="submitInfoFormActual"
+                                method="post"
+                                action="/review"
+                                
+                            >
 
 
 
@@ -687,7 +693,7 @@
                                             
                                                 id="ratingsSubmit"
                                                 name="userRatings"
-                                                type="text"
+                                                type="number"
                                                 value=""
                                                 class="submitRatingsStringInputActual"
                                                 readonly
@@ -712,8 +718,8 @@
                                             
                                                 id="caloriesSubmit"
                                                 name="userCalories"
-                                                type="text"
-                                                value=""
+                                                type="number"
+                                                value="12345"
                                                 class="submitCaloriesStringInputActual"
                                                 readonly
                                                 placeholder="calories..."

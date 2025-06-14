@@ -66,10 +66,37 @@ const bodyparser = require("body-parser");
 
 
 
+// SETUP MONGO DB xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+// //////////////////////////////////////////////////////////////////////////////
+
+    // CREATE MONGOOSE SCHEMA FOR UPLOAD ----------------------------------------
+    // xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+        const postSchema = {
+
+            image:String,
+            area:String,
+            rating:Number,
+            calorie:Number,
+            comments:String
+
+        }
+
+    // CREATE NEW USER POST -----------------------------------------------------
+    // xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+        const Post = mongoose.model("Post", postSchema)
+
+
+
+
+
+
+
 // SETUP ROUTES xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 // //////////////////////////////////////////////////////////////////////////////
 
-    // SETUP ROUTES FOR DEFAULT PATHS -------------------------------------------
+    // SETUP ROUTES FOR DEFAULT HOME PATH ---------------------------------------
     // xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
         // FOR INDEX HOME PAGE --------------------------------------------------
@@ -81,14 +108,73 @@ const bodyparser = require("body-parser");
 
             });
 
-        // FOR REVIEW PAGE ------------------------------------------------------
+
+
+
+
+
+
+
+
+
+    // SETUP ROUTES FOR OTHER PAGE ROUTES ---------------------------------------
+    // xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+        // SETUP GET PATHS ------------------------------------------------------
         // //////////////////////////////////////////////////////////////////////
 
-            app.get("/review", (req, res) => {
+            // REVIEW PAGE PATH xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            // xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
-                res.render("review");
+                app.get("/review", (req, res) => {
 
-            });
+                    res.render("review");
+
+                });
+
+
+
+
+
+        // SETUP POST PATHS -----------------------------------------------------
+        // //////////////////////////////////////////////////////////////////////
+
+            // REVIEW PAGE PATH xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            // xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+                app.post("/review", (req, res) => {
+
+                    // OPEN CONNECTION FOR USERS POSTS --------------------------
+                    // ----------------------------------------------------------
+
+                        mongoose.connect("mongodb+srv://klipsumlmp:sZRAj3EnrLFPfm23@pikeats.urlwdfx.mongodb.net/pikEatsUsers")
+
+                    // CREATE NEW POST ------------------------------------------
+                    // ----------------------------------------------------------
+
+                        let newPost = new Post ({
+
+                            image:req.body.userImageConverted,
+                            area:req.body.userArea,
+                            rating:req.body.userRatings,
+                            calorie:req.body.userCalories,
+                            comments:req.body.userComments
+
+                        })
+
+                    // SAVE POST TO MONGO DB ------------------------------------
+                    // ----------------------------------------------------------
+
+                        newPost.save()
+
+                    // FINALLY RERENDER PAGE WHEN DONE --------------------------
+                    // ----------------------------------------------------------
+
+                        res.redirect("review");
+
+                });
+
+
 
 
 
