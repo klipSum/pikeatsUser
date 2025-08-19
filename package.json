@@ -7,10 +7,18 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/klipSum/pikeatsUser.git"
+  },
   "author": "studiomonkey",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/klipSum/pikeatsUser/issues"
+  },
   "dependencies": {
     "body-parser": "^2.2.0",
+    "dotenv": "^17.2.1",
     "ejs": "^3.1.10",
     "express": "^5.1.0",
     "mongoose": "^8.15.1",

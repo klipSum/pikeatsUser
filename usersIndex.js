@@ -3,6 +3,10 @@ const express = require("express");
 const mongoose = require("mongoose");
 const bodyparser = require("body-parser");
 
+require("dotenv").config()
+
+const giveSeason = process.env.giveOpenSeason
+
 
 
 
@@ -74,11 +78,31 @@ const bodyparser = require("body-parser");
 
         const postSchema = {
 
-            image:String,
-            area:String,
-            rating:Number,
-            calorie:Number,
-            comments:String
+            // USER SUBMITS -------------------------------------
+            // --------------------------------------------------
+
+                userImage:String,                           // 1
+                userArea:String,                            // 2
+                userRating:Number,                          // 3
+                userCalorie:Number,                         // 4
+                userDescription:String,                     // 5
+                userTime:String,                            // 6
+                userDate:String,                            // 7
+                userReply:String,                           // 8
+                userReplyTime:String,                       // 9
+                userReplyDate:String,                       // 10
+
+            // ADMIN SUBMITS ------------------------------------
+            // --------------------------------------------------
+
+                adminComments:String,                       // 11
+                adminCommentTime:String,                    // 12
+                adminCommentDate:String,                    // 13
+
+            // IDENTIFICATION SUBMITS ---------------------------
+            // --------------------------------------------------
+
+                userId:String                               // 14
 
         }
 
@@ -144,21 +168,80 @@ const bodyparser = require("body-parser");
 
                 app.post("/review", (req, res) => {
 
+                    // CREATE TIME AND DATE STAMPS ------------------------------
+                    // ----------------------------------------------------------
+
+                        // SETUP VARIABLES --------------------------------------
+                        // //////////////////////////////////////////////////////
+
+                            // SETUP VARIABLES FOR TIME DATE STRINGS ////////////
+                            // //////////////////////////////////////////////////
+
+                                const timeDateInitiate = new Date()
+
+                                    // SETUP VARIABLES FOR GET TIME MARKERS /////
+                                    // //////////////////////////////////////////
+
+                                        const hour = timeDateInitiate.getHours()
+                                        const minute = timeDateInitiate.getMinutes()
+
+                                    // SETUP VARIABLES FOR GET DATE MARKERS /////
+                                    // //////////////////////////////////////////
+
+                                        const day = timeDateInitiate.getDate()
+                                        const month = timeDateInitiate.getMonth()
+                                        const year = timeDateInitiate.getFullYear()
+
+
+                            // SETUP VARIABLES FOR ARRAYS ///////////////////////
+                            // //////////////////////////////////////////////////
+
+                                const monthMappers = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"]
+
+                            // SETUP FULL CONSTRUCTED STRINGS ///////////////////
+                            // //////////////////////////////////////////////////
+
+                                // MAKE FULL TIME AND DATE STRING ///////////////
+                                // //////////////////////////////////////////////
+
+                                    var currentTime = `${hour}H${minute}`
+                                    var currentDate = `${day} ${monthMappers[month]} ${year}`
+
                     // OPEN CONNECTION FOR USERS POSTS --------------------------
                     // ----------------------------------------------------------
 
-                        mongoose.connect("mongodb+srv://klipsumlmp:sZRAj3EnrLFPfm23@pikeats.urlwdfx.mongodb.net/pikEatsUsers")
+                        mongoose.connect(`${giveSeason}`)
 
                     // CREATE NEW POST ------------------------------------------
                     // ----------------------------------------------------------
 
                         let newPost = new Post ({
 
-                            image:req.body.userImageConverted,
-                            area:req.body.userArea,
-                            rating:req.body.userRatings,
-                            calorie:req.body.userCalories,
-                            comments:req.body.userComments
+                            // USER SUBMITS -------------------------------------
+                            // --------------------------------------------------
+
+                                userImage:req.body.userImageConverted,
+                                userArea:req.body.userArea,
+                                userRating:req.body.userRatings,
+                                userCalorie:req.body.userCalories,
+                                userDescription:req.body.userComments,
+                                userTime:currentTime,
+                                userDate:currentDate,
+                                userReply:"",
+                                userReplyTime:"",
+                                userReplyDate:"",
+
+                            // ADMIN SUBMITS ------------------------------------
+                            // --------------------------------------------------
+
+                                adminComments:"",
+                                adminCommentTime:"",
+                                adminCommentDate:"",
+
+                            // IDENTIFICATION SUBMITS ---------------------------
+                            // --------------------------------------------------
+
+                                userId:""
 
                         })
 
